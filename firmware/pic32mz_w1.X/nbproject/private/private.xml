@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/c21415/H3_New/azure_rtos/apps/iot/azure_iot_demo_wifi/firmware/src/config/pic32mz_w1/interrupts.c</file>
+            <file>file:/Users/c21415/H3_New/azure_rtos/apps/iot/azure_iot_demo_wifi/firmware/src/third_party/rtos/threadx/ports/pic32mz/mplabx/src/tx_thread_context_save.S</file>
+            <file>file:/Users/c21415/H3_New/azure_rtos/apps/iot/azure_iot_demo_wifi/firmware/src/third_party/rtos/threadx/common/inc/tx_api.h</file>
+            <file>file:/Users/c21415/H3_New/azure_rtos/apps/iot/azure_iot_demo_wifi/firmware/src/app_pic32mz_w1.c</file>
+            <file>file:/Users/c21415/H3_New/azure_rtos/apps/iot/azure_iot_demo_wifi/firmware/src/config/pic32mz_w1/third_party_adapter/azure_rtos/src/azure_glue.c</file>
+            <file>file:/Users/c21415/H3_New/azure_rtos/apps/iot/azure_iot_demo_wifi/firmware/src/config/pic32mz_w1/driver/wifi/pic32mzw1/wdrv_pic32mzw_softap.c</file>
+            <file>file:/Users/c21415/H3_New/azure_rtos/apps/iot/azure_iot_demo_wifi/firmware/src/config/pic32mz_w1/exceptions.c</file>
+        </group>
+    </open-files>
+</project-private>
