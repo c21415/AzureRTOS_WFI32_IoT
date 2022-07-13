@@ -4965,7 +4965,7 @@ ULONG                   bytes_copied = 0;
 
     /* We will copy the received packet (datagram) over to a packet from the DHCP Server pool and release
        the packet from the receive packet pool as soon as possible. */
-    status =  nx_packet_allocate(dhcpv6_server_ptr -> nx_dhcpv6_packet_pool_ptr, &new_packet_ptr, NX_IPv6_UDP_PACKET, NX_DHCPV6_PACKET_TIME_OUT);
+    status =  nx_packet_allocate(dhcpv6_server_ptr -> nx_dhcpv6_packet_pool_ptr, &new_packet_ptr, NX_IPv6_UDP_PACKET, NX_DHCPV6_PACKET_TIME_OUT, __func__);
 
     /* Check status.  */
     if (status != NX_SUCCESS)
@@ -5259,7 +5259,7 @@ ULONG         message_word;
 
 
     /* Allocate a UDP packet from the DHCPv6 server packet pool.  */
-    status =  nx_packet_allocate(dhcpv6_server_ptr -> nx_dhcpv6_packet_pool_ptr, &packet_ptr, NX_IPv6_UDP_PACKET, NX_DHCPV6_PACKET_TIME_OUT);
+    status =  nx_packet_allocate(dhcpv6_server_ptr -> nx_dhcpv6_packet_pool_ptr, &packet_ptr, NX_IPv6_UDP_PACKET, NX_DHCPV6_PACKET_TIME_OUT, __func__);
 
     /* Was the packet allocation successful?  */
     if (status != NX_SUCCESS)

@@ -55,7 +55,7 @@
 
 extern void _tx_timer_interrupt( void );
 
-void __ISR(_TIMER_1_VECTOR, ipl1AUTO) TIMER_1_Handler (void)
+void __ISR(_TIMER_1_VECTOR, ipl1SAVEALL) TIMER_1_Handler (void)
 {
     /* Clear Interrupt */
     IFS0CLR = _IFS0_T1IF_MASK;

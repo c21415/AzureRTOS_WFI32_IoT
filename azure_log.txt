@@ -1,0 +1,756 @@
+_nx_packet_pool_create:pool start = 80001B60 end = FA00
+Init data start - 0x80001BA0
+Init data start - 0x800021E0
+Init data start - 0x80002820
+Init data start - 0x80002E60
+Init data start - 0x800034A0
+Init data start - 0x80003AE0
+Init data start - 0x80004120
+Init data start - 0x80004760
+Init data start - 0x80004DA0
+Init data start - 0x800053E0
+Init data start - 0x80005A20
+Init data start - 0x80006060
+Init data start - 0x800066A0
+Init data start - 0x80006CE0
+Init data start - 0x80007320
+Init data start - 0x80007960
+Init data start - 0x80007FA0
+Init data start - 0x800085E0
+Init data start - 0x80008C20
+Init data start - 0x80009260
+Init data start - 0x800098A0
+Init data start - 0x80009EE0
+Init data start - 0x8000A520
+Init data start - 0x8000AB60
+Init data start - 0x8000B1A0
+Init data start - 0x8000B7E0
+Init data start - 0x8000BE20
+Init data start - 0x8000C460
+Init data start - 0x8000CAA0
+Init data start - 0x8000D0E0
+Init data start - 0x8000D720
+Init data start - 0x8000DD60
+Init data start - 0x8000E3A0
+Init data start - 0x8000E9E0
+Init data start - 0x8000F020
+Init data start - 0x8000F660
+Init data start - 0x8000FCA0
+Init data start - 0x800102E0
+Init data start - 0x80010920
+Init data start - 0x80010F60
+_nx_packet_pool_create:pool start = 800166D0 end = C6C
+Init data start - 0x80016710
+Init data start - 0x800169CC
+Init data start - 0x80016C88
+Init data start - 0x80016F44
+MAC: Mac read e8:eb:1b:f3:3f:23
+MAC: ANT gain 2G 14
+MAC: ANT gain 5G 23
+MAC: cmd >> 
+MAC: Factory cal v2 found
+  gainCorrFact= 0.500000 0.500000 -1.000000 0.500000 -0.500000 -1.000000
+MAC: Power-on cal found
+  Tank1 = 0x0005…
+ Tank2 = 0x0005…
+  Band Gap = 0023
+
+MAC: $R>util_init_alarms
+MAC: $R<util_init_alarms
+MAC: Built on Nov  2 2021 18:22:14
+MAC: Temperature: 26.811594, backOffIndex: 511
+MAC: SDADC reading = 169 for a bias level of 4
+MAC: Clk-Bias = 4
+MAC: Error in RX LPF Calibration
+MAC: GEN Gain found, gain[0] = 2e2e2e0f, ch = 07ff, chbe = 0603, ver = 2
+
+MAC: set_PowerManagementMode - RUN mode 
+MAC: Already in Run mode
+MAC: Calling start_mac_and_phy() from parse_config_message - STA State = 0
+flush qs
+MAC: curTemp 27.898550 prevTemp25 27.898550 prevTemp10 27.898550 prevVDD 730.000000
+
+MAC: After Calling start_mac_and_phy() State = 0
+MAC:  SWITCHING MODE 0
+MAC: MAC ALREADY in STA MODE
+MAC: stop_supp_rsna(): After mset_RSNAEnabled
+MAC: stop_supp_rsna(): Before for loop
+MAC: stop_supp_rsna(): i = 0
+MAC: stop_supp_rsna(): i = 1
+MAC: stop_supp_rsna(): i = 2
+MAC: stop_supp_rsna(): i = 3
+MAC: stop_supp_rsna(): i = 4
+MAC: stop_supp_rsna(): i = 5
+MAC: stop_supp_rsna(): i = 6
+MAC: stop_supp_rsna(): i = 7
+MAC: Calling start_mac_and_phy() from parse_config_message - STA State = 0
+MAC: stop_supp_rsna(): After mset_RSNAEnabled
+MAC: stop_supp_rsna(): Before for loop
+MAC: stop_supp_rsna(): i = 0
+MAC: stop_supp_rsna(): i = 1
+MAC: stop_supp_rsna(): i = 2
+MAC: stop_supp_rsna(): i = 3
+MAC: stop_supp_rsna(): i = 4
+MAC: stop_supp_rsna(): i = 5
+MAC: stop_supp_rsna(): i = 6
+MAC: stop_supp_rsna(_nx_dhcp_send_request_internal
+(0x80016694)pool_ptr -> nx_packet_pool_available = 4
+***data End - 80016710
+work_ptr -> nx_packet_queue_next = 0x8001698C
+): i = 7
+flush qs
+MAC: curTemp 27.898550 prevTemp25 27.898550 prevTemp10 27.898550 prevVDD 728.500000
+
+MAC: After Calling start_mac_and_phy() State = 3
+MAC: Set channel 6, sec chan offset 0 
+MAC: Status: Sending precautionary DEAUTH.
+MAC: ****** sta_wait_auth: Sending Auth req ******
+MAC: Status: Initiating Authentication.
+MAC: ########## handle_auth_rsp: Calling initiate_asoc() #########
+MAC: ########## sta_wait_asoc: Enter #########
+MAC: ****** sta_wait_asoc_rx(): Rcvd ASSOC_RSP ******
+MAC: Process EAPOLKey
+MAC: Process EAPOLKey
+MAC: verify_RSNIE true
+MAC: Connected, check temp. volt. change
+MAC: Temp. or Volt. change not enough to trigger TPC
+MAC: machw_tx_suspended is false
+MAC: machw_tx_suspended is false
+_nx_dhcp_send_request_internal
+(0x80016694)pool_ptr -> nx_packet_pool_available = 4
+***data End - 80016710
+work_ptr -> nx_packet_queue_next = 0x8001698C
+Tx -> 80020080
+Tx <- 80020080
+Length of EthMsg = 42
+Rx -> 80020C60
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+Release pckt 0x0
+Rx <- 80020C60
+Length of EthMsg = 42
+Rx -> 80020CAC
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+Release pckt 0x0
+Rx <- 80020CAC
+Length of EthMsg = 42
+Rx -> 80020CF8
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+Release pckt 0x0
+Rx <- 80020CF8
+Length of EthMsg = 342
+Rx -> 80020D44
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+_nx_dhcp_packet_process
+(0x80016694)pool_ptr -> nx_packet_pool_available = 4
+***data End - 80016710
+work_ptr -> nx_packet_queue_next = 0x8001698C
+working_packet_ptr = 0x80001B60 remaining_bytes = 300
+destination_ptr = 0x80016768 source_ptr = 0x80001BF4 bytes_to_copy = 300
+_nx_dhcp_send_request_internal
+(0x80016694)pool_ptr -> nx_packet_pool_available = 3
+***data End - 800169CC
+work_ptr -> nx_packet_queue_next = 0x80016C48
+Tx -> 800200CC
+Tx <- 800200CC
+Release pckt 0x0
+Rx <- 80020D44
+Length of EthMsg = 342
+Rx -> 80020D90
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+_nx_dhcp_packet_process
+(0x80016694)pool_ptr -> nx_packet_pool_available = 4
+***data End - 80016710
+work_ptr -> nx_packet_queue_next = 0x8001698C
+working_packet_ptr = 0x80001B60 remaining_bytes = 300
+destination_ptr = 0x80016768 source_ptr = 0x80001BF4 bytes_to_copy = 300
+_nx_dns_send_query_get_rdata_by_name
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+Tx -> 80020118
+Tx <- 80020118
+Release pckt 0x0
+Rx <- 80020D90
+Length of EthMsg = 42
+Rx -> 80020DDC
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+Tx -> 80020164
+Tx <- 80020164
+Release pckt 0x0
+Rx <- 80020DDC
+Length of EthMsg = 138
+Rx -> 80020E28
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+_nx_sntp_client_send_unicast_request
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+Tx -> 800201B0
+Tx <- 800201B0
+MAC: $R???
+Release pckt 0x0
+Rx <- 80020E28
+Length of EthMsg = 90
+Rx -> 80020E74
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+Release pckt 0x0
+Rx <- 80020E74
+Start Provisioning Client…
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+_nx_cloud_thread_entry:1125
+_nx_dns_send_query_get_rdata_by_name
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+Tx -> 800201FC
+Tx <- 800201FC
+Length of EthMsg = 225
+Rx -> 80020EC0
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+nxp data start = 800021E0 end = 800027E0
+TLS resource Buffer size = 7168
+_nx_tcp_packet_send_control
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+Tx -> 80020248
+Tx <- 80020248
+Release pckt 0x0
+Rx <- 80020EC0
+Length of EthMsg = 58
+Rx -> 80020F0C
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+nxp data start = 800021E0 end = 800027E0
+_nx_tcp_packet_send_control
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 38
+***data End - 80002820
+work_ptr -> nx_packet_queue_next = 0x80002E20
+Tx -> 80020294
+Tx <- 80020294
+_nx_cloud_thread_entry:1125
+Async TLS Session Start!_nx_secure_tls_packet_allocate:88
+_nx_secure_tls_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+Tx -> 800202E0
+Tx <- 800202E0
+
+_nx_secure_tls_handshake_process
+
+_nx_secure_tls_session_receive_records
+
+_nx_secure_tls_handshake_process::status = 1
+Release pckt 0x0
+Rx <- 80020F0C
+Length of EthMsg = 1514
+Rx -> 80020F58
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 38
+***data End - 80002820
+work_ptr -> nx_packet_queue_next = 0x80002E20
+nxp data start = 80002820 end = 80002E20
+_nx_cloud_thread_entry:1125
+Process TLS Rx packet
+_nx_secure_tls_handshake_process
+
+_nx_secure_tls_session_receive_records
+_nx_tcp_packet_send_control
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 38
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x80002E20
+Tx -> 8002032C
+Tx <- 8002032C
+working_packet_ptr = 0x800027E0 remaining_bytes = 5
+destination_ptr = 0x8001D264 source_ptr = 0x80002880 bytes_to_copy = 5
+protocol_version = 0x303
+Length = 3887
+_nx_secure_tls_process_record:211 status = 0
+_nx_secure_tls_process_record:226 packet length = 1460
+
+_nx_secure_tls_handshake_process::status = 1
+_nxd_mqtt_tls_establish_process:2466
+Release pckt 0x0
+Rx <- 80020F58
+Length of EthMsg = 1514
+Rx -> 80020FA4
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 38
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x80002E20
+nxp data start = 800021E0 end = 800027E0
+_nx_cloud_thread_entry:1125
+Process TLS Rx packet
+_nx_secure_tls_handshake_process
+
+_nx_secure_tls_session_receive_records
+working_packet_ptr = 0x800027E0 remaining_bytes = 5
+destination_ptr = 0x8001D264 source_ptr = 0x53D14211 bytes_to_copy = 5
+1010101
+8001D264
+D3D09075
+8001D264
+53D14211
+5
+53D14216
+BF840000
+BF840000
+1
+0
+0
+800004A0
+14141414
+80808080
+24242424
+90082255
+9006E6E0
+0
+0
+80041C
+1000003
+900761A0
+**EXCEPTION:*
+ ECode: 7, EAddr: 0x900761A0, CPO Status: 0x01000003, CPO Cause: 0x0080041C
+ Stack Ptr: 0x8001D138, Bad Addr: 0x323D7C7C, Return Addr: 0x9006E6E0
+**EXCEPTION:*
+_nx_packet_pool_create:pool start = 80001B60 end = FA00
+Init data start - 0x80001BA0
+Init data start - 0x800021E0
+Init data start - 0x80002820
+Init data start - 0x80002E60
+Init data start - 0x800034A0
+Init data start - 0x80003AE0
+Init data start - 0x80004120
+Init data start - 0x80004760
+Init data start - 0x80004DA0
+Init data start - 0x800053E0
+Init data start - 0x80005A20
+Init data start - 0x80006060
+Init data start - 0x800066A0
+Init data start - 0x80006CE0
+Init data start - 0x80007320
+Init data start - 0x80007960
+Init data start - 0x80007FA0
+Init data start - 0x800085E0
+Init data start - 0x80008C20
+Init data start - 0x80009260
+Init data start - 0x800098A0
+Init data start - 0x80009EE0
+Init data start - 0x8000A520
+Init data start - 0x8000AB60
+Init data start - 0x8000B1A0
+Init data start - 0x8000B7E0
+Init data start - 0x8000BE20
+Init data start - 0x8000C460
+Init data start - 0x8000CAA0
+Init data start - 0x8000D0E0
+Init data start - 0x8000D720
+Init data start - 0x8000DD60
+Init data start - 0x8000E3A0
+Init data start - 0x8000E9E0
+Init data start - 0x8000F020
+Init data start - 0x8000F660
+Init data start - 0x8000FCA0
+Init data start - 0x800102E0
+Init data start - 0x80010920
+Init data start - 0x80010F60
+_nx_packet_pool_create:pool start = 800166D0 end = C6C
+Init data start - 0x80016710
+Init data start - 0x800169CC
+Init data start - 0x80016C88
+Init data start - 0x80016F44
+MAC: Mac read e8:eb:1b:f3:3f:23
+MAC: ANT gain 2G 14
+MAC: ANT gain 5G 23
+MAC: cmd >> 
+MAC: Factory cal v2 found
+  gainCorrFact= 0.500000 0.500000 -1.000000 0.500000 -0.500000 -1.000000
+MAC: Power-on cal found
+  Tank1 = 0x0005…
+ Tank2 = 0x0005…
+  Band Gap = 0023
+
+MAC: $R>util_init_alarms
+MAC: $R<util_init_alarms
+MAC: Built on Nov  2 2021 18:22:14
+MAC: SDADC reading = 171 for a bias level of 4
+MAC: Clk-Bias = 4
+MAC: Error in RX LPF Calibration
+MAC: GEN Gain found, gain[0] = 2e2e2e0f, ch = 07ff, chbe = 0603, ver = 2
+
+MAC: set_PowerManagementMode - RUN mode 
+MAC: Already in Run mode
+MAC: Calling start_mac_and_phy() from parse_config_message - STA State = 0
+flush qs
+MAC: curTemp 34.420288 prevTemp25 34.420288 prevTemp10 34.420288 prevVDD 730.500000
+
+MAC: After Calling start_mac_and_phy() State = 0
+MAC:  SWITCHING MODE 0
+MAC: MAC ALREADY in STA MODE
+MAC: stop_supp_rsna(): After mset_RSNAEnabled
+MAC: stop_supp_rsna(): Before for loop
+MAC: stop_supp_rsna(): i = 0
+MAC: stop_supp_rsna(): i = 1
+MAC: stop_supp_rsna(): i = 2
+MAC: stop_supp_rsna(): i = 3
+MAC: stop_supp_rsna(): i = 4
+MAC: stop_supp_rsna(): i = 5
+MAC: stop_supp_rsna(): i = 6
+MAC: stop_supp_rsna(): i = 7
+_nx_dhcp_send_request_internal
+(0x80016694)pool_ptr -> nx_packet_pool_available = 4
+***data End - 80016710
+work_ptr -> nx_packet_queue_next = 0x8001698C
+MAC: Calling start_mac_and_phy() from parse_config_message - STA State = 0
+MAC: stop_supp_rsna(): After mset_RSNAEnabled
+MAC: stop_supp_rsna(): Before for loop
+MAC: stop_supp_rsna(): i = 0
+MAC: stop_supp_rsna(): i = 1
+MAC: stop_supp_rsna(): i = 2
+MAC: stop_supp_rsna(): i = 3
+MAC: stop_supp_rsna(): i = 4
+MAC: stop_supp_rsna(): i = 5
+MAC: stop_supp_rsna(): i = 6
+MAC: stop_supp_rsna(): i = 7
+flush qs
+MAC: curTemp 34.420288 prevTemp25 34.420288 prevTemp10 34.420288 prevVDD 729.500000
+
+MAC: After Calling start_mac_and_phy() State = 3
+MAC: Set channel 6, sec chan offset 0 
+MAC: Status: Sending precautionary DEAUTH.
+MAC: ****** sta_wait_auth: Sending Auth req ******
+MAC: Status: Initiating Authentication.
+MAC: ########## handle_auth_rsp: Calling initiate_asoc() #########
+MAC: ########## sta_wait_asoc: Enter #########
+MAC: ****** sta_wait_asoc_rx(): Rcvd ASSOC_RSP ******
+MAC: Process EAPOLKey
+MAC: Process EAPOLKey
+MAC: verify_RSNIE true
+MAC: Connected, check temp. volt. change
+MAC: Temp. or Volt. change not enough to trigger TPC
+Length of EthMsg = 835
+Rx -> 80020C60
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+Release pckt 0x0
+Rx <- 80020C60
+MAC: machw_tx_suspended is false
+Length of EthMsg = 200
+Rx -> 80020CAC
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+Release pckt 0x0
+Rx <- 80020CAC
+_nx_dhcp_send_request_internal
+(0x80016694)pool_ptr -> nx_packet_pool_available = 4
+***data End - 80016710
+work_ptr -> nx_packet_queue_next = 0x8001698C
+Tx -> 80020080
+Tx <- 80020080
+Length of EthMsg = 342
+Rx -> 80020CF8
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+_nx_dhcp_packet_process
+(0x80016694)pool_ptr -> nx_packet_pool_available = 4
+***data End - 80016710
+work_ptr -> nx_packet_queue_next = 0x8001698C
+working_packet_ptr = 0x80001B60 remaining_bytes = 300
+destination_ptr = 0x80016768 source_ptr = 0x80001BF4 bytes_to_copy = 300
+_nx_dhcp_send_request_internal
+(0x80016694)pool_ptr -> nx_packet_pool_available = 3
+***data End - 800169CC
+work_ptr -> nx_packet_queue_next = 0x80016C48
+Tx -> 800200CC
+Tx <- 800200CC
+Release pckt 0x0
+Rx <- 80020CF8
+Length of EthMsg = 342
+Rx -> 80020D44
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+nxp data start = 80001BA0 end = 800021A0
+_nx_dhcp_packet_process
+(0x80016694)pool_ptr -> nx_packet_pool_available = 4
+***data End - 80016710
+work_ptr -> nx_packet_queue_next = 0x8001698C
+working_packet_ptr = 0x80001B60 remaining_bytes = 300
+destination_ptr = 0x80016768 source_ptr = 0x80001BF4 bytes_to_copy = 300
+_nx_dns_send_query_get_rdata_by_name
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800021A0
+_nx_arp_packet_send
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+Tx -> 80020118
+Tx <- 80020118
+Release pckt 0x0
+Rx <- 80020D44
+Length of EthMsg = 42
+Rx -> 80020D90
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+nxp data start = 800021E0 end = 800027E0
+Tx -> 80020164
+Tx <- 80020164
+Release pckt 0x0
+Rx <- 80020D90
+Length of EthMsg = 138
+Rx -> 80020DDC
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x80001B60
+nxp data start = 800021E0 end = 800027E0
+_nx_sntp_client_send_unicast_request
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x80001B60
+Tx -> 800201B0
+Tx <- 800201B0
+Release pckt 0x0
+Rx <- 80020DDC
+Length of EthMsg = 90
+Rx -> 80020E28
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x80001B60
+nxp data start = 800021E0 end = 800027E0
+Release pckt 0x0
+Rx <- 80020E28
+Start Provisioning Client...
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 40
+***data End - 800021E0
+work_ptr -> nx_packet_queue_next = 0x80001B60
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+_nx_cloud_thread_entry:1125
+_nx_dns_send_query_get_rdata_by_name
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+Tx -> 800201FC
+Tx <- 800201FC
+Length of EthMsg = 835
+Rx -> 80020E74
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+nxp data start = 80001BA0 end = 800021A0
+Length of EthMsg = 225
+Rx -> 80020EC0
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+nxp data start = 80001BA0 end = 800021A0
+TLS resource Buffer size = 7168
+_nx_tcp_packet_send_control
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+Tx -> 80020248
+Tx <- 80020248
+Release pckt 0x0
+Rx <- 80020E74
+Release pckt 0x0
+Rx <- 80020EC0
+Length of EthMsg = 58
+Rx -> 80020F0C
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+nxp data start = 80001BA0 end = 800021A0
+_nx_tcp_packet_send_control
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 38
+***data End - 80002820
+work_ptr -> nx_packet_queue_next = 0x80002E20
+Tx -> 80020294
+Tx <- 80020294
+_nx_cloud_thread_entry:1125
+Async TLS Session Start!_nx_secure_tls_packet_allocate:88
+_nx_secure_tls_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 39
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x800027E0
+Tx -> 800202E0
+Tx <- 800202E0
+
+_nx_secure_tls_handshake_process
+
+_nx_secure_tls_session_receive_records
+
+_nx_secure_tls_handshake_process::status = 1
+Release pckt 0x0
+Rx <- 80020F0C
+Length of EthMsg = 1514
+Rx -> 80020F58
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 38
+***data End - 80002820
+work_ptr -> nx_packet_queue_next = 0x80002E20
+nxp data start = 80002820 end = 80002E20
+_nx_cloud_thread_entry:1125
+Process TLS Rx packet
+_nx_secure_tls_handshake_process
+
+_nx_secure_tls_session_receive_records
+_nx_tcp_packet_send_control
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 38
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x80002E20
+Tx -> 8002032C
+Tx <- 8002032C
+working_packet_ptr = 0x800027E0 remaining_bytes = 5
+destination_ptr = 0x8001D264 source_ptr = 0x80002880 bytes_to_copy = 5
+protocol_version = 0x303
+Length = 3887
+_nx_secure_tls_process_record:211 status = 0
+_nx_secure_tls_process_record:226 packet length = 1460
+
+_nx_secure_tls_handshake_process::status = 1
+_nxd_mqtt_tls_establish_process:2466
+Release pckt 0x0
+Rx <- 80020F58
+Length of EthMsg = 1514
+Rx -> 80020FA4
+Calling nx_rx_pkt_allocate
+_nxe_packet_allocate
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 38
+***data End - 80001BA0
+work_ptr -> nx_packet_queue_next = 0x80002E20
+nxp data start = 80001BA0 end = 800021A0
+_nx_cloud_thread_entry:1125
+Process TLS Rx packet
+_nx_secure_tls_handshake_process
+
+_nx_secure_tls_session_receive_records
+working_packet_ptr = 0x800027E0 remaining_bytes = 5
+destination_ptr = 0x8001D264 source_ptr = 0x80002880 bytes_to_copy = 5
+protocol_version = 0x303
+Length = 3887
+_nx_secure_tls_process_record:211 status = 0
+_nx_secure_tls_process_record:226 packet length = 1460
+_nx_secure_tls_session_receive_records:122 status = 85
+_nx_tcp_packet_send_control
+(0x800195A8)pool_ptr -> nx_packet_pool_available = 37
+***data End - 6333035
+***data Start - 6333035
+work_ptr -> nx_packet_queue_next = 0x80003460
+1010101
+E60622B3
+22B3
+80002E20
+9009B059
+6333099
+6
+BF840000
+BF840000
+0
+0
+0
+800004A0
+14141414
+80808080
+24242424
+90082255
+9003AB20
+0
+0
+800414
+1000003
+9003AB78
+**EXCEPTION:*
+ ECode: 5, EAddr: 0x9003AB78, CPO Status: 0x01000003, CPO Cause: 0x00800414
+ Stack Ptr: 0x8001D168, Bad Addr: 0x06333099, Return Addr: 0x9003AB20
+**EXCEPTION:*
+

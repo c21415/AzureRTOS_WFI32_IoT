@@ -1060,7 +1060,7 @@ AZURE_GLUE_RES Azure_Glue_PacketTx(void* netxPkt)
 
             pPkt->ackFunc = _Azure_NetxTx_AckFunc; 
             pPkt->ackParam = pMDcpt; 
-            printf("store_pMDsct:%X\r\n", (int)pPkt);
+            //printf("store_pMDsct:%X\r\n", (int)pPkt);
             // unused field to store the owner packet
             pPkt->pTransportLayer = (uint8_t*)nxp;
         }
@@ -1276,8 +1276,7 @@ static TCPIP_MAC_PACKET* _Azure_AllocatePkt(AZURE_GLUE_DCPT* pGDcpt, bool isTx)
     if(isTx)
     {
         AZ_SINGLE_LIST *pList = &pGDcpt->txPktList;        
-        pPkt = (TCPIP_MAC_PACKET*)_Azure_SingleListHeadRemove(pList);
-        printf("Tx -> %X\r\n", (int)pPkt);
+        pPkt = (TCPIP_MAC_PACKET*)_Azure_SingleListHeadRemove(pList);        
         if(pPkt)
         {            
             pGDcpt->txAllocPkts++;
@@ -1290,8 +1289,7 @@ static TCPIP_MAC_PACKET* _Azure_AllocatePkt(AZURE_GLUE_DCPT* pGDcpt, bool isTx)
     else
     {
         AZ_SINGLE_LIST *pList = &pGDcpt->rxPktList;
-        pPkt = (TCPIP_MAC_PACKET*)_Azure_SingleListHeadRemove(pList);
-        printf("Rx -> %X\r\n", (int)pPkt);
+        pPkt = (TCPIP_MAC_PACKET*)_Azure_SingleListHeadRemove(pList);        
         if(pPkt)
         {
             pGDcpt->rxAllocPkts++;
@@ -1312,15 +1310,13 @@ static void _Azure_ReleasePkt(AZURE_GLUE_DCPT* pGDcpt, TCPIP_MAC_PACKET* pPkt, b
 
     if(isTx)
     {
-        AZ_SINGLE_LIST *pList = &pGDcpt->txPktList;
-        printf("Tx <- %X\r\n", (int)pPkt);
+        AZ_SINGLE_LIST *pList = &pGDcpt->txPktList;        
         _Azure_SingleListTailAdd(pList, (AZ_SGL_LIST_NODE*)pPkt);
         pGDcpt->txReleasePkts++;
     }
     else
     {
-        AZ_SINGLE_LIST *pList = &pGDcpt->rxPktList;
-        printf("Rx <- %X\r\n", (int)pPkt);
+        AZ_SINGLE_LIST *pList = &pGDcpt->rxPktList;        
         _Azure_SingleListTailAdd(pList, (AZ_SGL_LIST_NODE*)pPkt);
         pGDcpt->rxReleasePkts++;
     }
@@ -1345,10 +1341,9 @@ static TCPIP_MAC_PACKET* _Azure_Glue_MacRxPkt_Alloc(uint16_t pktLen, uint16_t se
     if(pktLen > avlblPktSize)
     {
         pGDcpt->rxLenError++;
-        _AzureAssertCond(false, __func__, __LINE__); 
+        _AzureAssertCond(false, __func__, __LINE__);         
         return 0;
-    }
-    OSAL_CRITSECT_DATA_TYPE status = OSAL_CRIT_Enter(OSAL_CRIT_TYPE_HIGH);
+    }    
     // get a MAC packet first
     TCPIP_MAC_PACKET* pPkt = _Azure_AllocatePkt(pGDcpt, false);
     if(pPkt == 0)
@@ -1356,11 +1351,12 @@ static TCPIP_MAC_PACKET* _Azure_Glue_MacRxPkt_Alloc(uint16_t pktLen, uint16_t se
         pGDcpt->rxAllocPktError++;
 #if ((_AZURE_DEBUG_LEVEL & _AZURE_DEBUG_MASK_RX_ALLOC) != 0)
         SYS_CONSOLE_MESSAGE("RX Packet Alloc: out of MAC packets!\r\n");
-#endif  // ((_AZURE_DEBUG_LEVEL & _AZURE_DEBUG_MASK_RX_ALLOC) != 0)
+#endif  // ((_AZURE_DEBUG_LEVEL & _AZURE_DEBUG_MASK_RX_ALLOC) != 0)        
         return 0;
     }
     
     // get an associated buffer
+    
     NX_PACKET* nxp = nx_rx_pkt_allocate();
     if(nxp == 0)
     {   // we're out of RX packets
@@ -1368,11 +1364,10 @@ static TCPIP_MAC_PACKET* _Azure_Glue_MacRxPkt_Alloc(uint16_t pktLen, uint16_t se
         _Azure_ReleasePkt(pGDcpt, pPkt, false);
 #if ((_AZURE_DEBUG_LEVEL & _AZURE_DEBUG_MASK_RX_ALLOC) != 0)
         SYS_CONSOLE_MESSAGE("RX Packet Alloc: out of RX buffers!\r\n");
-#endif  // ((_AZURE_DEBUG_LEVEL & _AZURE_DEBUG_MASK_RX_ALLOC) != 0)
+#endif  // ((_AZURE_DEBUG_LEVEL & _AZURE_DEBUG_MASK_RX_ALLOC) != 0)        
         return 0;
     }
-    //printf("nxp data start = %X end = %X\r\n", (int)nxp->nx_packet_data_start, (int)nxp->nx_packet_data_end);
-    
+       
     uint8_t* segBuffer = nxp->nx_packet_data_start + _TCPIP_MAC_DATA_SEGMENT_GAP_SIZE;
     _AzureAssertCond(NX_PHYSICAL_HEADER >= (_TCPIP_MAC_DATA_SEGMENT_GAP_SIZE + sizeof(TCPIP_MAC_ETHERNET_HEADER)), __func__, __LINE__); 
 
@@ -1388,7 +1383,7 @@ static TCPIP_MAC_PACKET* _Azure_Glue_MacRxPkt_Alloc(uint16_t pktLen, uint16_t se
         {
             gAzureDcpt->rxReleaseError++;
         }
-        _AzureAssertCond(false, __func__, __LINE__); 
+        _AzureAssertCond(false, __func__, __LINE__);         
         return 0;
     }
 
@@ -1404,7 +1399,7 @@ static TCPIP_MAC_PACKET* _Azure_Glue_MacRxPkt_Alloc(uint16_t pktLen, uint16_t se
         }
 #if ((_AZURE_DEBUG_LEVEL & _AZURE_DEBUG_MASK_GAP_SIZE) != 0)
         SYS_CONSOLE_MESSAGE("RX Packet Alloc: Gap size error!\r\n");
-#endif  // ((_AZURE_DEBUG_LEVEL & _AZURE_DEBUG_MASK_GAP_SIZE) != 0)
+#endif  // ((_AZURE_DEBUG_LEVEL & _AZURE_DEBUG_MASK_GAP_SIZE) != 0)        
         return 0;
     }    
 
@@ -1427,7 +1422,6 @@ static TCPIP_MAC_PACKET* _Azure_Glue_MacRxPkt_Alloc(uint16_t pktLen, uint16_t se
     pPkt->pktPriority = 0;
     pGDcpt->rxAllocBuffs++;
     
-    OSAL_CRIT_Leave(OSAL_CRIT_TYPE_HIGH, status);
     
     return pPkt;
 }
@@ -1436,12 +1430,12 @@ static TCPIP_MAC_PACKET* _Azure_Glue_MacRxPkt_Alloc(uint16_t pktLen, uint16_t se
 static void  _Azure_Glue_MacRxPkt_Free(TCPIP_MAC_PACKET* pPkt)
 {
     // restore packet owner
-    NX_PACKET* nxp = (NX_PACKET*)pPkt->pTransportLayer;
+    NX_PACKET* nxp = (NX_PACKET*)pPkt->pTransportLayer;    
     if(nxp != 0)
     {
         pPkt->pTransportLayer = 0;
         if(nx_packet_release(nxp) != 0)
-        {
+        {            
             gAzureDcpt->rxReleaseError++;
         }
     }

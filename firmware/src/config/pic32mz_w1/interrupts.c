@@ -100,7 +100,7 @@ void disable_interrupts(void)
 }
 
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
-void __attribute__((keep_interrupts_masked)) __ISR(_CORE_TIMER_VECTOR, ipl1AUTO) CORE_TIMER_Handler (void)
+void __ISR(_CORE_TIMER_VECTOR, ipl1SAVEALL) CORE_TIMER_Handler (void)
 {
     /* Call ThreadX context save. */
     _tx_thread_context_save();
@@ -112,7 +112,7 @@ void __attribute__((keep_interrupts_masked)) __ISR(_CORE_TIMER_VECTOR, ipl1AUTO)
 }
 
 
-void __attribute__((keep_interrupts_masked)) __ISR(_UART3_FAULT_VECTOR, ipl1AUTO) UART3_FAULT_Handler (void)
+void __ISR(_UART3_FAULT_VECTOR, ipl1SAVEALL) UART3_FAULT_Handler (void)
 {
     /* Call ThreadX context save. */
     _tx_thread_context_save();
@@ -123,7 +123,7 @@ void __attribute__((keep_interrupts_masked)) __ISR(_UART3_FAULT_VECTOR, ipl1AUTO
     _tx_thread_context_restore();
 }
 
-void __attribute__((keep_interrupts_masked)) __ISR(_UART3_RX_VECTOR, ipl1AUTO) UART3_RX_Handler (void)
+void __ISR(_UART3_RX_VECTOR, ipl1SAVEALL) UART3_RX_Handler (void)
 {
     /* Call ThreadX context save. */
     _tx_thread_context_save();
@@ -134,7 +134,7 @@ void __attribute__((keep_interrupts_masked)) __ISR(_UART3_RX_VECTOR, ipl1AUTO) U
     _tx_thread_context_restore();
 }
 
-void __attribute__((keep_interrupts_masked)) __ISR(_UART3_TX_VECTOR, ipl1AUTO) UART3_TX_Handler (void)
+void __ISR(_UART3_TX_VECTOR, ipl1SAVEALL) UART3_TX_Handler (void)
 {
     /* Call ThreadX context save. */
     _tx_thread_context_save();
@@ -145,7 +145,7 @@ void __attribute__((keep_interrupts_masked)) __ISR(_UART3_TX_VECTOR, ipl1AUTO) U
     _tx_thread_context_restore();
 }
 
-void __attribute__((keep_interrupts_masked)) __ISR(_RFSMC_VECTOR, ipl1AUTO) RFSMC_Handler (void)
+void __ISR(_RFSMC_VECTOR, ipl1SAVEALL) RFSMC_Handler (void)
 {
     /* Call ThreadX context save. */
     _tx_thread_context_save();
@@ -156,7 +156,7 @@ void __attribute__((keep_interrupts_masked)) __ISR(_RFSMC_VECTOR, ipl1AUTO) RFSM
     _tx_thread_context_restore();
 }
 
-void __attribute__((keep_interrupts_masked)) __ISR(_RFMAC_VECTOR, ipl1AUTO) RFMAC_Handler (void)
+void __ISR(_RFMAC_VECTOR, ipl1SAVEALL) RFMAC_Handler (void)
 {
     /* Call ThreadX context save. */
     _tx_thread_context_save();
@@ -167,7 +167,7 @@ void __attribute__((keep_interrupts_masked)) __ISR(_RFMAC_VECTOR, ipl1AUTO) RFMA
     _tx_thread_context_restore();
 }
 
-void __attribute__((keep_interrupts_masked)) __ISR(_RFTM0_VECTOR, ipl1AUTO) RFTM0_Handler (void)
+void __ISR(_RFTM0_VECTOR, ipl1SAVEALL) RFTM0_Handler (void)
 {
     /* Call ThreadX context save. */
     _tx_thread_context_save();
@@ -178,7 +178,7 @@ void __attribute__((keep_interrupts_masked)) __ISR(_RFTM0_VECTOR, ipl1AUTO) RFTM
     _tx_thread_context_restore();
 }
 
-void __attribute__((keep_interrupts_masked)) __ISR(_CRYPTO1_VECTOR, ipl1AUTO) CRYPTO1_Handler (void)
+void __ISR(_CRYPTO1_VECTOR, ipl1SAVEALL) CRYPTO1_Handler (void)
 {
     /* Call ThreadX context save. */
     _tx_thread_context_save();
@@ -189,7 +189,7 @@ void __attribute__((keep_interrupts_masked)) __ISR(_CRYPTO1_VECTOR, ipl1AUTO) CR
     _tx_thread_context_restore();
 }
 
-void __attribute__((keep_interrupts_masked)) __ISR(_CRYPTO1_FAULT_VECTOR, ipl1AUTO) CRYPTO1_FAULT_Handler (void)
+void __ISR(_CRYPTO1_FAULT_VECTOR, ipl1SAVEALL) CRYPTO1_FAULT_Handler (void)
 {
     /* Call ThreadX context save. */
     _tx_thread_context_save();

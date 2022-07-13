@@ -21,7 +21,7 @@
 /**************************************************************************/
 
 #define NX_SOURCE_CODE
-
+#include <stdio.h>
 
 /* Include necessary system files.  */
 
@@ -185,7 +185,7 @@ NX_PACKET *working_packet_ptr;
         {
             bytes_to_copy = remaining_bytes;
         }
-
+        
         /* Copy data from this packet.  */
         memcpy(destination_ptr, source_ptr, bytes_to_copy); /* Use case of memcpy is verified. */
 

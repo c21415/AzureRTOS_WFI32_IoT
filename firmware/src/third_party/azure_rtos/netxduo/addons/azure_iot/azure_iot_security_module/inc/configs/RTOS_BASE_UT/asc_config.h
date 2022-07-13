@@ -152,10 +152,8 @@ extern "C" {
 #endif
 
 #ifndef __ASC_CONFIG_EXCLUDE_PORT__H__
-#include "tx_port.h"
-#include "nx_port.h"
 #include "nx_api.h"
-
+    
 /* Flat buffer serializer platform */
 /* #undef FLATCC_ASSERT */
 

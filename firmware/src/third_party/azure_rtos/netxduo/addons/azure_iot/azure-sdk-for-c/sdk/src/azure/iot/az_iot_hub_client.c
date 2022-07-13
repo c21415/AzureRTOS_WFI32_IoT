@@ -170,6 +170,6 @@ AZ_NODISCARD az_result az_iot_hub_client_get_client_id(
   {
     *out_mqtt_client_id_length = (size_t)required_length;
   }
-
+  
   return AZ_OK;
 }

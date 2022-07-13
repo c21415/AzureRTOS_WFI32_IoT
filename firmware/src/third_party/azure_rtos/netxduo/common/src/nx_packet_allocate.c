@@ -74,7 +74,7 @@
 /*                                                                        */
 /**************************************************************************/
 UINT  _nx_packet_allocate(NX_PACKET_POOL *pool_ptr,  NX_PACKET **packet_ptr,
-                          ULONG packet_type, ULONG wait_option)
+                          ULONG packet_type, ULONG wait_option, const char * callerFunc)
 {
 TX_INTERRUPT_SAVE_AREA
 
@@ -101,7 +101,8 @@ ULONG                  trace_timestamp;
 
     /* Disable interrupts to get a packet from the pool.  */
     TX_DISABLE
-
+    //printf("%s\r\n", callerFunc);
+    
     /* Determine if there is an available packet.  */
     if (pool_ptr -> nx_packet_pool_available)
     {
@@ -111,7 +112,7 @@ ULONG                  trace_timestamp;
 
         /* Pickup the current packet pointer.  */
         work_ptr =  pool_ptr -> nx_packet_pool_available_list;
-
+        
         /* Modify the available list to point at the next packet in the pool. */
         pool_ptr -> nx_packet_pool_available_list =  work_ptr -> nx_packet_queue_next;
 
@@ -122,7 +123,7 @@ ULONG                  trace_timestamp;
         work_ptr -> nx_packet_last =         NX_NULL;
 #endif /* NX_DISABLE_PACKET_CHAIN */
         work_ptr -> nx_packet_length =       0;
-//        printf("data Start - %X\r\n", (int)work_ptr -> nx_packet_data_start );
+        
         work_ptr -> nx_packet_prepend_ptr =  work_ptr -> nx_packet_data_start + packet_type;
         work_ptr -> nx_packet_append_ptr =   work_ptr -> nx_packet_prepend_ptr;
         work_ptr -> nx_packet_address.nx_packet_interface_ptr = NX_NULL;

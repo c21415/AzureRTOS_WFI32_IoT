@@ -38,21 +38,3 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
-
-#ifdef __arm__
-/* Declaration of these functions are missing in stdio.h for ARM parts*/
-int _mon_getc(int canblock);
-void _mon_putc(char c);
-#endif //__arm__
-
-int _mon_getc(int canblock)
-{
-   (void)canblock;
-   return 0;
-}
-
-void _mon_putc(char c)
-{
-   (void)c;
-}
-

@@ -9,13 +9,13 @@
 /*                                                                             */
 /*******************************************************************************/
 
-#include <asc_config.h>
 
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include <string.h>
 
+#include "asc_config.h"
 #include "asc_security_core/utils/string_utils.h"
 #include "asc_security_core/utils/iconv.h"
 #include "asc_security_core/utils/string_utils.h"

@@ -9,13 +9,13 @@
 /*                                                                             */
 /*******************************************************************************/
 
-#include <asc_config.h>
 
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
 #include <string.h>
 
+#include "asc_config.h"
 #include "asc_security_core/utils/irand.h"
 #include "asc_security_core/utils/uuid.h"
 

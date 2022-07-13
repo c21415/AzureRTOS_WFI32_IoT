@@ -54,9 +54,9 @@
 #include "definitions.h"
 
 /* ThreadX byte memory pool from which to allocate the thread stacks. */
-#define TX_BYTE_POOL_SIZE   (55000 + 512)
+#define TX_BYTE_POOL_SIZE   (28000 + 512)
 
-#define PIC32MZW_TASK_STACK_SIZE    3*1024
+#define PIC32MZW_TASK_STACK_SIZE    4*1024
 
 TX_BYTE_POOL   byte_pool_0;
 

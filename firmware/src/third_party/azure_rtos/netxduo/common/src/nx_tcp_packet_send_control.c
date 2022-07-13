@@ -146,7 +146,7 @@ ULONG          window_size;
 
 #ifdef NX_ENABLE_DUAL_PACKET_POOL
     /* Allocate from auxiliary packet pool first. */
-    if (_nx_packet_allocate(ip_ptr -> nx_ip_auxiliary_packet_pool, &packet_ptr, NX_IP_PACKET + data_offset, NX_NO_WAIT))
+    if (_nx_packet_allocate(ip_ptr -> nx_ip_auxiliary_packet_pool, &packet_ptr, NX_IP_PACKET + data_offset, NX_NO_WAIT, __func__))
     {
         if (ip_ptr -> nx_ip_auxiliary_packet_pool != ip_ptr -> nx_ip_default_packet_pool)
 #endif /* NX_ENABLE_DUAL_PACKET_POOL */
@@ -154,7 +154,7 @@ ULONG          window_size;
 
             /*lint -e{835} -e{845} suppress operating on zero. */
             if (_nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool,
-                                    &packet_ptr, NX_IP_PACKET + data_offset, NX_NO_WAIT) != NX_SUCCESS)
+                                    &packet_ptr, NX_IP_PACKET + data_offset, NX_NO_WAIT, __func__) != NX_SUCCESS)
             {
 
                 /* Just give up and return.  */

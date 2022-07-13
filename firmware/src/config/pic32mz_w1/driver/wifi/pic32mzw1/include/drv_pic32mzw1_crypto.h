@@ -72,7 +72,7 @@ bool DRV_PIC32MZW1_Crypto_Random
 /* HMAC_SHA256 functions.   DRV_PIC32MZW1_Crypto_HMACSHA256                  */
 /*****************************************************************************/
 /* Run a HMACSHA256 operation. */
-bool DRV_PIC32MZW1_Crypto_HMAC
+bool DRV_PIC32MZW1_Crypto_HMACSHA256
 (
         const uint8_t           *salt,
         uint16_t                salt_len,

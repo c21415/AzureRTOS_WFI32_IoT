@@ -16,9 +16,6 @@
 #include "osal/osal.h"
 //#include "system/int/sys_int.h"
 
-#include "system/console/sys_console.h"
-#define printf(fmt, ...)    SYS_CONSOLE_Print(0, fmt, ##__VA_ARGS__)
-
 /* Include the sample.  */
 extern VOID sample_entry(NX_IP* ip_ptr, NX_PACKET_POOL* pool_ptr, NX_DNS* dns_ptr, UINT (*unix_time_callback)(ULONG *unix_time));
 
@@ -59,7 +56,7 @@ static UINT sntp_server_index;
 
 static UINT sntp_time_sync(NX_IP *ip_ptr, NX_PACKET_POOL *pool_ptr, NX_DNS *dns_ptr);
 
-//#define RUN_AZURE
+#define RUN_AZURE
 #ifdef RUN_AZURE
 static UINT unix_time_get(ULONG *unix_time);
 #endif

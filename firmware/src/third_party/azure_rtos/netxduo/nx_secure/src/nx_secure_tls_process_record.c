@@ -21,7 +21,7 @@
 /**************************************************************************/
 
 #define NX_SECURE_SOURCE_CODE
-
+#include <stdio.h>
 #include "nx_secure_tls.h"
 
 static VOID _nx_secure_tls_packet_trim(NX_PACKET *packet_ptr);
@@ -207,7 +207,7 @@ NX_PACKET *decrypted_packet;
 
         /* Process the TLS record header, which will set the state. */
         status = _nx_secure_tls_process_header(tls_session, packet_ptr, record_offset, &message_type, &message_length, header_data, &header_length);
-
+        
         if (status != NX_SECURE_TLS_SUCCESS)
         {
             return(status);
@@ -221,7 +221,7 @@ NX_PACKET *decrypted_packet;
             *bytes_processed += (ULONG)header_length;
             return(NX_SUCCESS);
         }
-
+        
         /* Is the entire payload of the current record received? */
         if ((header_length + record_offset + message_length) > packet_ptr -> nx_packet_length)
         {
@@ -231,12 +231,12 @@ NX_PACKET *decrypted_packet;
             tls_session -> nx_secure_tls_bytes_processed = *bytes_processed;
             return(NX_CONTINUE);
         }
-
+        
         /* Update the number of bytes we processed. */
         *bytes_processed += (ULONG)header_length + message_length;
         tls_session -> nx_secure_tls_bytes_processed = *bytes_processed;
         record_offset += (ULONG)header_length;
-        record_offset_next = record_offset + message_length;
+        record_offset_next = record_offset + message_length;        
 
         /* Check for active encryption of incoming records. If encrypted, decrypt before further processing. */
         if (tls_session -> nx_secure_tls_remote_session_active
@@ -384,13 +384,13 @@ NX_PACKET *decrypted_packet;
             }
 
             if (decrypted_packet == NX_NULL)
-            {
+            {                
                 status = nx_packet_data_extract_offset(packet_ptr, record_offset,
                                                        tls_session -> nx_secure_tls_packet_buffer + tls_session->nx_secure_tls_packet_buffer_bytes_copied,
                                                        message_length, &bytes_copied);
             }
             else
-            {
+            {                
                 status = nx_packet_data_extract_offset(decrypted_packet, 0,
                                                        tls_session -> nx_secure_tls_packet_buffer + tls_session->nx_secure_tls_packet_buffer_bytes_copied,
                                                        message_length, &bytes_copied);

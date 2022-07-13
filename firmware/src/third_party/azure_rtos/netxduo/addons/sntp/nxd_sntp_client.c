@@ -2310,7 +2310,7 @@ NX_SNTP_TIME local_time;
     tx_mutex_put(&client_ptr -> nx_sntp_client_mutex);
 
     /* Allocate a packet from the Client pool.  */
-    status =  nx_packet_allocate(client_ptr -> nx_sntp_client_packet_pool_ptr, &packet_ptr, NX_UDP_PACKET, NX_SNTP_CLIENT_PACKET_TIMEOUT);
+    status =  nx_packet_allocate(client_ptr -> nx_sntp_client_packet_pool_ptr, &packet_ptr, NX_UDP_PACKET, NX_SNTP_CLIENT_PACKET_TIMEOUT, __func__);
 
     /* Check for error.  */
     if (status != NX_SUCCESS)

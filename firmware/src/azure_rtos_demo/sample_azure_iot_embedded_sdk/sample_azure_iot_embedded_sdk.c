@@ -9,7 +9,6 @@
 /*                                                                        */
 /**************************************************************************/
 
-#include <stdio.h>
 
 #include "nx_api.h"
 #include "nx_azure_iot_hub_client.h"
@@ -20,7 +19,6 @@
 #include "nx_azure_iot_ciphersuites.h"
 #include "sample_config.h"
 
-#include "system/console/sys_console.h"
 
 /* Define Azure RTOS TLS info.  */
 static NX_SECURE_X509_CERT root_ca_cert;

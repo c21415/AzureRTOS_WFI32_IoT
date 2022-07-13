@@ -142,7 +142,7 @@ NX_PACKET *work_ptr;               /* Working packet pointer     */
         {
 
             /* Allocate a new packet.  */
-            status =  _nx_packet_allocate(pool_ptr, &work_ptr, 0, wait_option);
+            status =  _nx_packet_allocate(pool_ptr, &work_ptr, 0, wait_option, __func__);
 
             /* Determine if an error is present.  */
             if (status)

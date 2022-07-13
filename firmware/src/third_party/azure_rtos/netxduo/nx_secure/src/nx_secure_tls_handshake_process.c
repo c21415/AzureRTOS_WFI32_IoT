@@ -21,7 +21,7 @@
 /**************************************************************************/
 
 #define NX_SECURE_SOURCE_CODE
-
+#include <stdio.h>
 #include "nx_secure_tls.h"
 
 /**************************************************************************/
@@ -77,7 +77,7 @@ UINT _nx_secure_tls_handshake_process(NX_SECURE_TLS_SESSION *tls_session, UINT w
 {
 UINT       status = NX_NOT_SUCCESSFUL;
 NX_PACKET *incoming_packet = NX_NULL;
-
+        
     /* Process the handshake depending on the TLS session type. */
 #ifndef NX_SECURE_TLS_CLIENT_DISABLED
     if (tls_session -> nx_secure_tls_socket_type == NX_SECURE_TLS_SESSION_TYPE_CLIENT)
@@ -88,7 +88,7 @@ NX_PACKET *incoming_packet = NX_NULL;
         while (tls_session -> nx_secure_tls_client_state != NX_SECURE_TLS_CLIENT_STATE_HANDSHAKE_FINISHED)
         {
             status = _nx_secure_tls_session_receive_records(tls_session, &incoming_packet, wait_option);
-
+            
             /* Make sure we didn't have an error during the receive. */
             if (status != NX_SUCCESS)
             {

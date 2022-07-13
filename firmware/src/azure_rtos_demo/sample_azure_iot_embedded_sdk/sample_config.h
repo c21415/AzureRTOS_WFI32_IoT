@@ -21,12 +21,12 @@ extern   "C" {
 /* Required when DPS is used.  */
 #define ENABLE_DPS_SAMPLE
 #define ENDPOINT                       "global.azure-devices-provisioning.net"
-#define ID_SCOPE                       "0ne00551F61"
-#define REGISTRATION_ID                "wfi32-iot"
+#define ID_SCOPE                       "0ne0068FB02"
+#define REGISTRATION_ID                "pic32mz_w1"
 #define SAMPLE_MAX_BUFFER              (256)
             
     
-#define DEVICE_SYMMETRIC_KEY           "nKnohy6EgHlz44fjdmgG5IhDWh9PjXUUPhmZFyPAoIQ="           
+#define DEVICE_SYMMETRIC_KEY           "w6nFZoz+3OjjF5y52MzWUZR5Ht/XdV1H8S11EBanHJo="           
     
 #define NX_AZURE_IOT_STACK_SIZE                (4096)
 #define NX_AZURE_IOT_THREAD_PRIORITY           (4) 

@@ -21,7 +21,7 @@
 /**************************************************************************/
 
 #define NX_SECURE_SOURCE_CODE
-
+#include <stdio.h>
 
 #include "nx_secure_tls.h"
 
@@ -113,11 +113,11 @@ USHORT protocol_version;
     *message_type = header_data[0];
 
     /* Extract the protocol version. */
-    protocol_version = (USHORT)(((USHORT)header_data[1] << 8) | header_data[2]);
+    protocol_version = (USHORT)(((USHORT)header_data[1] << 8) | header_data[2]);    
 
     /* Get the length of the TLS data. */
     *length = (UINT)(((UINT)header_data[3] << 8) + header_data[4]);
-
+    
     /* Set header length. */
     *header_length = NX_SECURE_TLS_RECORD_HEADER_SIZE;
 

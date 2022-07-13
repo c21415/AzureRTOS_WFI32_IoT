@@ -21,7 +21,7 @@
 /**************************************************************************/
 
 #define NX_SOURCE_CODE
-
+#include <stdio.h>
 
 /* Include necessary system files.  */
 
@@ -156,7 +156,7 @@ TX_THREAD      *current_thread;
 
         /* Calculate the created pool's end of memory.  */
         created_end =  created_pool -> nx_packet_pool_start + (created_pool -> nx_packet_pool_size - 1);
-
+       
         /* Is the new pool already created?  */
         /*lint -e{946} suppress pointer subtraction, since it is necessary. */
         if ((pool_ptr == created_pool) ||

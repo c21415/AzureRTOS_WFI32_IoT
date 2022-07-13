@@ -306,10 +306,10 @@ _tx_thread_stack_build:
     #endif
 
     sw      $0, STACK_OFFSET_Res0($8)       # reserved
+    #if defined (__mips_hard_float)
     sw      $0, STACK_OFFSET_Res1($8)       # reserved
-    sw      $0, STACK_OFFSET_Res2($8)       # reserved
-    sw      $0, STACK_OFFSET_Res3($8)       # reserved
-    
+    #endif
+
     li      $9, 0x01010101                  # Build fill value for $1
     sw      $9, STACK_OFFSET_AT($8)         # Initial at
     li      $9, 0x02020202                  # Build fill value for $2
@@ -420,7 +420,7 @@ _tx_thread_stack_build:
     sw      $0, STACK_OFFSET_HI0($8)        # Initial ac0 hi
     sw      $0, STACK_OFFSET_LO0($8)        # Initial ac0 lo
 
-    rddsp   $9, 0x1F                        # Pickup current DSPControl
+    rddsp   $9, 0x3F                        # Pickup current DSPControl
     sw      $9, STACK_OFFSET_DSPC($8)       # Initial DSPControl 
     mfc0    $9, $12,2                       # Pickup SRSCtl
     sw      $9, STACK_OFFSET_SRSC($8)       # Initial SRSCtl

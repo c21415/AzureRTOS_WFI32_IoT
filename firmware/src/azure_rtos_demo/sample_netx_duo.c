@@ -9,8 +9,6 @@
 #include   "nxd_dns.h"
 #endif  // (NX_DEMO_ENABLE_DNS != 0)
 
-#include "system/console/sys_console.h"
-#define printf(fmt, ...)    SYS_CONSOLE_Print(0, fmt, ##__VA_ARGS__)
 /* Define demo stack size.   */
 
 #ifndef DEMO_STACK_SIZE
@@ -71,7 +69,7 @@ UINT    status;
 
     /* Initialize the NetX system.  */
     nx_system_initialize();
-
+    
     /* Create a packet pool.  */ 
     status = nx_packet_pool_create(&pool_0, "NetX Main Packet Pool", 
                                    NX_DEMO_PACKET_SIZE,

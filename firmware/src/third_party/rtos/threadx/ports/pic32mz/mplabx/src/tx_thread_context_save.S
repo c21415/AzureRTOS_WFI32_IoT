@@ -137,7 +137,8 @@ _tx_thread_context_save:
                        SRSCtl       (136)  Initial status
                        EPC          (140)  Initial EPC        
        
-         */    
+         */
+
     la      $26, _tx_thread_system_state    # Pickup address of system state
     lw      $8, ($26)                       # Pickup system state
 
@@ -178,24 +179,6 @@ _tx_thread_not_nested_save:
     lw      $8, ($26)                       # Pickup current thread pointer
     beqz    $8, _tx_thread_idle_system_save # If NULL, idle system was interrupted
     nop                                     # Delay slot
-
-    /*only allocate extra bytes on stack frame if first time through and 
-    _tx_thread_schedule_loop was not interrupted*/
-#if defined (__mips_hard_float)
-#if (__XC32_VERSION <= 2500)
-     addiu    $29, $29, -136                # Allocate additional space for a full stack frame
-                                        /*  #   even though the whole thing might
-                                            #   not be needed for awhile  */
-#else
-     addiu    $29, $29, -88                 # Allocate additional space for a full stack frame
-                                        /*  #   even though the whole thing might
-                                            #   not be needed for awhile  */
-#endif
-#else
-     addiu    $29, $29, -40                  # Allocate additional space for a full stack frame
-                                        /*  #   even though the whole thing might
-                                            #   not be needed for awhile  */
-#endif
 
     /* Save the current stack pointer in the thread's control block.  */
     /* _tx_thread_current_ptr -> tx_thread_stack_ptr =  sp;  */
@@ -238,3 +221,4 @@ _tx_thread_idle_system_save:
 
     /* }
 }  */
+

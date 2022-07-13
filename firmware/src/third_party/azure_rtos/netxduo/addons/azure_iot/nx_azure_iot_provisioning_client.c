@@ -134,7 +134,7 @@ UINT status;
 NXD_ADDRESS server_address;
 NXD_MQTT_CLIENT *mqtt_client_ptr;
 NX_AZURE_IOT_RESOURCE *resource_ptr;
-
+    
     /* Resolve the host name.  */
     status = nxd_dns_host_by_name_get(prov_client_ptr -> nx_azure_iot_ptr -> nx_azure_iot_dns_ptr,
                                       (UCHAR *)prov_client_ptr -> nx_azure_iot_provisioning_client_endpoint,

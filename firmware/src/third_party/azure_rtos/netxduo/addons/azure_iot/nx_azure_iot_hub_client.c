@@ -529,7 +529,7 @@ az_result       core_result;
 
     /* Release the mutex.  */
     tx_mutex_put(hub_client_ptr -> nx_azure_iot_ptr -> nx_azure_iot_mutex_ptr);
-
+    
     /* Start MQTT connection.  */
     status = nxd_mqtt_client_secure_connect(mqtt_client_ptr, &server_address, NXD_MQTT_TLS_PORT,
                                             nx_azure_iot_mqtt_tls_setup, NX_AZURE_IOT_MQTT_KEEP_ALIVE,

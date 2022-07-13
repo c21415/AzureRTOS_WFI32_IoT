@@ -91,7 +91,7 @@
 /* Define packet pool management function prototypes.  */
 
 UINT _nx_packet_allocate(NX_PACKET_POOL *pool_ptr,  NX_PACKET **packet_ptr,
-                         ULONG packet_type, ULONG wait_option);
+                         ULONG packet_type, ULONG wait_option, const char *callerFunc);
 UINT _nx_packet_copy(NX_PACKET *packet_ptr, NX_PACKET **new_packet_ptr,
                      NX_PACKET_POOL *pool_ptr, ULONG wait_option);
 UINT _nx_packet_data_append(NX_PACKET *packet_ptr, VOID *data_start, ULONG data_size,

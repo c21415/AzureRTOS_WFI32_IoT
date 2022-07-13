@@ -3220,23 +3220,25 @@ void DRV_PIC32MZW_MACEthernetSendPacket
     TCPIP_MAC_EVENT events;
     DRV_PIC32MZW_MEM_ALLOC_HDR *pAllocHdr = NULL;
     void *pBufferAddr;
-
+    
     if (NULL == pEthMsg)
     {
         return;
     }
-
+    OSAL_CRITSECT_DATA_TYPE status = OSAL_CRIT_Enter(OSAL_CRIT_TYPE_HIGH);
+    
     pBufferAddr = (void*)&pEthMsg[-hdrOffset];
 
     if (NULL != pic32mzwMACDescriptor.pktAllocF)
     {
-        printf("Length of EthMsg = %d\r\n", lengthEthMsg);
+        //printf("Length of EthMsg = %d\r\n", lengthEthMsg);
         ptrPacket = pic32mzwMACDescriptor.pktAllocF(sizeof(TCPIP_MAC_PACKET), lengthEthMsg-ETHERNET_HDR_LEN, 0);
     }
 
     if (NULL == ptrPacket)
     {
         DRV_PIC32MZW_MemFree(pBufferAddr);
+        OSAL_CRIT_Leave(OSAL_CRIT_TYPE_HIGH, status);
         return;
     }
 
@@ -3270,6 +3272,7 @@ void DRV_PIC32MZW_MACEthernetSendPacket
     {
         WDRV_DBG_ERROR_PRINT("MAC receive failed to lock event semaphore\r\n");
     }
+    OSAL_CRIT_Leave(OSAL_CRIT_TYPE_HIGH, status);
 }
 
 //*******************************************************************************

@@ -175,7 +175,7 @@ VOID  nx_driver_harmony(NX_IP_DRIVER *driver_req_ptr)
     case NX_LINK_RARP_SEND:
     case NX_LINK_PACKET_SEND:
     {
-            
+        
         /* Process packet send requests.  */
         _nx_driver_packet_send(driver_req_ptr);
         break;
@@ -1515,7 +1515,7 @@ NX_PACKET* nx_rx_pkt_allocate(void)
     // get a packet allocated by netxd
     size_t alloc_res;
 
-    alloc_res = nx_packet_allocate(nx_driver_information.nx_driver_information_packet_pool_ptr, &packet_ptr, NX_RECEIVE_PACKET, NX_NO_WAIT);
+    alloc_res = nx_packet_allocate(nx_driver_information.nx_driver_information_packet_pool_ptr, &packet_ptr, NX_RECEIVE_PACKET, NX_NO_WAIT, __func__);
 
     if(alloc_res != NX_SUCCESS)
     {   // failed to allocate packet

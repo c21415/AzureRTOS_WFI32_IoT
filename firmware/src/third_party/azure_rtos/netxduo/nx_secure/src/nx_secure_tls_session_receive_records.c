@@ -21,7 +21,7 @@
 /**************************************************************************/
 
 #define NX_SECURE_SOURCE_CODE
-
+#include <stdio.h>
 #include "nx_secure_tls.h"
 
 /**************************************************************************/
@@ -109,7 +109,7 @@ UCHAR          handshake_finished = NX_FALSE;
      *    3b. Once handshake processed, receive any new packets, but only if
      *        the remote host initiated the renegotiation.
      */
-
+    
 
     status = NX_CONTINUE;
     if (tls_session -> nx_secure_record_queue_header)
@@ -118,7 +118,7 @@ UCHAR          handshake_finished = NX_FALSE;
         /* Process all records in the packet we received - decrypt, authenticate, and
          * strip TLS record header/footer, placing data in the return packet.
          */
-        status = _nx_secure_tls_process_record(tls_session, NX_NULL, &bytes_processed, wait_option);
+        status = _nx_secure_tls_process_record(tls_session, NX_NULL, &bytes_processed, wait_option);        
     }
 
     while (status == NX_CONTINUE)

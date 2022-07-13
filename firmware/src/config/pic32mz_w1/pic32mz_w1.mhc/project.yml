@@ -194,7 +194,7 @@ files:
   physicalPath: third_party_adapter/azure_rtos/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: BFE8A9BBCE669A288FDEEA1F4F4419F0
+  userChecksum: C66023B9737FDBF0C4D372CE569FF07D
 - generatedChecksum: 7F46F93CFAAD75CACB249017911CE218
   logicalPath: config/pic32mz_w1/third_party_adapter/azure_rtos/src
   name: azure_glue_private.c
@@ -215,7 +215,7 @@ files:
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 9AB92B3629D54E1B1EE08BE83460B544
+  userChecksum: E9B174E9AD30BA4168F5E6C8B1C96F02
 - generatedChecksum: 6B9BEE27686FC36C62760DBAA363C695
   logicalPath: config/pic32mz_w1
   name: exceptions.c
@@ -1889,14 +1889,14 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: B4A0A8097EDA8332DFD577C748144180
-- generatedChecksum: CCAF6E99B3DE4D2BBD69CD1A18E5B1A5
+- generatedChecksum: 56E62CE95B1543CC254193BACD9A7117
   logicalPath: config/pic32mz_w1
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
   userChecksum: 35398381F4EDE0FC1D49B528C5208983
-- generatedChecksum: 720C587A8DFBA88D596C4A204A50670E
+- generatedChecksum: 5720DDB757425562406E4CE2BE49679D
   logicalPath: config/pic32mz_w1
   name: interrupts.c
   physicalPath: ''
@@ -3561,7 +3561,7 @@ files:
   physicalPath: ../../third_party/azure_rtos/netxduo/common/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 76DD72FABCEC98A5597C4259BD170729
+  userChecksum: 609DF87FEF148672F752BE5CEAE535CF
 - generatedChecksum: AC0383630E8E72277585081E4E557C0F
   logicalPath: third_party/azure_rtos/netxduo/common/src
   name: nx_packet_copy.c
@@ -7986,13 +7986,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6B67FAAE5074F582318CD257A807BD3C
-- generatedChecksum: 028D482DD6CC58B3C9A5605D34F59AF1
+- generatedChecksum: FD9CCED04912F9909A4206B832DC7F55
   logicalPath: config/pic32mz_w1/peripheral/clk
   name: plib_clk.c
   physicalPath: peripheral/clk
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 3EFA5F52B8828C94EAE18057A7180E64
+  userChecksum: FD9CCED04912F9909A4206B832DC7F55
 - generatedChecksum: 2FEFEA0D4E94F5A5F3D76BAEC3D602E5
   logicalPath: config/pic32mz_w1/peripheral/coretimer
   name: plib_coretimer.c
@@ -8007,27 +8007,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: E4FE9C01898E04ACB8E2D1766EBA14D3
-- generatedChecksum: 73DC82F42CBAB7B6627FA3F7280DCC89
+- generatedChecksum: 8BAADDEBEA7C93E5084122EC879F91BF
   logicalPath: config/pic32mz_w1/peripheral/gpio
   name: plib_gpio.c
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 73DC82F42CBAB7B6627FA3F7280DCC89
-- generatedChecksum: 960695694D392B781C1CA96648DBBFC0
+  userChecksum: 8BAADDEBEA7C93E5084122EC879F91BF
+- generatedChecksum: AE604F3000CBB648C9C8BB7EA99F10F2
   logicalPath: config/pic32mz_w1/peripheral/uart
   name: plib_uart1.c
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 960695694D392B781C1CA96648DBBFC0
-- generatedChecksum: 60E6E4CB48C8B1DBF209BE7CC57F72C8
+  userChecksum: AE604F3000CBB648C9C8BB7EA99F10F2
+- generatedChecksum: 9D5504AEDAE0DCAD4CB3374F95415EE2
   logicalPath: config/pic32mz_w1/peripheral/uart
   name: plib_uart3.c
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 60E6E4CB48C8B1DBF209BE7CC57F72C8
+  userChecksum: 9D5504AEDAE0DCAD4CB3374F95415EE2
 - generatedChecksum: 290251D6FF0845DC4259E0EF74DCB657
   logicalPath: config/pic32mz_w1
   name: pmu_init.c
@@ -8119,7 +8119,7 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: F849420C740D2B32346B4B4D9F46C136
-- generatedChecksum: 1DFE6C57260448995786A4911F57A51F
+- generatedChecksum: 68D26FB118A385CDD529F9F217D1CF18
   logicalPath: config/pic32mz_w1
   name: tasks.c
   physicalPath: ''
@@ -8630,20 +8630,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8CA9C3D621F5FAAB94FC393C8B10B400
-- generatedChecksum: B25EB99B9240D7271F87B32D921E4A12
+- generatedChecksum: 28663D2A22F2228F1B9BA767040100B1
   logicalPath: threadx/ports/pic32mz/mplabx/src
   name: tx_thread_context_restore.S
   physicalPath: ../../third_party/rtos/threadx/ports/pic32mz/mplabx/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B25EB99B9240D7271F87B32D921E4A12
-- generatedChecksum: FCDCA8DDE5573C26118F82794D745833
+  userChecksum: 28663D2A22F2228F1B9BA767040100B1
+- generatedChecksum: 247BFBB4BEE01AF7B6A9427E1B4A7A5A
   logicalPath: threadx/ports/pic32mz/mplabx/src
   name: tx_thread_context_save.S
   physicalPath: ../../third_party/rtos/threadx/ports/pic32mz/mplabx/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FCDCA8DDE5573C26118F82794D745833
+  userChecksum: 247BFBB4BEE01AF7B6A9427E1B4A7A5A
 - generatedChecksum: 71289FDAB01063EAA4F86EE422B3A8CF
   logicalPath: threadx/common/src
   name: tx_thread_create.c
@@ -8742,13 +8742,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 091DD75AE4013439776F0184F9BB100F
-- generatedChecksum: 39C40D6C0ED9705B47EF28D8CFF5E340
+- generatedChecksum: A07FD720C0BB8DB88D4C1F69FD0B07DA
   logicalPath: threadx/ports/pic32mz/mplabx/src
   name: tx_thread_schedule.S
   physicalPath: ../../third_party/rtos/threadx/ports/pic32mz/mplabx/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 39C40D6C0ED9705B47EF28D8CFF5E340
+  userChecksum: A07FD720C0BB8DB88D4C1F69FD0B07DA
 - generatedChecksum: 20DFE69C215234E9F30E08C8E9006D63
   logicalPath: threadx/common/src
   name: tx_thread_shell_entry.c
@@ -8770,13 +8770,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 8F6460AA271A561B2EA5463CCBB17F4F
-- generatedChecksum: 61E8B69E4C56D6C9C075406B90E09FA3
+- generatedChecksum: BB39D9084830298A90DBF3000A8A7A6A
   logicalPath: threadx/ports/pic32mz/mplabx/src
   name: tx_thread_stack_build.S
   physicalPath: ../../third_party/rtos/threadx/ports/pic32mz/mplabx/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 61E8B69E4C56D6C9C075406B90E09FA3
+  userChecksum: BB39D9084830298A90DBF3000A8A7A6A
 - generatedChecksum: 2E2628E8E62C645F13E79A40B1B901CF
   logicalPath: threadx/common/src
   name: tx_thread_stack_error_handler.c
@@ -8812,13 +8812,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6484E5FA8051A81230EC03B1A34FF0B2
-- generatedChecksum: E456D670CAE2073514EBDBEC0B15E2E4
+- generatedChecksum: 9459B29847EC4F5CD2FD0C6F1ED6D980
   logicalPath: threadx/ports/pic32mz/mplabx/src
   name: tx_thread_system_return.S
   physicalPath: ../../third_party/rtos/threadx/ports/pic32mz/mplabx/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E456D670CAE2073514EBDBEC0B15E2E4
+  userChecksum: 9459B29847EC4F5CD2FD0C6F1ED6D980
 - generatedChecksum: 3A97E96CA3259B61D37775A636641F5E
   logicalPath: threadx/common/src
   name: tx_thread_system_suspend.c
@@ -8973,13 +8973,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 3D7553E56C07B6CF71490FC704F57288
-- generatedChecksum: 77274E063C72D7EEB6811CED9DD981F8
+- generatedChecksum: 6CBB79E9B6456B9D9E5CB131561F44D5
   logicalPath: config/pic32mz_w1/threadx_config
   name: tx_tmr1.c
   physicalPath: threadx_config
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 77274E063C72D7EEB6811CED9DD981F8
+  userChecksum: 6CBB79E9B6456B9D9E5CB131561F44D5
 - generatedChecksum: D2FDBFBEBB62616E22B40AE620E7B9D4
   logicalPath: threadx/common/src
   name: tx_trace_buffer_full_notify.c
@@ -9490,7 +9490,7 @@ files:
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: BB8E1C66033F554B9E5D9E040E52A1A9
+  userChecksum: 33AA891210A7D324CA182776993CB930
 - generatedChecksum: 5C2A427D83E5CCA5D980D9FEC6D02E5D
   logicalPath: config/pic32mz_w1/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_assoc.c
@@ -9568,13 +9568,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 4DF46D44AEC32DB0BA3B78B64F975C4A
-- generatedChecksum: 7806B30ECAE0D18D08CD583D8775530D
+- generatedChecksum: 71352EF41F6688AD8408E42970B50B66
   logicalPath: config/pic32mz_w1/stdio
   name: xc32_monitor.c
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7806B30ECAE0D18D08CD583D8775530D
+  userChecksum: 71352EF41F6688AD8408E42970B50B66
 - generatedChecksum: 4D7B537E5004684A383F87B25BF9B89A
   logicalPath: third_party/azure_rtos/netxduo/addons/azure_iot/azure-sdk-for-c/sdk/inc/azure/core
   name: _az_cfg.h
@@ -9931,7 +9931,7 @@ files:
   physicalPath: driver/wifi/pic32mzw1/include
   security: NON_SECURE
   type: HEADER
-  userChecksum: 5CA38101059E7F03A9C478239E541A3D
+  userChecksum: DDD131AAE2C978645E64A718960A8B77
 - generatedChecksum: 883CF5C58E9B10627B48EE518D194501
   logicalPath: third_party/azure_rtos/filex/common/inc
   name: fx_api.h
@@ -10730,13 +10730,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2B5072810107E051495C4B6379DEDA4E
-- generatedChecksum: BFA90471A89ED563A27D8E3D12373D5E
+- generatedChecksum: D9B00CCF87095896FD2DE8B5A025A4CA
   logicalPath: config/pic32mz_w1/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: BFA90471A89ED563A27D8E3D12373D5E
+  userChecksum: D9B00CCF87095896FD2DE8B5A025A4CA
 - generatedChecksum: 2B111FC8ADC9E50611E481BE82CD3982
   logicalPath: config/pic32mz_w1/peripheral/uart
   name: plib_uart1.h
@@ -10744,13 +10744,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2B111FC8ADC9E50611E481BE82CD3982
-- generatedChecksum: 341A857DC94729EF64FAD632A199A84C
+- generatedChecksum: FDF23C4CD8EB7AFD2A25DB738B3A86B6
   logicalPath: config/pic32mz_w1/peripheral/uart
   name: plib_uart3.h
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: HEADER
-  userChecksum: 341A857DC94729EF64FAD632A199A84C
+  userChecksum: FDF23C4CD8EB7AFD2A25DB738B3A86B6
 - generatedChecksum: 67EEAF539A53B6B8FD7B600ACCB3F3CA
   logicalPath: config/pic32mz_w1/peripheral/uart
   name: plib_uart_common.h
@@ -10912,13 +10912,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: A6B782230E7D0D0797AFE75158E40ED4
-- generatedChecksum: 417A0C4FA855A0681C3C1DD33601850D
+- generatedChecksum: 61C8574E5C5E9D912B5E91B294C4EDBA
   logicalPath: threadx/ports/pic32mz/mplabx/inc
   name: tx_cpu.inc
   physicalPath: ../../third_party/rtos/threadx/ports/pic32mz/mplabx/inc
   security: NON_SECURE
   type: HEADER
-  userChecksum: 417A0C4FA855A0681C3C1DD33601850D
+  userChecksum: 61C8574E5C5E9D912B5E91B294C4EDBA
 - generatedChecksum: 7D7A5194A5091F48B4B896DE6B600975
   logicalPath: threadx/common/inc
   name: tx_event_flags.h
@@ -10989,13 +10989,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 9735007C93710E17B9D076EB9EB5F5EC
-- generatedChecksum: 54F0EBD014EFAECD67BB5C022D41F6D4
+- generatedChecksum: F41C06EEE503C605D285A81725DBE043
   logicalPath: config/pic32mz_w1/threadx_config
   name: tx_user.h
   physicalPath: threadx_config
   security: NON_SECURE
   type: HEADER
-  userChecksum: 54F0EBD014EFAECD67BB5C022D41F6D4
+  userChecksum: F41C06EEE503C605D285A81725DBE043
 - generatedChecksum: null
   logicalPath: config/pic32mz_w1
   name: user.h

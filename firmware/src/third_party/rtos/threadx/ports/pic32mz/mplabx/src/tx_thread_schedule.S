@@ -177,7 +177,7 @@ _tx_thread_schedule_loop:
     lwm32   $16-$23,$16,STACK_OFFSET_S0($29)  # Recover s0-s7
 
     lw      $8,  STACK_OFFSET_DSPC($29)     # Recover DSPControl
-    wrdsp   $8,  31                         # Setup DSPControl 
+    wrdsp   $8,  0x3F                       # Setup DSPControl 
         
     lwp     $8,  STACK_OFFSET_HI0($29)      # Recover ac0 low,hi
     mthi    $8,  $ac0                       # Setup ac0 lo
@@ -222,7 +222,7 @@ _tx_thread_schedule_loop:
     lw      $23, STACK_OFFSET_S7($29)       # Recover s7
 
     lw      $8,  STACK_OFFSET_DSPC($29)     # Recover DSPControl
-    wrdsp   $8,  31                         # Setup DSPControl 
+    wrdsp   $8,  0x3F                       # Setup DSPControl 
         
     lw      $8,  STACK_OFFSET_HI0($29)      # Recover ac0 hi
     lw      $9,  STACK_OFFSET_LO0($29)      # Recover ac0 low
@@ -307,7 +307,7 @@ _tx_thread_synch_return:
    /* Recover standard preserved registers.  */
     lw      $8,  MINIMAL_STACK_OFFSET_DSPC($29)     # Recover DSPControl
     lw      $30, MINIMAL_STACK_OFFSET_S8($29)       # Recover s8, fp
-    wrdsp   $8,  31                                 # Restore DSPControl
+    wrdsp   $8,  0x3F                               # Restore DSPControl
 #if ( __mips_micromips == 1 )
     
     lwm32   $16-$23,$16,MINIMAL_STACK_OFFSET_S0($29)  # Recover s0-s7
@@ -384,10 +384,9 @@ _tx_thread_synch_return:
     LDC1  $f29, MINIMAL_STACK_OFFSET_F29($29)	# Recover f29	
     LDC1  $f30, MINIMAL_STACK_OFFSET_F30($29)	# Recover f30
     LDC1  $f31, MINIMAL_STACK_OFFSET_F31($29)	# Recover f31
-    addiu   $29, $29, 96                    	# Recover stack space
 #endif
 1:    
-    addiu   $29, $29, 104                   	# Recover stack space
+    addiu   $29, $29, MINIMAL_STACK_CTX_SIZE   	# Recover stack space
 
     
     /* This may re-enable interrupts, make sure to clear exe hazard.  */

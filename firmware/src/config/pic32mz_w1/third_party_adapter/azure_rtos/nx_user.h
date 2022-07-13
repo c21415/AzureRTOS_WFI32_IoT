@@ -20,9 +20,10 @@
 /**************************************************************************/
 #ifndef NX_USER_H
 #define NX_USER_H
+#include "system/console/sys_console.h"
 /*** NetX Configuration ***/
 #define NX_PHYSICAL_HEADER                 (16 + 40 + 4)
-#define NX_DEMO_PACKET_SIZE                1536
+#define NX_DEMO_PACKET_SIZE                1536+32
 #define NX_DEMO_NUMBER_OF_PACKETS          40
 #define NX_DEMO_PACKET_POOL_SIZE           (((NX_DEMO_PACKET_SIZE) + sizeof(NX_PACKET)) * (NX_DEMO_NUMBER_OF_PACKETS))
 #define NX_DEMO_IP_STACK_SIZE              4096
@@ -57,4 +58,5 @@
 
 #define NX_ENABLE_INTERFACE_CAPABILITY
 
+#define printf(fmt, ...)    SYS_CONSOLE_Print(0, fmt, ##__VA_ARGS__)
 #endif  // NX_USER_H

@@ -21,7 +21,7 @@
 /**************************************************************************/
 
 #define NX_CLOUD_SOURCE_CODE
-
+#include <stdio.h>
 
 /* Force error checking to be disabled in this module */
 
@@ -1121,7 +1121,7 @@ ULONG           module_own_events;
                 /* Release the mutex.  */
                 tx_mutex_put(&(cloud_ptr -> nx_cloud_mutex));
 
-                /* Call the module processing routine.  */
+                /* Call the module processing routine.  */                
                 cloud_module -> nx_cloud_module_process(cloud_module -> nx_cloud_module_context, cloud_events & cloud_module -> nx_cloud_module_registered_events, module_own_events);
 
                 /* Get mutex. */

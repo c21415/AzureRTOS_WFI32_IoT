@@ -168,23 +168,22 @@ _tx_thread_system_return:
     /* Save minimal context on the stack.  */
 #if defined (__mips_hard_float)
     
-    addiu   $29, $29, -104                  # Allocate space on the stack
+    addiu   $29, $29, -MINIMAL_STACK_CTX_SIZE # Allocate space on the stack
     
     la      $9, _tx_thread_current_ptr      # Pickup address of pointer
     lw      $8, ($9)                        # Set current thread pointer
     lw      $10, 144($8)                    # Check the status of FPU Enable Flag
     beq	    $10, $0, 1f   
     nop
-    addiu   $29, $29, -96                   # Allocate additional space on the stack
     1:
 #else
-    addiu   $29, $29, -104                  # Allocate space on the stack
+    addiu   $29, $29, -MINIMAL_STACK_CTX_SIZE # Allocate space on the stack
 #endif    
 
 #if ( __mips_micromips == 1)    
     
     sw      $0, ($29)                       # Solicited stack type
-    rddsp   $8,  31                         # Pickup DSPControl
+    rddsp   $8,  0x3F                       # Pickup DSPControl
     swm32   $16-$23,$16,MINIMAL_STACK_OFFSET_S0($29)    # Store s0-s7
     sw      $8,  MINIMAL_STACK_OFFSET_DSPC($29)         # Save DSPControl
     sw      $30, MINIMAL_STACK_OFFSET_S8($29)           # Save s8, fp
@@ -211,7 +210,7 @@ _tx_thread_system_return:
     
 #else
     sw      $0, ($29)                       		# Solicited stack type
-    rddsp   $8,  31                         		# Pickup DSPControl
+    rddsp   $8,  0x3F                         		# Pickup DSPControl
     sw      $16, MINIMAL_STACK_OFFSET_S0($29)           # Save s0
     sw      $8,  MINIMAL_STACK_OFFSET_DSPC($29)         # Save DSPControl
     sw      $17, MINIMAL_STACK_OFFSET_S1($29)           # Save s1

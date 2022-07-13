@@ -65,7 +65,7 @@ void EVIC_Initialize( void )
     IPC41SET = 0x40000 | 0x0;  /* CRYPTO1:  Priority 1 / Subpriority 0 */
     IPC41SET = 0x4000000 | 0x0;  /* CRYPTO1_FAULT:  Priority 1 / Subpriority 0 */
 
-    //PRISSbits.PRI1SS  = 0x001;
+
 }
 
 void EVIC_SourceEnable( INT_SOURCE source )

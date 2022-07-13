@@ -22,7 +22,7 @@
 
 #define NX_SOURCE_CODE
 
-
+#include <stdio.h>
 /* Include necessary system files.  */
 
 #include "nx_api.h"
@@ -89,7 +89,7 @@ CHAR           *end_of_pool;           /* End of pool area            */
 CHAR           *payload_address;       /* Address of the first payload*/
 VOID           *rounded_pool_start;    /* Rounded stating address     */
 
-
+    
     /* Save the original payload size.  */
     original_payload_size =  payload_size;
 
@@ -165,7 +165,7 @@ VOID           *rounded_pool_start;    /* Rounded stating address     */
 
         /* Setup the packet data pointers.  */
         /*lint -e{929} -e{928} -e{740} -e{826} suppress cast of pointer to pointer, since it is necessary  */
-        ((NX_PACKET *)packet_ptr) -> nx_packet_data_start =  (UCHAR *)(packet_ptr + header_size);
+        ((NX_PACKET *)packet_ptr) -> nx_packet_data_start =  (UCHAR *)(packet_ptr + header_size);        
 
         /*lint -e{929} -e{928} -e{740} -e{826} suppress cast of pointer to pointer, since it is necessary  */
         ((NX_PACKET *)packet_ptr) -> nx_packet_data_end =    (UCHAR *)(packet_ptr + header_size + original_payload_size);

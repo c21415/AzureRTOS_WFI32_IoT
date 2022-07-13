@@ -116,7 +116,7 @@ ULONG                  trace_timestamp;
 
     /* Allocate a new packet from the default packet pool supplied.  */
     /*lint -e{946} -e{947} suppress pointer subtraction, since it is necessary. */
-    status =  _nx_packet_allocate(pool_ptr, &work_ptr, 0, wait_option);
+    status =  _nx_packet_allocate(pool_ptr, &work_ptr, 0, wait_option, __func__);
 
     /* Determine if the packet was not allocated.  */
     if (status != NX_SUCCESS)

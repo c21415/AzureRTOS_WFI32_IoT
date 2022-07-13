@@ -85,12 +85,12 @@ NX_IP_DRIVER  driver_request;
     /* Allocate a packet to build the ARP Announce message in.  */
 #ifdef NX_ENABLE_DUAL_PACKET_POOL
     /* Allocate from auxiliary packet pool first. */
-    if (_nx_packet_allocate(ip_ptr -> nx_ip_auxiliary_packet_pool, &request_ptr, (NX_PHYSICAL_HEADER + NX_ARP_MESSAGE_SIZE), NX_NO_WAIT))
+    if (_nx_packet_allocate(ip_ptr -> nx_ip_auxiliary_packet_pool, &request_ptr, (NX_PHYSICAL_HEADER + NX_ARP_MESSAGE_SIZE), NX_NO_WAIT, __func__))
     {
         if (ip_ptr -> nx_ip_auxiliary_packet_pool != ip_ptr -> nx_ip_default_packet_pool)
 #endif /* NX_ENABLE_DUAL_PACKET_POOL */
         {
-            if (_nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool, &request_ptr, (NX_PHYSICAL_HEADER + NX_ARP_MESSAGE_SIZE), NX_NO_WAIT))
+            if (_nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool, &request_ptr, (NX_PHYSICAL_HEADER + NX_ARP_MESSAGE_SIZE), NX_NO_WAIT, __func__))
             {
 
                 /* Error getting packet, so just get out!  */
