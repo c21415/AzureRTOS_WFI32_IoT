@@ -31,11 +31,11 @@
 
 /* Include necessary system files.  */
 
-#include    <stdio.h>
-#include    <string.h>
 #include    "nx_api.h"
 #include    "nx_ip.h"
 #include    "nxd_dns.h"
+#include    "stdio.h"
+#include    "string.h"
 #include    "nx_system.h"
 
 /* Define the resource record section.  */
@@ -4174,7 +4174,7 @@ ULONG       rr_ttl;
     }
 
     /* Allocate a packet.  */
-    status = nx_packet_allocate(dns_ptr -> nx_dns_packet_pool_ptr, &packet_ptr, NX_UDP_PACKET, NX_DNS_PACKET_ALLOCATE_TIMEOUT, __func__);
+    status = nx_packet_allocate(dns_ptr -> nx_dns_packet_pool_ptr, &packet_ptr, NX_UDP_PACKET, NX_DNS_PACKET_ALLOCATE_TIMEOUT);
 
     /* Check the allocate status.  */
     if (status != NX_SUCCESS)
@@ -4562,7 +4562,7 @@ NX_PACKET           *receive_packet_ptr;
 #endif /* NX_DNS_CLIENT_CLEAR_QUEUE */
  
     /* Allocate a packet.  */
-    status =  nx_packet_allocate(dns_ptr -> nx_dns_packet_pool_ptr, &packet_ptr, NX_UDP_PACKET, NX_DNS_PACKET_ALLOCATE_TIMEOUT, __func__);
+    status =  nx_packet_allocate(dns_ptr -> nx_dns_packet_pool_ptr, &packet_ptr, NX_UDP_PACKET, NX_DNS_PACKET_ALLOCATE_TIMEOUT);
 
     /* Check the allocate status.  */
     if (status != NX_SUCCESS)

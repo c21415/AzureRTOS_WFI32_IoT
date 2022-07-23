@@ -21,7 +21,7 @@
 /**************************************************************************/
 
 #define NX_SOURCE_CODE
-#include <stdio.h>
+
 
 /* Include necessary system files.  */
 

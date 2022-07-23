@@ -216,8 +216,7 @@ void APP_Tasks ( void )
         case APP_STATE_INIT:
             nx_azure_init();
             
-            appData.state = APP_TCPIP_WAITING_FOR_COMMAND;
-            SYS_CONSOLE_MESSAGE("App Ready\r\n");
+            appData.state = APP_TCPIP_WAITING_FOR_COMMAND;            
 
             break;
 

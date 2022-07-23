@@ -169,7 +169,7 @@ UINT            ret = 0;
     /* Allocate a packet to place the ICMP echo request message in.  */
     /*lint -e{845} suppress argument to operator '+' is certain to be 0, since "data_offset" can be non-zero when NX_IPSEC_ENABLE is defined. */
     status =  _nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool, &request_ptr,
-                                  (ULONG)(NX_IPv4_ICMP_PACKET + data_offset + NX_ICMP_HEADER_SIZE), wait_option, __func__);
+                                  (ULONG)(NX_IPv4_ICMP_PACKET + data_offset + NX_ICMP_HEADER_SIZE), wait_option);
     if (status)
     {
 

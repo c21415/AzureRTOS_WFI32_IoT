@@ -31,7 +31,7 @@
 
 
 /* Include necessary system files.  */
-#include    <stdio.h>
+
 #include    "tx_api.h"
 #include    "nx_api.h"
 #include    "nx_ip.h"
@@ -560,12 +560,12 @@ UINT status = NXD_MQTT_SUCCESS;
         if (client_ptr -> nxd_mqtt_client_socket.nx_tcp_socket_connect_ip.nxd_ip_version == NX_IP_VERSION_V4)
         {
             status = nx_packet_allocate(client_ptr -> nxd_mqtt_client_packet_pool_ptr, packet_ptr, NX_IPv4_TCP_PACKET,
-                                        TX_WAIT_FOREVER, __func__);
+                                        TX_WAIT_FOREVER);
         }
         else
         {
             status = nx_packet_allocate(client_ptr -> nxd_mqtt_client_packet_pool_ptr, packet_ptr, NX_IPv6_TCP_PACKET,
-                                        TX_WAIT_FOREVER, __func__);
+                                        TX_WAIT_FOREVER);
         }
 #ifdef NX_SECURE_ENABLE
     }
@@ -2332,7 +2332,7 @@ UINT       status;
     /* If TLS is enabled, start TLS */
 #ifdef NX_SECURE_ENABLE
     if (client_ptr -> nxd_mqtt_client_use_tls)
-    {        
+    {
         status = nx_secure_tls_session_start(&(client_ptr -> nxd_mqtt_tls_session), &(client_ptr -> nxd_mqtt_client_socket), NX_NO_WAIT);
 
         if (status != NX_CONTINUE)
@@ -2452,7 +2452,7 @@ UINT       status;
     {
 
         /* Error.  */
-        
+
         /* End connection. */
         _nxd_mqtt_client_connection_end(client_ptr, NX_NO_WAIT);
 
@@ -2462,7 +2462,7 @@ UINT       status;
             client_ptr -> nxd_mqtt_connect_notify(client_ptr, status, client_ptr -> nxd_mqtt_connect_context);
         }
     }
-    
+
     return;
 }
 #endif /* NX_SECURE_ENABLE */
@@ -2783,7 +2783,7 @@ NXD_MQTT_CLIENT *client_ptr = (NXD_MQTT_CLIENT *)mqtt_client;
 #ifdef NX_SECURE_ENABLE
         /* TLS in progress on async mode.  */
         if (client_ptr -> nxd_mqtt_tls_in_progress)
-        {            
+        {
             _nxd_mqtt_tls_establish_process(client_ptr);
         }
         else
@@ -3964,7 +3964,8 @@ UINT                 old_priority;
     /* If TLS is enabled, start TLS */
 #ifdef NX_SECURE_ENABLE
     if (client_ptr -> nxd_mqtt_client_use_tls)
-    {        
+    {
+
         status = nx_secure_tls_session_start(&(client_ptr -> nxd_mqtt_tls_session), &(client_ptr -> nxd_mqtt_client_socket), wait_option);
 
         if (status != NX_SUCCESS)

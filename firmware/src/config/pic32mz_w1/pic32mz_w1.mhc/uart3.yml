@@ -44,12 +44,6 @@ children:
   - type: KeyValueSet
     attributes: {id: UART_OPERATING_MODE}
     children:
-    - type: Attributes
-      children:
-      - type: Boolean
-        attributes: {id: readOnly}
-        children:
-        - {type: Value, value: 'true'}
     - type: Values
       children:
       - type: Dynamic
@@ -108,20 +102,5 @@ children:
       children:
       - type: Dynamic
         attributes: {id: uart3, value: '8'}
-- type: Attachments
-  children:
-  - type: DirectCapability
-    attributes: {id: UART3_UART}
-    children:
-    - type: Attributes
-      children:
-      - type: String
-        attributes: {id: targetComponentID}
-        children:
-        - {type: Value, value: sys_console_0}
-      - type: String
-        attributes: {id: targetAttachmentID}
-        children:
-        - {type: Value, value: sys_console_UART_dependency}
 - type: ElementPosition
-  attributes: {x: '37', y: '329', id: uart3}
+  attributes: {x: '178', y: '146', id: uart3}

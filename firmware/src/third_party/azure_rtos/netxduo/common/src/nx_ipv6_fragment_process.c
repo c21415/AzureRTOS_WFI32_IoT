@@ -248,7 +248,7 @@ NX_PACKET_POOL                 *pool_ptr;
 
             /* Allocate a packet from the default packet pool.  */
             if (_nx_packet_allocate(pool_ptr, &new_packet,
-                                    0, TX_NO_WAIT, __func__))
+                                    0, TX_NO_WAIT))
             {
                 error = 1;
                 break;

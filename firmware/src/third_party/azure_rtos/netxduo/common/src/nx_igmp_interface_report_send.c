@@ -116,11 +116,11 @@ NX_IGMP_HEADER *header_ptr;
     /* Allocate a packet to place the IGMP host response message in.  */
 #ifdef NX_ENABLE_DUAL_PACKET_POOL
     /* Allocate from auxiliary packet pool first. */
-    status = _nx_packet_allocate(ip_ptr -> nx_ip_auxiliary_packet_pool, &packet_ptr, (ULONG)(NX_IGMP_PACKET + router_alert + NX_IGMP_HEADER_SIZE), TX_NO_WAIT, __func__);
+    status = _nx_packet_allocate(ip_ptr -> nx_ip_auxiliary_packet_pool, &packet_ptr, (ULONG)(NX_IGMP_PACKET + router_alert + NX_IGMP_HEADER_SIZE), TX_NO_WAIT);
     if ((status != NX_SUCCESS) && (ip_ptr -> nx_ip_auxiliary_packet_pool != ip_ptr -> nx_ip_default_packet_pool))
 #endif /* NX_ENABLE_DUAL_PACKET_POOL */
     {
-        status = _nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool, &packet_ptr, (ULONG)(NX_IGMP_PACKET + router_alert + NX_IGMP_HEADER_SIZE), TX_NO_WAIT, __func__);
+        status = _nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool, &packet_ptr, (ULONG)(NX_IGMP_PACKET + router_alert + NX_IGMP_HEADER_SIZE), TX_NO_WAIT);
     }
 
     if (status)

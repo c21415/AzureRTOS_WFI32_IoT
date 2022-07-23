@@ -3225,20 +3225,17 @@ void DRV_PIC32MZW_MACEthernetSendPacket
     {
         return;
     }
-    OSAL_CRITSECT_DATA_TYPE status = OSAL_CRIT_Enter(OSAL_CRIT_TYPE_HIGH);
     
     pBufferAddr = (void*)&pEthMsg[-hdrOffset];
 
     if (NULL != pic32mzwMACDescriptor.pktAllocF)
     {
-        //printf("Length of EthMsg = %d\r\n", lengthEthMsg);
         ptrPacket = pic32mzwMACDescriptor.pktAllocF(sizeof(TCPIP_MAC_PACKET), lengthEthMsg-ETHERNET_HDR_LEN, 0);
     }
 
     if (NULL == ptrPacket)
     {
         DRV_PIC32MZW_MemFree(pBufferAddr);
-        OSAL_CRIT_Leave(OSAL_CRIT_TYPE_HIGH, status);
         return;
     }
 
@@ -3272,7 +3269,6 @@ void DRV_PIC32MZW_MACEthernetSendPacket
     {
         WDRV_DBG_ERROR_PRINT("MAC receive failed to lock event semaphore\r\n");
     }
-    OSAL_CRIT_Leave(OSAL_CRIT_TYPE_HIGH, status);
 }
 
 //*******************************************************************************
@@ -3616,11 +3612,9 @@ void* DRV_PIC32MZW_PacketMemAlloc(DRV_PIC32MZW_ALLOC_OPT_ARGS uint16_t size, MEM
         return NULL;
     }
 
-    //OSAL_CRITSECT_DATA_TYPE status = OSAL_CRIT_Enter(OSAL_CRIT_TYPE_HIGH);
     pAllocHdr->priLevel = priLevel;
 
     g_pktmem_pri[priLevel].num_allocd++;
-    //OSAL_CRIT_Leave(OSAL_CRIT_TYPE_HIGH, status);
     
 #ifdef WDRV_PIC32MZW_STATS_ENABLE
     if (OSAL_RESULT_TRUE == OSAL_MUTEX_Lock(&pic32mzwMemStatsMutex, OSAL_WAIT_FOREVER))

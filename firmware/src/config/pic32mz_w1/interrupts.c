@@ -62,6 +62,14 @@
 
 
 void CORE_TIMER_InterruptHandler( void );
+void DRV_USBFS_USB_Handler( void );
+void SPI1_RX_InterruptHandler( void );
+void SPI1_TX_InterruptHandler( void );
+void UART1_FAULT_InterruptHandler( void );
+void UART1_RX_InterruptHandler( void );
+void UART1_TX_InterruptHandler( void );
+void I2C2_BUS_InterruptHandler( void );
+void I2C2_MASTER_InterruptHandler( void );
 void UART3_FAULT_InterruptHandler( void );
 void UART3_RX_InterruptHandler( void );
 void UART3_TX_InterruptHandler( void );
@@ -71,35 +79,10 @@ void WDRV_PIC32MZW_TasksRFTimer0ISR( void );
 void DRV_BA414E_InterruptHandler( void );
 void DRV_BA414E_ErrorInterruptHandler( void );
 
-void enable_interrupts(void)
-{
-    SYS_INT_SourceEnable(INT_SOURCE_CORE_TIMER);
-    SYS_INT_SourceEnable(INT_SOURCE_UART3_FAULT);
-    SYS_INT_SourceEnable(INT_SOURCE_UART3_RX);
-    SYS_INT_SourceEnable(INT_SOURCE_UART3_TX);
-    SYS_INT_SourceEnable(INT_SOURCE_RFTM0);
-    SYS_INT_SourceEnable(INT_SOURCE_RFMAC);
-    SYS_INT_SourceEnable(INT_SOURCE_RFTM0);    
-    SYS_INT_SourceEnable(INT_SOURCE_CRYPTO1);
-    SYS_INT_SourceEnable(INT_SOURCE_CRYPTO1_FAULT);
-    
-    
-}
 
-void disable_interrupts(void)
-{
-    SYS_INT_SourceDisable(INT_SOURCE_CORE_TIMER);
-    SYS_INT_SourceDisable(INT_SOURCE_UART3_FAULT);
-    SYS_INT_SourceDisable(INT_SOURCE_UART3_RX);
-    SYS_INT_SourceDisable(INT_SOURCE_UART3_TX);
-    SYS_INT_SourceDisable(INT_SOURCE_RFTM0);
-    SYS_INT_SourceDisable(INT_SOURCE_RFMAC);
-    SYS_INT_SourceDisable(INT_SOURCE_RFTM0);
-    SYS_INT_SourceDisable(INT_SOURCE_CRYPTO1);
-    SYS_INT_SourceDisable(INT_SOURCE_CRYPTO1_FAULT);
-}
 
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
+
 void __ISR(_CORE_TIMER_VECTOR, ipl1SAVEALL) CORE_TIMER_Handler (void)
 {
     /* Call ThreadX context save. */
@@ -111,6 +94,94 @@ void __ISR(_CORE_TIMER_VECTOR, ipl1SAVEALL) CORE_TIMER_Handler (void)
     _tx_thread_context_restore();
 }
 
+
+void __ISR(_USB_VECTOR, ipl1SAVEALL) USB_Handler (void)
+{
+    /* Call ThreadX context save. */
+    _tx_thread_context_save();
+
+    DRV_USBFS_USB_Handler();
+
+    /* Call ThreadX context restore. */
+    _tx_thread_context_restore();
+}
+
+void __ISR(_SPI1_RX_VECTOR, ipl1SAVEALL) SPI1_RX_Handler (void)
+{
+    /* Call ThreadX context save. */
+    _tx_thread_context_save();
+
+    SPI1_RX_InterruptHandler();
+
+    /* Call ThreadX context restore. */
+    _tx_thread_context_restore();
+}
+
+void __ISR(_SPI1_TX_VECTOR, ipl1SAVEALL) SPI1_TX_Handler (void)
+{
+    /* Call ThreadX context save. */
+    _tx_thread_context_save();
+
+    SPI1_TX_InterruptHandler();
+
+    /* Call ThreadX context restore. */
+    _tx_thread_context_restore();
+}
+
+void __ISR(_UART1_FAULT_VECTOR, ipl1SAVEALL) UART1_FAULT_Handler (void)
+{
+    /* Call ThreadX context save. */
+    _tx_thread_context_save();
+
+    UART1_FAULT_InterruptHandler();
+
+    /* Call ThreadX context restore. */
+    _tx_thread_context_restore();
+}
+
+void __ISR(_UART1_RX_VECTOR, ipl1SAVEALL) UART1_RX_Handler (void)
+{
+    /* Call ThreadX context save. */
+    _tx_thread_context_save();
+
+    UART1_RX_InterruptHandler();
+
+    /* Call ThreadX context restore. */
+    _tx_thread_context_restore();
+}
+
+void __ISR(_UART1_TX_VECTOR, ipl1SAVEALL) UART1_TX_Handler (void)
+{
+    /* Call ThreadX context save. */
+    _tx_thread_context_save();
+
+    UART1_TX_InterruptHandler();
+
+    /* Call ThreadX context restore. */
+    _tx_thread_context_restore();
+}
+
+void __ISR(_I2C2_BUS_VECTOR, ipl1SAVEALL) I2C2_BUS_Handler (void)
+{
+    /* Call ThreadX context save. */
+    _tx_thread_context_save();
+
+    I2C2_BUS_InterruptHandler();
+
+    /* Call ThreadX context restore. */
+    _tx_thread_context_restore();
+}
+
+void __ISR(_I2C2_MASTER_VECTOR, ipl1SAVEALL) I2C2_MASTER_Handler (void)
+{
+    /* Call ThreadX context save. */
+    _tx_thread_context_save();
+
+    I2C2_MASTER_InterruptHandler();
+
+    /* Call ThreadX context restore. */
+    _tx_thread_context_restore();
+}
 
 void __ISR(_UART3_FAULT_VECTOR, ipl1SAVEALL) UART3_FAULT_Handler (void)
 {

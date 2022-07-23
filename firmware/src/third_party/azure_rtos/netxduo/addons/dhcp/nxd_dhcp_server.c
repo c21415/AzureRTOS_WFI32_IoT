@@ -1808,7 +1808,7 @@ UINT                     index = 0;
 #endif
 
     /* Allocate a DHCP packet.  */
-    status =  nx_packet_allocate(dhcp_ptr -> nx_dhcp_packet_pool_ptr, &packet_ptr, NX_IPv4_UDP_PACKET, NX_DHCP_PACKET_ALLOCATE_TIMEOUT, __func__);
+    status =  nx_packet_allocate(dhcp_ptr -> nx_dhcp_packet_pool_ptr, &packet_ptr, NX_IPv4_UDP_PACKET, NX_DHCP_PACKET_ALLOCATE_TIMEOUT);
 
     /* Was the packet allocation successful?  */
     if (status != NX_SUCCESS)
@@ -2765,7 +2765,7 @@ ULONG           offset;
           
     /* We will copy the received packet (datagram) over to a packet from the DHCP Server pool and release
        the packet from the receive packet pool as soon as possible. */
-    status =  nx_packet_allocate(dhcp_ptr -> nx_dhcp_packet_pool_ptr, &new_packet_ptr, NX_IPv4_UDP_PACKET, NX_DHCP_PACKET_ALLOCATE_TIMEOUT, __func__);
+    status =  nx_packet_allocate(dhcp_ptr -> nx_dhcp_packet_pool_ptr, &new_packet_ptr, NX_IPv4_UDP_PACKET, NX_DHCP_PACKET_ALLOCATE_TIMEOUT);
 
     /* Check status.  */
     if (status != NX_SUCCESS)

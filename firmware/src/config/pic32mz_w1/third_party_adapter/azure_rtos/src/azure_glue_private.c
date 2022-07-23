@@ -45,7 +45,7 @@ THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 #include "osal/osal.h"
 #include "azure_glue_private.h"
 
-#include <sys/kmem.h>
+#include "sys/kmem.h"
 
 // converts a string MAC address (aa:bb:cc:dd:ee:ff) to binary
 bool _Azure_StringToMACAddress(const char* macAddrStr, uint8_t b[6])

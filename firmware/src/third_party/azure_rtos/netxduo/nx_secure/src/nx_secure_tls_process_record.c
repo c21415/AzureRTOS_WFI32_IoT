@@ -21,7 +21,7 @@
 /**************************************************************************/
 
 #define NX_SECURE_SOURCE_CODE
-#include <stdio.h>
+
 #include "nx_secure_tls.h"
 
 static VOID _nx_secure_tls_packet_trim(NX_PACKET *packet_ptr);

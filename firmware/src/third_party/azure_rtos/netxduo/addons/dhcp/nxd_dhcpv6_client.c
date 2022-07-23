@@ -8405,7 +8405,7 @@ ULONG             available_payload;
     }
 
     /* Allocate a DHCPV6 packet.  */
-    status =  nx_packet_allocate(dhcpv6_ptr -> nx_dhcpv6_pool_ptr, &packet_ptr, NX_IPv6_UDP_PACKET, NX_DHCPV6_PACKET_TIME_OUT, __func__);
+    status =  nx_packet_allocate(dhcpv6_ptr -> nx_dhcpv6_pool_ptr, &packet_ptr, NX_IPv6_UDP_PACKET, NX_DHCPV6_PACKET_TIME_OUT);
 
     /* Was the packet allocation successful?  */
     if (status != NX_SUCCESS)
@@ -10919,7 +10919,7 @@ NX_PACKET   *new_packet_ptr;
     /* Copy the received packet into the packet allocated by the DHCPv6 Client.  */
     status =  nx_packet_allocate(dhcpv6_ptr -> nx_dhcpv6_pool_ptr, 
                                  &new_packet_ptr, NX_IPv6_UDP_PACKET, 
-                                 NX_DHCPV6_PACKET_TIME_OUT, __func__);
+                                 NX_DHCPV6_PACKET_TIME_OUT);
     
     /* Check for errors. */
     if (status != NX_SUCCESS)

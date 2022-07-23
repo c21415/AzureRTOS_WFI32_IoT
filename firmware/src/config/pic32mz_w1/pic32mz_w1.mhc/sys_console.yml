@@ -40,7 +40,7 @@ children:
         - type: Values
           children:
           - type: Dynamic
-            attributes: {id: sys_console_0, value: UART3}
+            attributes: {id: sys_console_0, value: UART1}
       - type: String
         attributes: {id: SYS_CONSOLE_DEVICE_SET}
         children:
@@ -119,10 +119,10 @@ children:
           - type: String
             attributes: {id: targetComponentID}
             children:
-            - {type: Value, value: uart3}
+            - {type: Value, value: uart1}
           - type: String
             attributes: {id: targetAttachmentID}
             children:
-            - {type: Value, value: UART3_UART}
+            - {type: Value, value: UART1_UART}
 - type: ElementPosition
   attributes: {x: '192', y: '265', id: sys_console}

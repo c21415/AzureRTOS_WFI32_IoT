@@ -179,7 +179,7 @@ UINT            compute_checksum = 1;
 
     /* Allocate a packet to place the ICMP echo request message in.  */
     status =  _nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool, &request_ptr,
-                                  NX_ICMP_PACKET + sizeof(NX_ICMPV6_ECHO), wait_option, __func__);
+                                  NX_ICMP_PACKET + sizeof(NX_ICMPV6_ECHO), wait_option);
     if (status)
     {
 

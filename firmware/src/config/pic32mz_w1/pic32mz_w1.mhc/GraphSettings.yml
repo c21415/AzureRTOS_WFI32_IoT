@@ -1,3 +1,3 @@
 format_version: v1.0
 type: GraphSettings
-attributes: {canvasWidth: '742', id: GraphSettings, canvasHeight: '757'}
+attributes: {canvasWidth: '1024', id: GraphSettings, canvasHeight: '725'}

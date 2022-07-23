@@ -21,7 +21,7 @@
 /**************************************************************************/
 
 #define NX_CLOUD_SOURCE_CODE
-#include <stdio.h>
+
 
 /* Force error checking to be disabled in this module */
 

@@ -604,7 +604,7 @@ const NX_CRYPTO_METHOD *session_cipher_method;
     }
 
     /* Allocate another packet for decryption. */
-    status = nx_packet_allocate(tls_session -> nx_secure_tls_packet_pool, &packet_ptr, 0, wait_option, __func__);
+    status = nx_packet_allocate(tls_session -> nx_secure_tls_packet_pool, &packet_ptr, 0, wait_option);
     if (status)
     {
         return(status);
@@ -830,7 +830,7 @@ UINT original_offset = offset;
     {
 
         /* Allocate another packet for decryption. */
-        status = nx_packet_allocate(tls_session -> nx_secure_tls_packet_pool, &packet_ptr, 0, wait_option, __func__);
+        status = nx_packet_allocate(tls_session -> nx_secure_tls_packet_pool, &packet_ptr, 0, wait_option);
         if (status)
         {
             return(status);

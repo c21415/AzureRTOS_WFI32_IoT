@@ -8,7 +8,7 @@
 /*       and in the root directory of this software.                      */
 /*                                                                        */
 /**************************************************************************/
-
+#include <stdio.h>
 
 #include "nx_api.h"
 #include "nx_azure_iot_hub_client.h"
@@ -220,7 +220,7 @@ UINT iothub_device_id_length = sizeof(DEVICE_ID) - 1;
     /* Set symmetric key.  */
     else if ((status = nx_azure_iot_hub_client_symmetric_key_set(iothub_client_ptr,
                                                                  (UCHAR *)DEVICE_SYMMETRIC_KEY,
-                                                                 sizeof(DEVICE_SYMMETRIC_KEY) - 1)))
+                                                                 strlen(DEVICE_SYMMETRIC_KEY))))
     {
         printf("Failed on nx_azure_iot_hub_client_symmetric_key_set!\r\n");
     }
@@ -263,7 +263,7 @@ static void log_callback(az_log_classification classification, UCHAR *msg, UINT 
 {
     if (classification == AZ_LOG_IOT_AZURERTOS)
     {
-        SYS_CONSOLE_PRINT("%.*s", msg_len, (CHAR *)msg);
+        printf("%.*s", msg_len, (CHAR *)msg);
     }
 }
 
@@ -392,12 +392,12 @@ static UINT sample_dps_entry(UCHAR **iothub_hostname, UINT *iothub_hostname_leng
 UINT status;
 
     printf("Start Provisioning Client...\r\n");
-
+  
     /* Initialize IoT provisioning client.  */
     if ((status = nx_azure_iot_provisioning_client_initialize(&prov_client, &nx_azure_iot,
                                                               (UCHAR *)ENDPOINT, sizeof(ENDPOINT) - 1,
-                                                              (UCHAR *)ID_SCOPE, sizeof(ID_SCOPE) - 1,
-                                                              (UCHAR *)REGISTRATION_ID, sizeof(REGISTRATION_ID) - 1,
+                                                              (UCHAR *)ID_SCOPE, strlen(ID_SCOPE),
+                                                              (UCHAR *)REGISTRATION_ID, strlen(REGISTRATION_ID),
                                                               _nx_azure_iot_tls_supported_crypto,
                                                               _nx_azure_iot_tls_supported_crypto_size,
                                                               _nx_azure_iot_tls_ciphersuite_map,
@@ -409,7 +409,7 @@ UINT status;
         printf("Failed on nx_azure_iot_provisioning_client_initialize!: error code = 0x%08x\r\n", status);
         return(status);
     }
-
+    
     /* Initialize length of hostname and device ID.  */
     *iothub_hostname_length = sizeof(sample_iothub_hostname);
     *iothub_device_id_length = sizeof(sample_iothub_device_id);
@@ -442,7 +442,7 @@ UINT status;
 
     /* Set symmetric key.  */
     else if ((status = nx_azure_iot_provisioning_client_symmetric_key_set(&prov_client, (UCHAR *)DEVICE_SYMMETRIC_KEY,
-                                                                          sizeof(DEVICE_SYMMETRIC_KEY) - 1)))
+                                                                          strlen(DEVICE_SYMMETRIC_KEY))))
     {
         printf("Failed on nx_azure_iot_hub_client_symmetric_key_set!: error code = 0x%08x\r\n", status);
     }

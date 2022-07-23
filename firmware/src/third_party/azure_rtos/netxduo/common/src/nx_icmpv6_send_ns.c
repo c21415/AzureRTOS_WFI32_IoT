@@ -111,12 +111,12 @@ NX_IP_DRIVER  driver_request;
     /* Allocate a packet to build the ICMPv6 NS message in.  */
 #ifdef NX_ENABLE_DUAL_PACKET_POOL
     /* Allocate from auxiliary packet pool first. */
-    if (_nx_packet_allocate(ip_ptr -> nx_ip_auxiliary_packet_pool, &pkt_ptr, NX_IPv6_ICMP_PACKET, NX_NO_WAIT, __func__))
+    if (_nx_packet_allocate(ip_ptr -> nx_ip_auxiliary_packet_pool, &pkt_ptr, NX_IPv6_ICMP_PACKET, NX_NO_WAIT))
     {
         if (ip_ptr -> nx_ip_auxiliary_packet_pool != ip_ptr -> nx_ip_default_packet_pool)
 #endif /* NX_ENABLE_DUAL_PACKET_POOL */
         {
-            if (_nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool, &pkt_ptr, NX_IPv6_ICMP_PACKET, NX_NO_WAIT, __func__))
+            if (_nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool, &pkt_ptr, NX_IPv6_ICMP_PACKET, NX_NO_WAIT))
             {
 
                 /* Error getting packet, so just get out!  */

@@ -58,7 +58,6 @@ THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 #include "tx_api.h"
 #include "nx_api.h"
 
-#include <sys/kmem.h>
 // definitions
 //
 #define AZURE_GLUE_HDR_MESSAGE "Azure IoT Glue: "
@@ -84,7 +83,6 @@ THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 // NB: this should be taken care in the nx_user.h::NX_PHYSICAL_HEADER !
 // should be uintptr_t aligned, for storing the segmentPktPtr 
 #define _TCPIP_MAC_DATA_SEGMENT_GAP_SIZE  ((((sizeof(TCPIP_MAC_SEGMENT_GAP_DCPT) + TCPIP_MAC_DATA_SEGMENT_GAP) + sizeof(uintptr_t) - 1) / sizeof(uintptr_t)) * sizeof(uintptr_t))
-//#define _TCPIP_MAC_DATA_SEGMENT_GAP_SIZE  ((((sizeof(TCPIP_MAC_SEGMENT_GAP_DCPT) + TCPIP_MAC_DATA_SEGMENT_GAP) + CACHE_LINE_SIZE - 1) / CACHE_LINE_SIZE) * CACHE_LINE_SIZE)
 
 // for TX/RX we place the segment gap in front of the packet:
 #define _TCPIP_MAC_GAP_OFFSET    (int16_t)(-_TCPIP_MAC_DATA_SEGMENT_GAP_SIZE)    // offset from the segment buffer, both TX and RX
@@ -103,7 +101,7 @@ THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 
 
 // enable DHCP debugging levels
-#define _AZURE_DEBUG_LEVEL  (0xFF)
+#define _AZURE_DEBUG_LEVEL  (0)
 
 typedef enum
 {
@@ -174,7 +172,7 @@ typedef struct
 
 // use an ordinary array to store RX/TX descriptors
 #define AZURE_GLUE_PKT_SIZE         (((sizeof(TCPIP_MAC_PACKET) + 3) >> 2) << 2)  // packet size, 32 bits round up
-#define AZURE_GLUE_PKT_ITEM_SIZE    ((AZURE_GLUE_PKT_SIZE + sizeof(TCPIP_MAC_DATA_SEGMENT)))  // complete item size
+#define AZURE_GLUE_PKT_ITEM_SIZE    (AZURE_GLUE_PKT_SIZE + sizeof(TCPIP_MAC_DATA_SEGMENT))  // complete item size
 #define AZURE_GLUE_PKT_RX_ARRAY_ITEMS       NX_DEMO_NUMBER_OF_PACKETS  // (TCPIP_GMAC_RX_DESCRIPTORS_COUNT_QUE0 + 32)
 #define AZURE_GLUE_PKT_TX_ARRAY_ITEMS       NX_DEMO_NUMBER_OF_PACKETS // (TCPIP_GMAC_TX_DESCRIPTORS_COUNT_QUE0 + 32)
 static uint32_t azure_glue_rx_pkt_array[(AZURE_GLUE_PKT_RX_ARRAY_ITEMS * AZURE_GLUE_PKT_ITEM_SIZE) / sizeof(uint32_t)];
@@ -612,7 +610,7 @@ size_t write(int fd, const void *buffer, size_t length)
 {
     if(fd == STDOUT_FILENO || fd == STDERR_FILENO)
     {
-        return UART1_Write((void *)buffer, length);
+        return SYS_CONSOLE_Write(0, buffer, length);
     }
     return -1;
 }
@@ -851,11 +849,8 @@ static void _Azure_Process_MacRxPackets(AZURE_MAC_DCPT* pMDcpt)
                     pRxPkt->pTransportLayer = 0;    // show there's no more associated nx packet
                     master_nxp = nxp;
                     
-                    if(segLoad != segBuffer + 2)
-                        printf("P-Rx pkt = %X\r\n", (int)pRxPkt);
                     _AzureAssertCond((segLoad & 0x3) == 2, __func__, __LINE__); 
                     _AzureAssertCond(segLoad == segBuffer + 2, __func__, __LINE__); 
-                    
                 }
                 else
                 {
@@ -891,10 +886,8 @@ static void _Azure_Process_MacRxPackets(AZURE_MAC_DCPT* pMDcpt)
 
 
         // netxd takes care of its own packets
-        // we just release the MAC_PACKET
-        OSAL_CRITSECT_DATA_TYPE status = OSAL_CRIT_Enter(OSAL_CRIT_TYPE_HIGH);
+        // we just release the MAC_PACKET        
         pRxPkt->pktPriority = 0; //clear the packet priority to default
-        OSAL_CRIT_Leave(OSAL_CRIT_TYPE_HIGH, status);
         if(pRxPkt->ackFunc)
         {
             if((*pRxPkt->ackFunc)(pRxPkt, pRxPkt->ackParam))
@@ -1022,7 +1015,6 @@ AZURE_GLUE_RES Azure_Glue_PacketTx(void* netxPkt)
     AZURE_GLUE_RES azTxRes = AZURE_GLUE_RES_OK;
     masterPkt = prevPkt = 0;
     prevSeg = 0;
-    OSAL_CRITSECT_DATA_TYPE status = OSAL_CRIT_Enter(OSAL_CRIT_TYPE_LOW);
     for(pktIx = 0; nxp != 0; nxp = nxp->nx_packet_next, pktIx++)
     {
         // make there's enough space to save the packet pointer expected by  the MAC driver
@@ -1060,7 +1052,6 @@ AZURE_GLUE_RES Azure_Glue_PacketTx(void* netxPkt)
 
             pPkt->ackFunc = _Azure_NetxTx_AckFunc; 
             pPkt->ackParam = pMDcpt; 
-            //printf("store_pMDsct:%X\r\n", (int)pPkt);
             // unused field to store the owner packet
             pPkt->pTransportLayer = (uint8_t*)nxp;
         }
@@ -1087,7 +1078,7 @@ AZURE_GLUE_RES Azure_Glue_PacketTx(void* netxPkt)
         // save the packet pointer expected by  the MAC driver
         pSegGap->segmentPktPtr = pPkt;
     }
-    OSAL_CRIT_Leave(OSAL_CRIT_TYPE_LOW, status);
+
 
     if(azTxRes == AZURE_GLUE_RES_OK)
     {   // all good; transmit the packet
@@ -1100,7 +1091,6 @@ AZURE_GLUE_RES Azure_Glue_PacketTx(void* netxPkt)
             pMDcpt->txPkts++;
             return AZURE_GLUE_RES_OK;
         }
-        printf("Packet Tx Error!");
         masterPkt->next = nextPkt;  // restore link
         azTxRes = AZURE_GLUE_RES_TX_ERROR; 
     }
@@ -1190,7 +1180,6 @@ static void* _Azure_Glue_Malloc(TCPIP_MAC_HEAP_HANDLE heapH, size_t bytes)
 
     if(tx_byte_allocate(pPool, &allocPtr, bytes, TX_WAIT_FOREVER) == TX_SUCCESS)
     {
-        //allocPtr = (void *)_TCPIP_HEAP_BufferMapNonCached(allocPtr, bytes);
         return allocPtr;
     }
     
@@ -1211,7 +1200,6 @@ static void* _Azure_Glue_Calloc(TCPIP_MAC_HEAP_HANDLE heapH, size_t nElems, size
 
 static size_t _Azure_Glue_Free(TCPIP_MAC_HEAP_HANDLE heapH, const void* ptr)
 {
-    //ptr = _TCPIP_HEAP_PointerMapCached(ptr);
     return tx_byte_release((void*)ptr);
 }
 
@@ -1272,7 +1260,6 @@ static TCPIP_MAC_PACKET* _Azure_AllocatePkt(AZURE_GLUE_DCPT* pGDcpt, bool isTx)
 {
     TCPIP_MAC_PACKET* pPkt;
 
-    OSAL_CRITSECT_DATA_TYPE status = OSAL_CRIT_Enter(OSAL_CRIT_TYPE_LOW);
     if(isTx)
     {
         AZ_SINGLE_LIST *pList = &pGDcpt->txPktList;        
@@ -1280,10 +1267,6 @@ static TCPIP_MAC_PACKET* _Azure_AllocatePkt(AZURE_GLUE_DCPT* pGDcpt, bool isTx)
         if(pPkt)
         {            
             pGDcpt->txAllocPkts++;
-            // initialize the packet
-            memset(pPkt, 0, AZURE_GLUE_PKT_ITEM_SIZE);
-            // set proper segment
-            pPkt->pDSeg = (TCPIP_MAC_DATA_SEGMENT*)((uint8_t*)pPkt + AZURE_GLUE_PKT_SIZE);
         }        
     }
     else
@@ -1293,13 +1276,8 @@ static TCPIP_MAC_PACKET* _Azure_AllocatePkt(AZURE_GLUE_DCPT* pGDcpt, bool isTx)
         if(pPkt)
         {
             pGDcpt->rxAllocPkts++;
-            // initialize the packet
-            memset(pPkt, 0, AZURE_GLUE_PKT_ITEM_SIZE);
-            // set proper segment                        
-            pPkt->pDSeg = (TCPIP_MAC_DATA_SEGMENT*)((uint8_t*)pPkt + AZURE_GLUE_PKT_SIZE);
         }
     }
-    OSAL_CRIT_Leave(OSAL_CRIT_TYPE_LOW, status);
 
     return pPkt;
 }
@@ -1344,6 +1322,7 @@ static TCPIP_MAC_PACKET* _Azure_Glue_MacRxPkt_Alloc(uint16_t pktLen, uint16_t se
         _AzureAssertCond(false, __func__, __LINE__);         
         return 0;
     }    
+
     // get a MAC packet first
     TCPIP_MAC_PACKET* pPkt = _Azure_AllocatePkt(pGDcpt, false);
     if(pPkt == 0)
@@ -1356,7 +1335,6 @@ static TCPIP_MAC_PACKET* _Azure_Glue_MacRxPkt_Alloc(uint16_t pktLen, uint16_t se
     }
     
     // get an associated buffer
-    
     NX_PACKET* nxp = nx_rx_pkt_allocate();
     if(nxp == 0)
     {   // we're out of RX packets
@@ -1374,7 +1352,6 @@ static TCPIP_MAC_PACKET* _Azure_Glue_MacRxPkt_Alloc(uint16_t pktLen, uint16_t se
     uint8_t* segLoad = nxp->nx_packet_prepend_ptr = segBuffer + 2; // dataOffset; make MAC header start at M2 offset
 
     uint16_t nxpLen = nxp->nx_packet_data_end - segBuffer;
-    //printf("nxpLen = %d\r\n", nxpLen);
     if(nxpLen <  pGDcpt->maxRxFrame)
     {   // wrong config ???
         pGDcpt->netxLenError++;
@@ -1415,14 +1392,8 @@ static TCPIP_MAC_PACKET* _Azure_Glue_MacRxPkt_Alloc(uint16_t pktLen, uint16_t se
     pSeg->segBuffer = segBuffer;
     pSeg->segLoad = pPkt->pMacLayer = segLoad;
     pSeg->segSize = nxpLen;
-    //pSeg->segFlags = TCPIP_MAC_SEG_FLAG_STATIC;
     
-    //pPkt->pktFlags = flags | (TCPIP_MAC_PKT_FLAG_STATIC);  // this packet is statically allocated
-    
-    pPkt->pktPriority = 0;
     pGDcpt->rxAllocBuffs++;
-    
-    
     return pPkt;
 }
 
@@ -1471,10 +1442,8 @@ static void _Azure_Glue_MacTxPkt_Ack(TCPIP_MAC_PACKET* pPkt, TCPIP_MAC_PKT_ACK_R
     
     int macIx = pMDcpt - pGDcpt->macDcpt;
     (void)macIx;
-    
     if(macIx < 0 || macIx >= AZURE_NET_INTERFACES)
     {
-        printf("pkt = %X macIdx = %d\r\n", (int)pPkt, macIx);
         _AzureAssertCond(false, __func__, __LINE__); 
         return;
     }

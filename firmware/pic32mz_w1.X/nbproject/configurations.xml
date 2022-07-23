@@ -15,6 +15,9 @@
       </logicalFolder>
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="pic32mz_w1" projectFiles="true">
+          <logicalFolder name="f8" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/pic32mz_w1/bsp/bsp.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f4" displayName="driver" projectFiles="true">
             <logicalFolder name="f1" displayName="ba414e" projectFiles="true">
               <logicalFolder name="f1" displayName="src" projectFiles="true">
@@ -22,6 +25,142 @@
               </logicalFolder>
               <itemPath>../src/config/pic32mz_w1/driver/ba414e/drv_ba414e.h</itemPath>
               <itemPath>../src/config/pic32mz_w1/driver/ba414e/drv_ba414e_definitions.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="memory" projectFiles="true">
+              <itemPath>../src/config/pic32mz_w1/driver/memory/src/drv_memory_local.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/driver/memory/drv_memory.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/driver/memory/drv_memory_definitions.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f4" displayName="sst26" projectFiles="true">
+              <itemPath>../src/config/pic32mz_w1/driver/sst26/drv_sst26.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/driver/sst26/src/drv_sst26_local.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/driver/sst26/drv_sst26_definitions.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f5" displayName="usb" projectFiles="true">
+              <logicalFolder name="f1" displayName="usbfs" projectFiles="true">
+                <logicalFolder name="f1" displayName="src" projectFiles="true">
+                  <logicalFolder name="f1" displayName="templates" projectFiles="true">
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usbfs_registers.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ActivityPending_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ActivityPending_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ALL_Interrupt_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ALL_Interrupt_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_AutomaticSuspend_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_AutomaticSuspend_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_BDTBaseAddress_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_BDTBaseAddress_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_BDTFunctions_PIC32.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_BDTFunctions_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_BufferFreeze_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_BufferFreeze_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_DeviceAddress_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_DeviceAddress_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EP0LowSpeedConnect_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EP0LowSpeedConnect_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EP0NAKRetry_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EP0NAKRetry_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EPnControlTransfer_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EPnControlTransfer_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EPnHandshake_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EPnHandshake_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EPnRxEnableEnhanced_PIC32.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EPnRxEnableEnhanced_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EPnStall_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EPnStall_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EPnTxRx_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EPnTxRx_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ERR_Interrupt_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ERR_Interrupt_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ERR_InterruptStatus_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ERR_InterruptStatus_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EyePattern_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_EyePattern_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_FrameNumber_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_FrameNumber_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_GEN_Interrupt_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_GEN_Interrupt_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_GEN_InterruptStatus_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_GEN_InterruptStatus_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_HostBusyWithToken_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_HostBusyWithToken_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_HostGeneratesReset_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_HostGeneratesReset_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LastDirection_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LastDirection_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LastEndpoint_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LastEndpoint_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LastPingPong_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LastPingPong_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LastTransactionDetails_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LastTransactionDetails_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LiveJState_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LiveJState_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LiveSingleEndedZero_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_LiveSingleEndedZero_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ModuleBusy_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ModuleBusy_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ModulePower_32Bit16Bit.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ModulePower_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_NextTokenSpeed_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_NextTokenSpeed_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OnChipPullup_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OnChipTransceiver_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OpModeSelect_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OpModeSelect_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_ASessionValid_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_ASessionValid_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_BSessionEnd_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_BSessionEnd_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_IDPinState_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_IDPinState_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_Interrupt_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_Interrupt_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_InterruptStatus_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_InterruptStatus_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_LineState_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_LineState_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_PullUpPullDown_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_PullUpPullDown_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_SessionValid_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_SessionValid_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_VbusCharge_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_VbusCharge_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_VbusDischarge_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_VbusDischarge_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_VbusPowerOnOff_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_OTG_VbusPowerOnOff_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_PacketTransfer_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_PacketTransfer_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_PingPongMode_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ResumeSignaling_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_ResumeSignaling_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_SleepEntryGuard_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_SleepEntryGuard_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_SOFThreshold_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_SOFThreshold_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_SpeedControl_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_StartOfFrames_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_StartOfFrames_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_StopInIdle_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_StopInIdle_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_Suspend_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_Suspend_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_TokenEP_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_TokenEP_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_TokenPID_Default.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_TokenPID_Unsupported.h</itemPath>
+                    <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/templates/usb_UOEMonitor_Unsupported.h</itemPath>
+                  </logicalFolder>
+                  <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/drv_usbfs_variant_mapping.h</itemPath>
+                  <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/drv_usbfs_local.h</itemPath>
+                  <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/plib_usbfs.h</itemPath>
+                  <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/plib_usbfs_header.h</itemPath>
+                  <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/usbfs_registers.h</itemPath>
+                </logicalFolder>
+                <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/drv_usbfs.h</itemPath>
+              </logicalFolder>
+              <itemPath>../src/config/pic32mz_w1/driver/usb/drv_usb.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/driver/usb/drv_usb_external_dependencies.h</itemPath>
             </logicalFolder>
             <logicalFolder name="f2" displayName="wifi" projectFiles="true">
               <logicalFolder name="f1" displayName="pic32mzw1" projectFiles="true">
@@ -50,12 +189,33 @@
             <itemPath>../src/config/pic32mz_w1/driver/driver.h</itemPath>
             <itemPath>../src/config/pic32mz_w1/driver/driver_common.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f9" displayName="library" projectFiles="true">
+            <logicalFolder name="f1" displayName="cryptoauthlib" projectFiles="true">
+              <logicalFolder name="f1" displayName="tng" projectFiles="true">
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tngtls_cert_def_2_device.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tngtls_cert_def_3_device.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tng_atca.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tngtls_cert_def_1_signer.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tflxtls_cert_def_4_device.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tng_atcacert_client.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tnglora_cert_def_2_device.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tnglora_cert_def_1_signer.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tnglora_cert_def_4_device.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tng_root_cert.h</itemPath>
+              </logicalFolder>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_config.h</itemPath>
+            </logicalFolder>
+          </logicalFolder>
           <logicalFolder name="f5" displayName="osal" projectFiles="true">
             <itemPath>../src/config/pic32mz_w1/osal/osal.h</itemPath>
             <itemPath>../src/config/pic32mz_w1/osal/osal_definitions.h</itemPath>
             <itemPath>../src/config/pic32mz_w1/osal/osal_threadx.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f6" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/pic32mz_w1/peripheral/cache/plib_cache.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/peripheral/cache/plib_cache_pic32mz.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="f2" displayName="clk" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
@@ -68,6 +228,18 @@
             <logicalFolder name="f3" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/peripheral/gpio/plib_gpio.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="f8" displayName="i2c" projectFiles="true">
+              <logicalFolder name="f1" displayName="master" projectFiles="true">
+                <itemPath>../src/config/pic32mz_w1/peripheral/i2c/master/plib_i2c2_master.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/peripheral/i2c/master/plib_i2c_master_common.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f7" displayName="spi" projectFiles="true">
+              <logicalFolder name="f1" displayName="spi_master" projectFiles="true">
+                <itemPath>../src/config/pic32mz_w1/peripheral/spi/spi_master/plib_spi_master_common.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/peripheral/spi/spi_master/plib_spi1_master.h</itemPath>
+              </logicalFolder>
+            </logicalFolder>
             <logicalFolder name="f1" displayName="uart" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/peripheral/uart/plib_uart_common.h</itemPath>
               <itemPath>../src/config/pic32mz_w1/peripheral/uart/plib_uart3.h</itemPath>
@@ -75,6 +247,9 @@
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f2" displayName="system" projectFiles="true">
+            <logicalFolder name="f9" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/pic32mz_w1/system/cache/sys_cache.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="f1" displayName="command" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/system/command/sys_command.h</itemPath>
             </logicalFolder>
@@ -84,9 +259,29 @@
             <logicalFolder name="f5" displayName="debug" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/system/debug/sys_debug.h</itemPath>
             </logicalFolder>
+            <logicalFolder name="f7" displayName="fs" projectFiles="true">
+              <logicalFolder name="f1" displayName="fat_fs" projectFiles="true">
+                <logicalFolder name="f1" displayName="file_system" projectFiles="true">
+                  <itemPath>../src/config/pic32mz_w1/system/fs/fat_fs/file_system/ff.h</itemPath>
+                  <itemPath>../src/config/pic32mz_w1/system/fs/fat_fs/file_system/ffconf.h</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="hardware_access" projectFiles="true">
+                  <itemPath>../src/config/pic32mz_w1/system/fs/fat_fs/hardware_access/diskio.h</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+              <itemPath>../src/config/pic32mz_w1/system/fs/sys_fs.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/system/fs/src/sys_fs_local.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/system/fs/sys_fs_media_manager.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/system/fs/src/sys_fs_media_manager_local.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/system/fs/sys_fs_fat_interface.h</itemPath>
+            </logicalFolder>
             <logicalFolder name="f3" displayName="int" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/system/int/sys_int.h</itemPath>
               <itemPath>../src/config/pic32mz_w1/system/int/sys_int_mapping.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f8" displayName="ports" projectFiles="true">
+              <itemPath>../src/config/pic32mz_w1/system/ports/sys_ports.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/system/ports/sys_ports_mapping.h</itemPath>
             </logicalFolder>
             <logicalFolder name="f4" displayName="reset" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/system/reset/sys_reset.h</itemPath>
@@ -100,6 +295,7 @@
             <itemPath>../src/config/pic32mz_w1/system/system_common.h</itemPath>
             <itemPath>../src/config/pic32mz_w1/system/system_module.h</itemPath>
             <itemPath>../src/config/pic32mz_w1/system/sys_time_h2_adapter.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1/system/system_media.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f6" displayName="third_party_adapter" projectFiles="true">
             <logicalFolder name="f1" displayName="azure_rtos" projectFiles="true">
@@ -120,6 +316,25 @@
             <itemPath>../src/config/pic32mz_w1/threadx_config/tx_user.h</itemPath>
             <itemPath>../src/config/pic32mz_w1/threadx_config/tx_tmr1.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f7" displayName="usb" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../src/config/pic32mz_w1/usb/src/usb_device_local.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/usb/src/usb_device_mapping.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/usb/src/usb_device_function_driver.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/usb/src/usb_external_dependencies.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/usb/src/usb_device_msd_local.h</itemPath>
+            </logicalFolder>
+            <itemPath>../src/config/pic32mz_w1/usb/usb_device.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1/usb/usb_common.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1/usb/usb_chapter_9.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1/usb/usb_host_client_driver.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1/usb/usb_host_hub_interface.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1/usb/usb_host.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1/usb/usb_hub.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1/usb/usb_device_msd.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1/usb/usb_msd.h</itemPath>
+            <itemPath>../src/config/pic32mz_w1/usb/scsi.h</itemPath>
+          </logicalFolder>
           <itemPath>../src/config/pic32mz_w1/device.h</itemPath>
           <itemPath>../src/config/pic32mz_w1/toolchain_specifics.h</itemPath>
           <itemPath>../src/config/pic32mz_w1/definitions.h</itemPath>
@@ -127,6 +342,7 @@
           <itemPath>../src/config/pic32mz_w1/user.h</itemPath>
           <itemPath>../src/config/pic32mz_w1/configuration.h</itemPath>
           <itemPath>../src/config/pic32mz_w1/system_config.h</itemPath>
+          <itemPath>../src/config/pic32mz_w1/device_cache.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f4" displayName="third_party" projectFiles="true">
@@ -489,10 +705,28 @@
       </logicalFolder>
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="pic32mz_w1" projectFiles="true">
+          <logicalFolder name="f9" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/pic32mz_w1/bsp/bsp.c</itemPath>
+          </logicalFolder>
           <logicalFolder name="f7" displayName="driver" projectFiles="true">
             <logicalFolder name="f1" displayName="ba414e" projectFiles="true">
               <logicalFolder name="f1" displayName="src" projectFiles="true">
                 <itemPath>../src/config/pic32mz_w1/driver/ba414e/src/drv_ba414e.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f3" displayName="memory" projectFiles="true">
+              <itemPath>../src/config/pic32mz_w1/driver/memory/src/drv_memory.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/driver/memory/src/drv_memory_file_system.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f4" displayName="sst26" projectFiles="true">
+              <itemPath>../src/config/pic32mz_w1/driver/sst26/src/drv_sst26.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f5" displayName="usb" projectFiles="true">
+              <logicalFolder name="f1" displayName="usbfs" projectFiles="true">
+                <logicalFolder name="f1" displayName="src" projectFiles="true">
+                  <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/drv_usbfs.c</itemPath>
+                  <itemPath>../src/config/pic32mz_w1/driver/usb/usbfs/src/drv_usbfs_device.c</itemPath>
+                </logicalFolder>
               </logicalFolder>
             </logicalFolder>
             <logicalFolder name="f2" displayName="wifi" projectFiles="true">
@@ -513,10 +747,143 @@
               </logicalFolder>
             </logicalFolder>
           </logicalFolder>
+          <logicalFolder name="f3" displayName="library" projectFiles="true">
+            <logicalFolder name="f1" displayName="cryptoauthlib" projectFiles="true">
+              <logicalFolder name="f5" displayName="atcacert" projectFiles="true">
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_client.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_host_hw.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_date.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_pem.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_der.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_def.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_host_sw.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_host_hw.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_client.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_pem.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_date.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_der.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_host_sw.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atcacert/atcacert_def.h</itemPath>
+              </logicalFolder>
+              <logicalFolder name="f6" displayName="calib" projectFiles="true">
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_info.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_random.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_verify.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_privwrite.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_execution.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_read.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_sign.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_selftest.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_nonce.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_hmac.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_command.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_aes_gcm.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_sha.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_ecdh.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_helpers.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_basic.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_kdf.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_gendig.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_secureboot.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_lock.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_write.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_genkey.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_execution.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_counter.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_derivekey.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_mac.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_checkmac.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_updateextra.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_command.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_aes_gcm.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_aes.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/calib/calib_basic.h</itemPath>
+              </logicalFolder>
+              <logicalFolder name="f2" displayName="crypto" projectFiles="true">
+                <logicalFolder name="f1" displayName="hashes" projectFiles="true">
+                  <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/hashes/sha2_routines.h</itemPath>
+                  <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/hashes/sha1_routines.c</itemPath>
+                  <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/hashes/sha2_routines.c</itemPath>
+                  <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/hashes/sha1_routines.h</itemPath>
+                </logicalFolder>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_sw_sha1.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_pbkdf2.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_hw_aes.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_sw_sha2.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_sw_ecdsa.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_sw_rand.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_sw_sha1.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_hw_aes_cbc.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_hw_aes_ctr.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_hw_aes_cmac.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_hw_aes_ccm.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_sw_sha2.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_hw_aes_cbcmac.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_sw_ecdsa.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_sw_rand.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/crypto/atca_crypto_sw.h</itemPath>
+              </logicalFolder>
+              <logicalFolder name="f1" displayName="hal" projectFiles="true">
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/ATECC608_0.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/atca_hal.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/atca_hal.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/hal_harmony_init.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/hal_gpio_harmony.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/hal_pic32_delay.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/hal_threadx.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/hal_i2c_harmony.c</itemPath>
+              </logicalFolder>
+              <logicalFolder name="f7" displayName="host" projectFiles="true">
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/host/atca_host.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/host/atca_host.h</itemPath>
+              </logicalFolder>
+              <logicalFolder name="f3" displayName="jwt" projectFiles="true">
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/jwt/atca_jwt.h</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/jwt/atca_jwt.c</itemPath>
+              </logicalFolder>
+              <logicalFolder name="f4" displayName="tng" projectFiles="true">
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tnglora_cert_def_2_device.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tnglora_cert_def_1_signer.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tnglora_cert_def_4_device.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tng_root_cert.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tng_atca.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tngtls_cert_def_2_device.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tngtls_cert_def_3_device.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tflxtls_cert_def_4_device.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tng_atcacert_client.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/tng/tngtls_cert_def_1_signer.c</itemPath>
+              </logicalFolder>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_cfgs.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_helpers.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_debug.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_basic.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_compiler.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_iface.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_devtypes.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_utils_sizes.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_status.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_device.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_helpers.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_cfgs.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/cryptoauthlib.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_bool.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_basic.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_debug.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_iface.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_device.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/atca_version.h</itemPath>
+            </logicalFolder>
+          </logicalFolder>
           <logicalFolder name="f5" displayName="osal" projectFiles="true">
             <itemPath>../src/config/pic32mz_w1/osal/osal_threadx.c</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f6" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/pic32mz_w1/peripheral/cache/plib_cache_local.h</itemPath>
+              <itemPath>../src/config/pic32mz_w1/peripheral/cache/plib_cache.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/peripheral/cache/plib_cache_pic32mz.S</itemPath>
+            </logicalFolder>
             <logicalFolder name="f2" displayName="clk" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/peripheral/clk/plib_clk.c</itemPath>
             </logicalFolder>
@@ -529,15 +896,28 @@
             <logicalFolder name="f3" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/peripheral/gpio/plib_gpio.c</itemPath>
             </logicalFolder>
+            <logicalFolder name="f8" displayName="i2c" projectFiles="true">
+              <logicalFolder name="f1" displayName="master" projectFiles="true">
+                <itemPath>../src/config/pic32mz_w1/peripheral/i2c/master/plib_i2c2_master.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
+            <logicalFolder name="f7" displayName="spi" projectFiles="true">
+              <logicalFolder name="f1" displayName="spi_master" projectFiles="true">
+                <itemPath>../src/config/pic32mz_w1/peripheral/spi/spi_master/plib_spi1_master.c</itemPath>
+              </logicalFolder>
+            </logicalFolder>
             <logicalFolder name="f1" displayName="uart" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/peripheral/uart/plib_uart3.c</itemPath>
               <itemPath>../src/config/pic32mz_w1/peripheral/uart/plib_uart1.c</itemPath>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f3" displayName="stdio" projectFiles="true">
+          <logicalFolder name="f10" displayName="stdio" projectFiles="true">
             <itemPath>../src/config/pic32mz_w1/stdio/xc32_monitor.c</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="system" projectFiles="true">
+            <logicalFolder name="f8" displayName="cache" projectFiles="true">
+              <itemPath>../src/config/pic32mz_w1/system/cache/sys_cache.c</itemPath>
+            </logicalFolder>
             <logicalFolder name="f1" displayName="command" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/system/command/src/sys_command.c</itemPath>
             </logicalFolder>
@@ -551,6 +931,20 @@
             <logicalFolder name="f5" displayName="debug" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/system/debug/src/sys_debug_local.h</itemPath>
               <itemPath>../src/config/pic32mz_w1/system/debug/src/sys_debug.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f7" displayName="fs" projectFiles="true">
+              <logicalFolder name="f1" displayName="fat_fs" projectFiles="true">
+                <logicalFolder name="f1" displayName="file_system" projectFiles="true">
+                  <itemPath>../src/config/pic32mz_w1/system/fs/fat_fs/file_system/ff.c</itemPath>
+                  <itemPath>../src/config/pic32mz_w1/system/fs/fat_fs/file_system/ffunicode.c</itemPath>
+                </logicalFolder>
+                <logicalFolder name="f2" displayName="hardware_access" projectFiles="true">
+                  <itemPath>../src/config/pic32mz_w1/system/fs/fat_fs/hardware_access/diskio.c</itemPath>
+                </logicalFolder>
+              </logicalFolder>
+              <itemPath>../src/config/pic32mz_w1/system/fs/src/sys_fs.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/system/fs/src/sys_fs_media_manager.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/system/fs/src/sys_fs_fat_interface.c</itemPath>
             </logicalFolder>
             <logicalFolder name="f3" displayName="int" projectFiles="true">
               <itemPath>../src/config/pic32mz_w1/system/int/src/sys_int.c</itemPath>
@@ -575,12 +969,19 @@
           <logicalFolder name="f4" displayName="threadx_config" projectFiles="true">
             <itemPath>../src/config/pic32mz_w1/threadx_config/tx_tmr1.c</itemPath>
           </logicalFolder>
+          <logicalFolder name="f8" displayName="usb" projectFiles="true">
+            <logicalFolder name="f1" displayName="src" projectFiles="true">
+              <itemPath>../src/config/pic32mz_w1/usb/src/usb_device.c</itemPath>
+              <itemPath>../src/config/pic32mz_w1/usb/src/usb_device_msd.c</itemPath>
+            </logicalFolder>
+          </logicalFolder>
           <itemPath>../src/config/pic32mz_w1/initialization.c</itemPath>
           <itemPath>../src/config/pic32mz_w1/interrupts.c</itemPath>
           <itemPath>../src/config/pic32mz_w1/exceptions.c</itemPath>
           <itemPath>../src/config/pic32mz_w1/pmu_init.c</itemPath>
           <itemPath>../src/config/pic32mz_w1/tasks.c</itemPath>
           <itemPath>../src/config/pic32mz_w1/exceptionsHandler.S</itemPath>
+          <itemPath>../src/config/pic32mz_w1/usb_device_init_data.c</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f3" displayName="third_party" projectFiles="true">
@@ -2072,28 +2473,41 @@
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/app.c</itemPath>
       <itemPath>../src/app_pic32mz_w1.c</itemPath>
+      <itemPath>../src/cJSON.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="false">
       <logicalFolder name="f1" displayName="pic32mz_w1.mhc" projectFiles="true">
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/drv_usbfs_v1.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/drvWifiPic32mzw1.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/HarmonyCore.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/sys_console.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/sys_fs.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/core_timer.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/ThreadX.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/core.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/sys_command.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/BSP_PIC32MZ_W1_WFI32IoT.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/project.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/drv_ba414e.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/drv_sst26.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/GraphSettings.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/cryptoauthlib.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/sys_time.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/usb_device.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/lib_azure_rtos.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/atecc608.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/drv_memory.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/usb_device_msd.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/uart1.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/sys_debug.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/uart3.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/spi1.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/cryptoauthlib_tng.yml</itemPath>
         <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/settings.yml</itemPath>
+        <itemPath>../src/config/pic32mz_w1/pic32mz_w1.mhc/i2c2.yml</itemPath>
       </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/pic32mz_w1/harmony-manifest-success.yml</itemPath>
@@ -2155,7 +2569,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src/config/pic32mz_w1/third_party_adapter/azure_rtos/src/tcpip;../src;../src/config/pic32mz_w1;../src/config/pic32mz_w1/driver/wifi/pic32mzw1/include/;../src/config/pic32mz_w1/third_party_adapter/azure_rtos;../src/config/pic32mz_w1/third_party_adapter/azure_rtos/src;../src/config/pic32mz_w1/third_party_adapter/azure_rtos/src/tcpip;../src/config/pic32mz_w1/threadx_config;../src/third_party/azure_rtos/filex/common/inc;../src/third_party/azure_rtos/filex/ports/mips/gnu/inc;../src/third_party/azure_rtos/netxduo;../src/third_party/azure_rtos/netxduo/addons;../src/third_party/azure_rtos/netxduo/addons/azure_iot;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure-sdk-for-c/sdk/inc;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module/inc;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module/inc/configs/RTOS_BASE_UT;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module/iot-security-module-core/deps/flatcc/include;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module/iot-security-module-core/inc;../src/third_party/azure_rtos/netxduo/addons/cloud;../src/third_party/azure_rtos/netxduo/addons/dhcp;../src/third_party/azure_rtos/netxduo/addons/dns;../src/third_party/azure_rtos/netxduo/addons/mqtt;../src/third_party/azure_rtos/netxduo/addons/sntp;../src/third_party/azure_rtos/netxduo/common/inc;../src/third_party/azure_rtos/netxduo/crypto_libraries/inc;../src/third_party/azure_rtos/netxduo/nx_secure/inc;../src/third_party/azure_rtos/netxduo/nx_secure/ports;../src/third_party/azure_rtos/netxduo/ports/mips/gnu/inc;../src/third_party/rtos/threadx/common/inc;../src/third_party/rtos/threadx/ports/pic32mz/mplabx/inc"/>
+                  value="../src/config/pic32mz_w1/third_party_adapter/azure_rtos/src/tcpip;../src;../src/config/pic32mz_w1;../src/config/pic32mz_w1/driver/wifi/pic32mzw1/include/;../src/config/pic32mz_w1/library/cryptoauthlib;../src/config/pic32mz_w1/library/cryptoauthlib/crypto;../src/config/pic32mz_w1/library/cryptoauthlib/pkcs11;../src/config/pic32mz_w1/library/cryptoauthlib/tng;../src/config/pic32mz_w1/system/fs/fat_fs/file_system;../src/config/pic32mz_w1/system/fs/fat_fs/hardware_access;../src/config/pic32mz_w1/third_party_adapter/azure_rtos;../src/config/pic32mz_w1/third_party_adapter/azure_rtos/src;../src/config/pic32mz_w1/third_party_adapter/azure_rtos/src/tcpip;../src/config/pic32mz_w1/threadx_config;../src/third_party/azure_rtos/filex/common/inc;../src/third_party/azure_rtos/filex/ports/mips/gnu/inc;../src/third_party/azure_rtos/netxduo;../src/third_party/azure_rtos/netxduo/addons;../src/third_party/azure_rtos/netxduo/addons/azure_iot;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure-sdk-for-c/sdk/inc;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module/inc;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module/inc/configs/RTOS_BASE_UT;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module/iot-security-module-core/deps/flatcc/include;../src/third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module/iot-security-module-core/inc;../src/third_party/azure_rtos/netxduo/addons/cloud;../src/third_party/azure_rtos/netxduo/addons/dhcp;../src/third_party/azure_rtos/netxduo/addons/dns;../src/third_party/azure_rtos/netxduo/addons/mqtt;../src/third_party/azure_rtos/netxduo/addons/sntp;../src/third_party/azure_rtos/netxduo/common/inc;../src/third_party/azure_rtos/netxduo/crypto_libraries/inc;../src/third_party/azure_rtos/netxduo/nx_secure/inc;../src/third_party/azure_rtos/netxduo/nx_secure/ports;../src/third_party/azure_rtos/netxduo/ports/mips/gnu/inc;../src/third_party/rtos/threadx/common/inc;../src/third_party/rtos/threadx/ports/pic32mz/mplabx/inc"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -2225,7 +2639,7 @@
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-cross-reference-file" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
-        <property key="heap-size" value="1024"/>
+        <property key="heap-size" value="4096"/>
         <property key="input-libraries" value=""/>
         <property key="kseg-length" value=""/>
         <property key="kseg-origin" value=""/>
@@ -2257,7 +2671,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/pic32mz_w1;../src/config/pic32mz_w1/threadx_config;../src/third_party/rtos/threadx/common/inc;../src/third_party/rtos/threadx/ports/pic32mz/mplabx/inc"/>
+                  value="../src;../src/config/pic32mz_w1;../src/config/pic32mz_w1/system/fs/fat_fs/file_system;../src/config/pic32mz_w1/system/fs/fat_fs/hardware_access;../src/config/pic32mz_w1/threadx_config;../src/third_party/rtos/threadx/common/inc;../src/third_party/rtos/threadx/ports/pic32mz/mplabx/inc"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -2449,6 +2863,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="10000000-100fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="/Users/c21415/H3_New/azure_iot_demo_wifi/firmware/pic32mz_w1.X/debug/pic32mz_w1/pic32mz_w1_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>

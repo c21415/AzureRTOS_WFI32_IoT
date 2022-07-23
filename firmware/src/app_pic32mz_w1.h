@@ -32,6 +32,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include "configuration.h"
+#include "definitions.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
@@ -46,7 +47,34 @@ extern "C" {
 // Section: Type Definitions
 // *****************************************************************************
 // *****************************************************************************
+#define APP_MOUNT_NAME          "/mnt/myDrive1"
+#define APP_DEVICE_NAME         "/dev/mtda1"
+#define APP_FS_TYPE             FAT
+ 
+#define AZURE_DEVICE_CRT_FILE_NAME_FMT              "sn%s.der"
+    
+    
+#define AZURE_CLOUD_CFG_FILE_NAME               "CLOUD.CFG"
+#define AZURE_WIFI_CFG_FILE_NAME                "WIFI.CFG"    
 
+#define AZURE_CLOUD_CFG_FILE                    APP_MOUNT_NAME"/"AZURE_CLOUD_CFG_FILE_NAME   
+#define AZURE_WIFI_CFG_FILE                     APP_MOUNT_NAME"/"AZURE_WIFI_CFG_FILE_NAME   
+    
+    
+#define AZURE_CLOUD_IDSCOPE_JSON_TAG        "ID_SCOPE"
+#define AZURE_CLOUD_DEVICEID_JSON_TAG       "REGISTRATION_ID"
+#define AZURE_CLOUD_PRIMARY_KEY_JSON_TAG    "PRIMARY_KEY" 
+
+/* Config/Web files' contents */
+#define APP_USB_MSD_WIFI_CONFIG_ID              "CMD:SEND_UART=wifi"
+#define APP_USB_MSD_WIFI_CONFIG_DATA_TEMPLATE   APP_USB_MSD_WIFI_CONFIG_ID" %s,%s,%d"
+#define APP_USB_MSD_WIFI_CONFIG_MIN_LEN         (strlen(APP_USB_MSD_WIFI_CONFIG_ID) \
+                                                + 1 \
+                                                + sizeof(WIFI_AUTH))
+
+extern char default_id_scope[];
+extern char default_registration_id[];
+extern char default_primary_key[];
 // *****************************************************************************
 /* Application states
 
@@ -61,7 +89,16 @@ extern "C" {
 typedef enum
 {
     /* Application's state machine's initial state. */
-    APP_PIC32MZ_W1_STATE_INIT=0,
+    APP_PIC32MZ_W1_STATE_MOUNT_DISK=0,
+    APP_PIC32MZ_W1_STATE_MSD_CONNECT,
+    APP_PIC32MZ_W1_STATE_FORMAT_DISK,
+    APP_PIC32MZ_W1_STATE_CHECK_DEV_CERT_FILE,            
+    APP_PIC32MZ_W1_STATE_CHECK_AZURE_CFG_FILE,
+    APP_PIC32MZ_W1_STATE_CHECK_WIFI_CFG_FILE,    
+    APP_PIC32MZ_W1_STATE_READ_CERT_WIFI_CLOUD_CFG_FILE,    
+    APP_PIC32MZ_W1_STATE_FLUSH_FILE,
+    APP_PIC32MZ_W1_STATE_UNMOUNT_DISK,
+    APP_PIC32MZ_W1_STATE_INIT,
     APP_PIC32MZ_W1_STATE_INIT_READY,
     APP_PIC32MZ_W1_STATE_CHECK_CREDENTIALS,
     APP_PIC32MZ_W1_STATE_CONFIG,
@@ -90,14 +127,18 @@ typedef enum
 typedef struct
 {
     /* The application's current state */
-    APP_PIC32MZ_W1_STATES wlanTaskState;    
-
+    APP_PIC32MZ_W1_STATES appPic32mzW1State;
+    USB_DEVICE_HANDLE usbDeviceHandle;     
+    /* SYS_FS File handle */
+    SYS_FS_HANDLE fileHandle;
+    SYS_FS_FSTAT fileStatus;
     /* TODO: Define any additional data used by the application. */
     SYS_CONSOLE_HANDLE consoleHandle;
     DRV_HANDLE wdrvHandle;
     uint8_t ValidCrednetials;
     /* TODO: Define any additional data used by the application. */
-
+    char ecc608SerialNum[64];
+    char ecc608PemCert[1024];
 } APP_PIC32MZ_W1_DATA;
 
 // *****************************************************************************

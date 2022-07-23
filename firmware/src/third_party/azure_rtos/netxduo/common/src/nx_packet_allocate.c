@@ -24,7 +24,7 @@
 
 
 /* Include necessary system files.  */
-#include <stdio.h>
+
 #include "nx_api.h"
 #include "tx_thread.h"
 #include "nx_packet.h"
@@ -74,7 +74,7 @@
 /*                                                                        */
 /**************************************************************************/
 UINT  _nx_packet_allocate(NX_PACKET_POOL *pool_ptr,  NX_PACKET **packet_ptr,
-                          ULONG packet_type, ULONG wait_option, const char * callerFunc)
+                          ULONG packet_type, ULONG wait_option)
 {
 TX_INTERRUPT_SAVE_AREA
 
@@ -101,7 +101,6 @@ ULONG                  trace_timestamp;
 
     /* Disable interrupts to get a packet from the pool.  */
     TX_DISABLE
-    //printf("%s\r\n", callerFunc);
     
     /* Determine if there is an available packet.  */
     if (pool_ptr -> nx_packet_pool_available)
@@ -123,7 +122,6 @@ ULONG                  trace_timestamp;
         work_ptr -> nx_packet_last =         NX_NULL;
 #endif /* NX_DISABLE_PACKET_CHAIN */
         work_ptr -> nx_packet_length =       0;
-        
         work_ptr -> nx_packet_prepend_ptr =  work_ptr -> nx_packet_data_start + packet_type;
         work_ptr -> nx_packet_append_ptr =   work_ptr -> nx_packet_prepend_ptr;
         work_ptr -> nx_packet_address.nx_packet_interface_ptr = NX_NULL;

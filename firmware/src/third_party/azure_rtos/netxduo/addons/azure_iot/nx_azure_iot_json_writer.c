@@ -25,7 +25,7 @@ NX_PACKET *tail_packet_ptr;
 
     /* Allocate a new packet.  */
     if (nx_packet_allocate(packet_ptr -> nx_packet_pool_owner,
-                           &new_paket_ptr, 0, writer_ptr -> wait_option, __func__))
+                           &new_paket_ptr, 0, writer_ptr -> wait_option))
     {
         return(AZ_ERROR_OUT_OF_MEMORY);
     }

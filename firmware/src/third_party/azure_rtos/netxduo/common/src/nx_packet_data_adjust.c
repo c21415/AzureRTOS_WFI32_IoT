@@ -21,7 +21,7 @@
 /**************************************************************************/
 
 #define NX_SOURCE_CODE
-#include <stdio.h>
+
 
 /* Include necessary system files.  */
 
@@ -145,8 +145,7 @@ NX_PACKET      *work_ptr;
         data_start = packet_ptr -> nx_packet_append_ptr - append_size;
 
         /* Allocate a packet.  */
-        printf("%s:%d, calling packet alloc\r\n", __func__, __LINE__);
-        status = _nx_packet_allocate(packet_ptr -> nx_packet_pool_owner, &work_ptr, 0, NX_NO_WAIT, __func__);
+        status = _nx_packet_allocate(packet_ptr -> nx_packet_pool_owner, &work_ptr, 0, NX_NO_WAIT);
 
         /* Check status.  */
         if (status)

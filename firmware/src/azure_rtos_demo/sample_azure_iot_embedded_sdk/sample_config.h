@@ -12,28 +12,31 @@
 #ifndef SAMPLE_CONFIG_H
 #define SAMPLE_CONFIG_H
 
+#include "app_pic32mz_w1.h"
+
 #ifdef __cplusplus
 extern   "C" {
 #endif
+   
 
 /*** Azure IoT embedded C SDK Configuration ***/
 #define MODULE_ID              ""
 /* Required when DPS is used.  */
 #define ENABLE_DPS_SAMPLE
 #define ENDPOINT                       "global.azure-devices-provisioning.net"
-#define ID_SCOPE                       "0ne0068FB02"
-#define REGISTRATION_ID                "pic32mz_w1"
+#define ID_SCOPE                       default_id_scope
+#define REGISTRATION_ID                default_registration_id    
 #define SAMPLE_MAX_BUFFER              (256)
             
     
-#define DEVICE_SYMMETRIC_KEY           "w6nFZoz+3OjjF5y52MzWUZR5Ht/XdV1H8S11EBanHJo="           
+#define DEVICE_SYMMETRIC_KEY           default_primary_key           
     
 #define NX_AZURE_IOT_STACK_SIZE                (4096)
 #define NX_AZURE_IOT_THREAD_PRIORITY           (4) 
 #define SAMPLE_STACK_SIZE                      (4096)
 #define SAMPLE_THREAD_PRIORITY                 (16)
 #define MAX_PROPERTY_COUNT                     (2)
-
+    
 #ifdef __cplusplus
 }
 #endif

@@ -102,7 +102,7 @@ UINT status;
     NX_THREAD_WAIT_CALLER_CHECKING
 
     /* Call actual packet allocate function.  */
-    status =  _nx_packet_allocate(pool_ptr,  packet_ptr, packet_type, wait_option, __func__);
+    status =  _nx_packet_allocate(pool_ptr,  packet_ptr, packet_type, wait_option);
 
     /* Return completion status.  */
     return(status);

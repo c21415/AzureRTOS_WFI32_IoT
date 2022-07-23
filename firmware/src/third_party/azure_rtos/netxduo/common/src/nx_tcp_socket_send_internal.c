@@ -576,7 +576,7 @@ UINT            compute_checksum = 1;
 
                 /* Obtain a new segmentation. */
                 ret = _nx_packet_allocate(pool_ptr, &send_packet,
-                                          data_offset, wait_option, __func__);
+                                          data_offset, wait_option);
 
                 if (ret != NX_SUCCESS)
                 {

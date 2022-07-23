@@ -5378,7 +5378,7 @@ ULONG       probing_delay;
 
     /* Copy the received packet (datagram) over to a packet from the DHCP Client pool and release
        the packet back to receive packet pool as soon as possible. */
-    status =  nx_packet_allocate(dhcp_ptr -> nx_dhcp_packet_pool_ptr, &new_packet_ptr, NX_IPv4_UDP_PACKET, NX_NO_WAIT, __func__);
+    status =  nx_packet_allocate(dhcp_ptr -> nx_dhcp_packet_pool_ptr, &new_packet_ptr, NX_IPv4_UDP_PACKET, NX_NO_WAIT);
 
     /* Check status.  */
     if (status != NX_SUCCESS)
@@ -6686,7 +6686,7 @@ UINT            name_length;
     iface_index = interface_record -> nx_dhcp_interface_index;
 
     /* Allocate a DHCP packet.  */
-    status =  nx_packet_allocate(dhcp_ptr -> nx_dhcp_packet_pool_ptr, &packet_ptr, NX_IPv4_UDP_PACKET, NX_NO_WAIT, __func__);
+    status =  nx_packet_allocate(dhcp_ptr -> nx_dhcp_packet_pool_ptr, &packet_ptr, NX_IPv4_UDP_PACKET, NX_NO_WAIT);
 
     /* Was the packet allocation successful?  */
     if (status != NX_SUCCESS)

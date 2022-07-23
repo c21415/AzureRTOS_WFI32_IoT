@@ -146,7 +146,7 @@ NXD_ADDRESS      dest_addr;
     }
 
     /* Allocate a packet to build the ICMPv6 error message in.  */
-    if (_nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool, &pkt_ptr, NX_IPv6_ICMP_PACKET, NX_NO_WAIT, __func__))
+    if (_nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool, &pkt_ptr, NX_IPv6_ICMP_PACKET, NX_NO_WAIT))
     {
 
         /* Error getting packet, so just get out!  */

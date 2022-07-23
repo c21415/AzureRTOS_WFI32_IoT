@@ -31,8 +31,6 @@
 #include "nx_driver_harmony.h"
 #include "azure_glue.h"
 
-#include "system/console/sys_console.h"
-#define printf(fmt, ...)    SYS_CONSOLE_Print(0, fmt, ##__VA_ARGS__)
 /****** DRIVER SPECIFIC ****** End of part/vendor specific include file area!  */
 
 
@@ -1515,7 +1513,7 @@ NX_PACKET* nx_rx_pkt_allocate(void)
     // get a packet allocated by netxd
     size_t alloc_res;
 
-    alloc_res = nx_packet_allocate(nx_driver_information.nx_driver_information_packet_pool_ptr, &packet_ptr, NX_RECEIVE_PACKET, NX_NO_WAIT, __func__);
+    alloc_res = nx_packet_allocate(nx_driver_information.nx_driver_information_packet_pool_ptr, &packet_ptr, NX_RECEIVE_PACKET, NX_NO_WAIT);
 
     if(alloc_res != NX_SUCCESS)
     {   // failed to allocate packet

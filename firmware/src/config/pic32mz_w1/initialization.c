@@ -55,14 +55,10 @@
 // ****************************************************************************
 // ****************************************************************************
 
-
-
-
 /*** FBCFG0 ***/
 #pragma config BUHSWEN =    OFF
 #pragma config PCSCMODE =    DUAL
 #pragma config BOOTISA =    MIPS32
-
 
 
 /*** DEVCFG0 ***/
@@ -100,13 +96,12 @@
 #pragma config CLASSBDIS =         DISABLE
 #pragma config USBIDIO =         ON
 #pragma config VBUSIO =         ON
-#pragma config HSSPIEN =         OFF
+#pragma config HSSPIEN =         ON
 #pragma config SMCLR =      MCLR_NORM
 #pragma config USBDMTRIM =      0
 #pragma config USBDPTRIM =      0
 #pragma config HSUARTEN =    ON
 #pragma config WDTPSS =    PSS1
-
 
 
 /*** DEVCFG2 ***/
@@ -126,7 +121,6 @@
 #pragma config DMTEN =    OFF
 
 
-
 /*** DEVCFG4 ***/
 #pragma config SOSCCFG =    0
 #pragma config VBZPBOREN =    ON
@@ -144,11 +138,64 @@
 
 
 
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Driver Initialization Data
 // *****************************************************************************
 // *****************************************************************************
+// <editor-fold defaultstate="collapsed" desc="DRV_MEMORY Instance 0 Initialization Data">
+
+static uint8_t gDrvMemory0EraseBuffer[DRV_SST26_ERASE_BUFFER_SIZE] CACHE_ALIGN;
+
+static DRV_MEMORY_CLIENT_OBJECT gDrvMemory0ClientObject[DRV_MEMORY_CLIENTS_NUMBER_IDX0];
+
+static DRV_MEMORY_BUFFER_OBJECT gDrvMemory0BufferObject[DRV_MEMORY_BUFFER_QUEUE_SIZE_IDX0];
+
+const DRV_MEMORY_DEVICE_INTERFACE drvMemory0DeviceAPI = {
+    .Open               = DRV_SST26_Open,
+    .Close              = DRV_SST26_Close,
+    .Status             = DRV_SST26_Status,
+    .SectorErase        = DRV_SST26_SectorErase,
+    .Read               = DRV_SST26_Read,
+    .PageWrite          = DRV_SST26_PageWrite,
+    .EventHandlerSet    = (DRV_MEMORY_DEVICE_EVENT_HANDLER_SET)DRV_SST26_EventHandlerSet,
+    .GeometryGet        = (DRV_MEMORY_DEVICE_GEOMETRY_GET)DRV_SST26_GeometryGet,
+    .TransferStatusGet  = (DRV_MEMORY_DEVICE_TRANSFER_STATUS_GET)DRV_SST26_TransferStatusGet
+};
+
+const DRV_MEMORY_INIT drvMemory0InitData =
+{
+    .memDevIndex                = DRV_SST26_INDEX,
+    .memoryDevice               = &drvMemory0DeviceAPI,
+    .isMemDevInterruptEnabled   = true,
+    .isFsEnabled                = true,
+    .deviceMediaType            = (uint8_t)SYS_FS_MEDIA_TYPE_SPIFLASH,
+    .ewBuffer                   = &gDrvMemory0EraseBuffer[0],
+    .clientObjPool              = (uintptr_t)&gDrvMemory0ClientObject[0],
+    .bufferObj                  = (uintptr_t)&gDrvMemory0BufferObject[0],
+    .queueSize                  = DRV_MEMORY_BUFFER_QUEUE_SIZE_IDX0,
+    .nClientsMax                = DRV_MEMORY_CLIENTS_NUMBER_IDX0
+};
+
+// </editor-fold>
+// <editor-fold defaultstate="collapsed" desc="DRV_SST26 Initialization Data">
+
+const DRV_SST26_PLIB_INTERFACE drvSST26PlibAPI = {
+    .writeRead          = (DRV_SST26_PLIB_WRITE_READ)SPI1_WriteRead,
+    .write              = (DRV_SST26_PLIB_WRITE)SPI1_Write,
+    .read               = (DRV_SST26_PLIB_READ)SPI1_Read,
+    .isBusy             = (DRV_SST26_PLIB_IS_BUSY)SPI1_IsBusy,
+    .callbackRegister   = (DRV_SST26_PLIB_CALLBACK_REGISTER)SPI1_CallbackRegister,
+};
+
+const DRV_SST26_INIT drvSST26InitData =
+{
+    .sst26Plib      = &drvSST26PlibAPI,
+    .chipSelectPin  = DRV_SST26_CHIP_SELECT_PIN
+};
+// </editor-fold>
+
 #ifdef H3_CRYPT
 static CRYPT_RNG_CTX wdrvRngCtx;
 #endif
@@ -177,6 +224,54 @@ SYSTEM_OBJECTS sysObj;
 // *****************************************************************************
 // *****************************************************************************
 
+
+static const DRV_BA414E_INIT_DATA ba414eInitData = 
+{
+};
+  
+ 
+
+/******************************************************
+ * USB Driver Initialization
+ ******************************************************/
+ 
+uint8_t __attribute__((aligned(512))) USB_ALIGN endPointTable1[DRV_USBFS_ENDPOINTS_NUMBER * 32];
+
+
+const DRV_USBFS_INIT drvUSBFSInit =
+{
+	 /* Assign the endpoint table */
+    .endpointTable= endPointTable1,
+
+
+
+
+	/* Interrupt Source for USB module */
+	.interruptSource = INT_SOURCE_USB,
+    
+    /* USB Controller to operate as USB Device */
+    .operationMode = DRV_USBFS_OPMODE_DEVICE,
+	
+	.operationSpeed = USB_SPEED_FULL,
+ 
+	/* Stop in idle */
+    .stopInIdle = false,
+	
+	    /* Suspend in sleep */
+    .suspendInSleep = false,
+ 
+    /* Identifies peripheral (PLIB-level) ID */
+    .usbID = USB_ID_1,
+	
+
+};
+
+
+
+
+
+
+
 const AZURE_GLUE_NETWORK_CONFIG azure_net_config[] = 
 {
 /*** Interface 0 Configuration  ***/                    
@@ -191,29 +286,72 @@ const AZURE_GLUE_INIT azure_glue_init =
     .nNets = sizeof(azure_net_config) / sizeof(*azure_net_config),
     .pNetConf = azure_net_config,
 };
+// <editor-fold defaultstate="collapsed" desc="File System Initialization Data">
 
 
-static const DRV_BA414E_INIT_DATA ba414eInitData = 
+const SYS_FS_MEDIA_MOUNT_DATA sysfsMountTable[SYS_FS_VOLUME_NUMBER] =
 {
+    {NULL}
 };
-  
+
+const SYS_FS_FUNCTIONS FatFsFunctions =
+{
+    .mount             = FATFS_mount,
+    .unmount           = FATFS_unmount,
+    .open              = FATFS_open,
+    .read              = FATFS_read,
+    .close             = FATFS_close,
+    .seek              = FATFS_lseek,
+    .fstat             = FATFS_stat,
+    .getlabel          = FATFS_getlabel,
+    .currWD            = FATFS_getcwd,
+    .getstrn           = FATFS_gets,
+    .openDir           = FATFS_opendir,
+    .readDir           = FATFS_readdir,
+    .closeDir          = FATFS_closedir,
+    .chdir             = FATFS_chdir,
+    .chdrive           = FATFS_chdrive,
+    .write             = FATFS_write,
+    .tell              = FATFS_tell,
+    .eof               = FATFS_eof,
+    .size              = FATFS_size,
+    .mkdir             = FATFS_mkdir,
+    .remove            = FATFS_unlink,
+    .setlabel          = FATFS_setlabel,
+    .truncate          = FATFS_truncate,
+    .chmode            = FATFS_chmod,
+    .chtime            = FATFS_utime,
+    .rename            = FATFS_rename,
+    .sync              = FATFS_sync,
+    .putchr            = FATFS_putc,
+    .putstrn           = FATFS_puts,
+    .formattedprint    = FATFS_printf,
+    .testerror         = FATFS_error,
+    .formatDisk        = (FORMAT_DISK)FATFS_mkfs,
+    .partitionDisk     = FATFS_fdisk,
+    .getCluster        = FATFS_getclusters
+};
+
+
+
+const SYS_FS_REGISTRATION_TABLE sysFSInit [ SYS_FS_MAX_FILE_SYSTEM_TYPE ] =
+{
+    {
+        .nativeFileSystemType = FAT,
+        .nativeFileSystemFunctions = &FatFsFunctions
+    },
+};
+
+
+// </editor-fold>
+
  
-
-
 
 // *****************************************************************************
 // *****************************************************************************
 // Section: System Initialization
 // *****************************************************************************
 // *****************************************************************************
-
-const SYS_CMD_INIT sysCmdInit =
-{
-    .moduleInit = {0},
-    .consoleCmdIOParam = SYS_CMD_SINGLE_CHARACTER_READ_CONSOLE_IO_PARAM,
-	.consoleIndex = 0,
-};
-
 // <editor-fold defaultstate="collapsed" desc="SYS_TIME Initialization Data">
 
 const SYS_TIME_PLIB_INTERFACE sysTimePlibAPI = {
@@ -233,15 +371,6 @@ const SYS_TIME_INIT sysTimeInitData =
 };
 
 // </editor-fold>
-
-const SYS_DEBUG_INIT debugInit =
-{
-    .moduleInit = {0},
-    .errorLevel = SYS_DEBUG_GLOBAL_ERROR_LEVEL,
-    .consoleIndex = 0,
-};
-
-
 // <editor-fold defaultstate="collapsed" desc="SYS_CONSOLE Instance 0 Initialization Data">
 
 
@@ -275,6 +404,23 @@ const SYS_CONSOLE_INIT sysConsole0Init =
 // </editor-fold>
 
 
+const SYS_CMD_INIT sysCmdInit =
+{
+    .moduleInit = {0},
+    .consoleCmdIOParam = SYS_CMD_SINGLE_CHARACTER_READ_CONSOLE_IO_PARAM,
+	.consoleIndex = 0,
+};
+
+
+const SYS_DEBUG_INIT debugInit =
+{
+    .moduleInit = {0},
+    .errorLevel = SYS_DEBUG_GLOBAL_ERROR_LEVEL,
+    .consoleIndex = 0,
+};
+
+
+
 
 
 // *****************************************************************************
@@ -297,6 +443,8 @@ const SYS_CONSOLE_INIT sysConsole0Init =
 
 void SYS_Initialize ( void* data )
 {
+    /* MISRAC 2012 deviation block start */
+    /* MISRA C-2012 Rule 2.2 deviated in this file.  Deviation record ID -  H3_MISRAC_2012_R_2_2_DR_1 */
 
     /* Start out with interrupts disabled before configuring any modules */
     __builtin_disable_interrupts();
@@ -312,12 +460,22 @@ void SYS_Initialize ( void* data )
 
 	GPIO_Initialize();
 
-    TMR1_Initialize();
-
     CORETIMER_Initialize();
 	UART3_Initialize();
 
 	UART1_Initialize();
+
+	BSP_Initialize();
+	SPI1_Initialize();
+
+    TMR1_Initialize();
+
+    I2C2_Initialize();
+
+
+    sysObj.drvMemory0 = DRV_MEMORY_Initialize((SYS_MODULE_INDEX)DRV_MEMORY_INDEX_0, (SYS_MODULE_INIT *)&drvMemory0InitData);
+
+    sysObj.drvSST26 = DRV_SST26_Initialize((SYS_MODULE_INDEX)DRV_SST26_INDEX, (SYS_MODULE_INIT *)&drvSST26InitData);
 
 #ifdef H3_CRYPT
     /* Initialize the PIC32MZW1 Driver */
@@ -326,16 +484,28 @@ void SYS_Initialize ( void* data )
     sysObj.drvWifiPIC32MZW1 = WDRV_PIC32MZW_Initialize(WDRV_PIC32MZW_SYS_IDX_0, (SYS_MODULE_INIT*)&wdrvPIC32MZW1InitData);
 
 
+    sysObj.sysTime = SYS_TIME_Initialize(SYS_TIME_INDEX_0, (SYS_MODULE_INIT *)&sysTimeInitData);
+    sysObj.sysConsole0 = SYS_CONSOLE_Initialize(SYS_CONSOLE_INDEX_0, (SYS_MODULE_INIT *)&sysConsole0Init);
+
     SYS_CMD_Initialize((SYS_MODULE_INIT*)&sysCmdInit);
 
-    sysObj.sysTime = SYS_TIME_Initialize(SYS_TIME_INDEX_0, (SYS_MODULE_INIT *)&sysTimeInitData);
     sysObj.sysDebug = SYS_DEBUG_Initialize(SYS_DEBUG_INDEX_0, (SYS_MODULE_INIT*)&debugInit);
 
 
-    sysObj.sysConsole0 = SYS_CONSOLE_Initialize(SYS_CONSOLE_INDEX_0, (SYS_MODULE_INIT *)&sysConsole0Init);
-
 
     sysObj.ba414e = DRV_BA414E_Initialize(0, (SYS_MODULE_INIT*)&ba414eInitData);
+
+
+	 /* Initialize the USB device layer */
+    sysObj.usbDevObject0 = USB_DEVICE_Initialize (USB_DEVICE_INDEX_0 , ( SYS_MODULE_INIT* ) & usbDevInitData);
+	
+	
+
+	/* Initialize USB Driver */ 
+    sysObj.drvUSBFSObject = DRV_USBFS_Initialize(DRV_USBFS_INDEX_0, (SYS_MODULE_INIT *) &drvUSBFSInit);	
+
+    /*** File System Service Initialization Code ***/
+    SYS_FS_Initialize( (const void *) sysFSInit );
 
 
     APP_Initialize();
@@ -348,6 +518,7 @@ void SYS_Initialize ( void* data )
     __builtin_enable_interrupts();
 
 
+    /* MISRAC 2012 deviation block end */
 }
 
 

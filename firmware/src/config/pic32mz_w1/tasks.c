@@ -54,7 +54,7 @@
 #include "definitions.h"
 
 /* ThreadX byte memory pool from which to allocate the thread stacks. */
-#define TX_BYTE_POOL_SIZE   (28000 + 512)
+#define TX_BYTE_POOL_SIZE   (38000 + 512)
 
 #define PIC32MZW_TASK_STACK_SIZE    4*1024
 
@@ -65,6 +65,21 @@ TX_BYTE_POOL   byte_pool_0;
 // Section: RTOS "Tasks" Routine
 // *****************************************************************************
 // *****************************************************************************
+
+
+
+TX_THREAD      _DRV_MEMORY_0_Task_TCB;
+uint8_t*       _DRV_MEMORY_0_Task_Stk_Ptr;
+
+static void _DRV_MEMORY_0_Tasks( ULONG thread_input )
+{
+    while(1)
+    {
+        DRV_MEMORY_Tasks(sysObj.drvMemory0);
+        tx_thread_sleep((ULONG)(DRV_MEMORY_RTOS_DELAY_IDX0 / (TX_TICK_PERIOD_MS)));
+    }
+}
+
 
 
 TX_THREAD      _SYS_CMD_Task_TCB;
@@ -118,20 +133,47 @@ static void _APP_PIC32MZ_W1_Tasks( ULONG thread_input )
 }
 
 
+
+
+TX_THREAD      _SYS_USB_DEVICE_Task_TCB;
+uint8_t*       _SYS_USB_DEVICE_Task_Stk_Ptr;
+
+static void _SYS_USB_DEVICE_Tasks( ULONG thread_input )
+{
+    while(1)
+    {
+        /* USB Device layer tasks routine */
+        USB_DEVICE_Tasks(sysObj.usbDevObject0);
+        tx_thread_sleep((ULONG)(10 / (TX_TICK_PERIOD_MS)));
+    }
+}
+
+
+
+
+TX_THREAD      _SYS_FS_Task_TCB;
+uint8_t*       _SYS_FS_Task_Stk_Ptr;
+
+static void _SYS_FS_Tasks( ULONG thread_input )
+{
+    while(1)
+    {
+        SYS_FS_Tasks();
+        tx_thread_sleep((ULONG)(10 / (TX_TICK_PERIOD_MS)));
+    }
+}
+
+
 TX_THREAD   _WDRV_PIC32MZW_Task_TCB;
 uint8_t*    _WDRV_PIC32MZW_Task_Stk_Ptr;
 
 static void _WDRV_PIC32MZW_Tasks(ULONG thread_input)
 {
-        
     while(1)
     {
         SYS_STATUS status = SYS_STATUS_UNINITIALIZED;
-
         WDRV_PIC32MZW_Tasks(sysObj.drvWifiPIC32MZW1);
-
         status = WDRV_PIC32MZW_Status(sysObj.drvWifiPIC32MZW1);
-
         if ((SYS_STATUS_ERROR == status) || (SYS_STATUS_UNINITIALIZED == status))
         {
             tx_thread_sleep((ULONG)(50 / (TX_TICK_PERIOD_MS)));
@@ -167,7 +209,24 @@ void tx_application_define(void* first_unused_memory)
     );
     
 
-    /* Maintain Device Drivers */
+
+    tx_byte_allocate(&byte_pool_0,
+        (VOID **) &_SYS_FS_Task_Stk_Ptr,
+        SYS_FS_STACK_SIZE,
+        TX_NO_WAIT
+    );
+
+    tx_thread_create(&_SYS_FS_Task_TCB,
+        "SYS_FS_TASKS",
+        _SYS_FS_Tasks,
+        0,
+        _SYS_FS_Task_Stk_Ptr,
+        SYS_FS_STACK_SIZE,
+        SYS_FS_PRIORITY,
+        SYS_FS_PRIORITY,
+        TX_NO_TIME_SLICE,
+        TX_AUTO_START
+    );
     
     tx_byte_allocate(&byte_pool_0,
         (VOID **) &_WDRV_PIC32MZW_Task_Stk_Ptr,
@@ -189,11 +248,53 @@ void tx_application_define(void* first_unused_memory)
     );
 
 
+    /* Maintain Device Drivers */
+        tx_byte_allocate(&byte_pool_0,
+       (VOID **) &_DRV_MEMORY_0_Task_Stk_Ptr,
+        DRV_MEMORY_STACK_SIZE_IDX0,
+        TX_NO_WAIT);
+
+    tx_thread_create(&_DRV_MEMORY_0_Task_TCB,
+        "DRV_MEM_0_TASKS",
+        _DRV_MEMORY_0_Tasks,
+        0,
+        _DRV_MEMORY_0_Task_Stk_Ptr,
+        DRV_MEMORY_STACK_SIZE_IDX0,
+        DRV_MEMORY_PRIORITY_IDX0,
+        DRV_MEMORY_PRIORITY_IDX0,
+        TX_NO_TIME_SLICE,
+        TX_AUTO_START
+        );
+
+
+    tx_byte_allocate(&byte_pool_0,
+       (VOID **) &_SYS_USB_DEVICE_Task_Stk_Ptr,
+        1024,
+        TX_NO_WAIT);
+
+    tx_thread_create(&_SYS_USB_DEVICE_Task_TCB,
+        "USB_DEVICE_TASKS",
+        _SYS_USB_DEVICE_Tasks,
+        0,
+        _SYS_USB_DEVICE_Task_Stk_Ptr,
+        1024,
+        1,
+        1,
+        TX_NO_TIME_SLICE,
+        TX_AUTO_START
+        );
+
+
     /* Maintain Middleware & Other Libraries */
         
 
 
+
+
+
+
     /* Maintain the application's state machine. */
+    
         /* Allocate the stack for _APP_IDLE_Tasks threads */
     tx_byte_allocate(&byte_pool_0,
         (VOID **) &_APP_IDLE_Task_Stk_Ptr,
@@ -252,7 +353,6 @@ void tx_application_define(void* first_unused_memory)
         TX_NO_TIME_SLICE,
         TX_AUTO_START
     );
-
 
 
 }

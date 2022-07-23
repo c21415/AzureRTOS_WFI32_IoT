@@ -1,4 +1,11 @@
 files:
+- generatedChecksum: 7CDB31A66D03B2CD28B76D44AAED12AE
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/hal
+  name: ATECC608_0.c
+  physicalPath: library/cryptoauthlib/hal
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 7CDB31A66D03B2CD28B76D44AAED12AE
 - generatedChecksum: null
   logicalPath: ''
   name: app.c
@@ -13,6 +20,391 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: null
+- generatedChecksum: 444781ED6E666671B8BDEE5918176A8E
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_basic.c
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 444781ED6E666671B8BDEE5918176A8E
+- generatedChecksum: 6E4CBB332534E51810441984EF645DCC
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_basic.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 6E4CBB332534E51810441984EF645DCC
+- generatedChecksum: 7A3C7433D5B1A51B74A8924E342D644E
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_bool.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 7A3C7433D5B1A51B74A8924E342D644E
+- generatedChecksum: 2DBDFFD8728C4D1D8E369A076C3B357E
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_cfgs.c
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 2DBDFFD8728C4D1D8E369A076C3B357E
+- generatedChecksum: F0BFA9CA8C736ED732A529954EBB4CAE
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_cfgs.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: F0BFA9CA8C736ED732A529954EBB4CAE
+- generatedChecksum: 3385E1FBFBCD5667C4CAB333B9B6F070
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_compiler.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 3385E1FBFBCD5667C4CAB333B9B6F070
+- generatedChecksum: 8500092E7EA1EB920BF9E9DDFF2038F7
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_hw_aes.h
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 8500092E7EA1EB920BF9E9DDFF2038F7
+- generatedChecksum: 65171793E500AE687BC8CCD3C6049D31
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_hw_aes_cbc.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 65171793E500AE687BC8CCD3C6049D31
+- generatedChecksum: B44E7013BDEBA9ADA498AC9F61109FFA
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_hw_aes_cbcmac.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: B44E7013BDEBA9ADA498AC9F61109FFA
+- generatedChecksum: 923D43EF28A3288C01012E1CC37326C0
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_hw_aes_ccm.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 923D43EF28A3288C01012E1CC37326C0
+- generatedChecksum: 2B8A1F34423F806543F302408266CD54
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_hw_aes_cmac.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 2B8A1F34423F806543F302408266CD54
+- generatedChecksum: 2524D72F7A43204248272C0893543EB7
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_hw_aes_ctr.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 2524D72F7A43204248272C0893543EB7
+- generatedChecksum: 16B6D66A2EDABDACD74461AEF7450F00
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_pbkdf2.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 16B6D66A2EDABDACD74461AEF7450F00
+- generatedChecksum: D158412AE4C69A095BE6D235131E5B8D
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_sw.h
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: D158412AE4C69A095BE6D235131E5B8D
+- generatedChecksum: B5EA343D1BC163882E441D84DFFB506F
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_sw_ecdsa.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: B5EA343D1BC163882E441D84DFFB506F
+- generatedChecksum: A9B48CDA4A6F4AE7EA0421C70C9AA8A2
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_sw_ecdsa.h
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: A9B48CDA4A6F4AE7EA0421C70C9AA8A2
+- generatedChecksum: 48D7E0FFB6075E881511DF73FEAE7AE9
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_sw_rand.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 48D7E0FFB6075E881511DF73FEAE7AE9
+- generatedChecksum: 54B5FFC548BD32AD9DCC330452BF8FBE
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_sw_rand.h
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 54B5FFC548BD32AD9DCC330452BF8FBE
+- generatedChecksum: 7ED683421A04E7C89F264388445A65D3
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_sw_sha1.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 7ED683421A04E7C89F264388445A65D3
+- generatedChecksum: A1D4B8DF10B6AB9164B16D14A4E49A32
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_sw_sha1.h
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: A1D4B8DF10B6AB9164B16D14A4E49A32
+- generatedChecksum: 77B63DCBA7374CED0C5D2E8B61FF374C
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_sw_sha2.c
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 77B63DCBA7374CED0C5D2E8B61FF374C
+- generatedChecksum: 2DF89DD03016078326191F5B0452C596
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto
+  name: atca_crypto_sw_sha2.h
+  physicalPath: library/cryptoauthlib/crypto
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 2DF89DD03016078326191F5B0452C596
+- generatedChecksum: 367980753E682BFC5D189349D2A8359A
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_debug.c
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 367980753E682BFC5D189349D2A8359A
+- generatedChecksum: DF024729BA32598B139988DB4C303D52
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_debug.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: DF024729BA32598B139988DB4C303D52
+- generatedChecksum: 347D15467A95D5FD6182396CFD4F2311
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_device.c
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 347D15467A95D5FD6182396CFD4F2311
+- generatedChecksum: DE8BAD918C7262C675DB9380FECE5A6B
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_device.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: DE8BAD918C7262C675DB9380FECE5A6B
+- generatedChecksum: 7106109F765A6B18291B237D7A2F5CC4
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_devtypes.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 7106109F765A6B18291B237D7A2F5CC4
+- generatedChecksum: 5B860734C7D386817AC298E2A7ADEE1F
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/hal
+  name: atca_hal.c
+  physicalPath: library/cryptoauthlib/hal
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 5B860734C7D386817AC298E2A7ADEE1F
+- generatedChecksum: 6B08E62A8B85368F79DCBDC6A9A6BFCA
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/hal
+  name: atca_hal.h
+  physicalPath: library/cryptoauthlib/hal
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 6B08E62A8B85368F79DCBDC6A9A6BFCA
+- generatedChecksum: E77FDC98556646364B018E2A2468849F
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_helpers.c
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: E77FDC98556646364B018E2A2468849F
+- generatedChecksum: 4C7F2D4E1754F7D33CADFA1724B68939
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_helpers.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 4C7F2D4E1754F7D33CADFA1724B68939
+- generatedChecksum: EAA41D469D076D0834655C74BE1C6A63
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/host
+  name: atca_host.c
+  physicalPath: library/cryptoauthlib/host
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: EAA41D469D076D0834655C74BE1C6A63
+- generatedChecksum: 6E89F7C656132778C623E58EEB5CBB73
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/host
+  name: atca_host.h
+  physicalPath: library/cryptoauthlib/host
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 6E89F7C656132778C623E58EEB5CBB73
+- generatedChecksum: CDCE0CE7DDF817D810F57F3459CA1DEF
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_iface.c
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: CDCE0CE7DDF817D810F57F3459CA1DEF
+- generatedChecksum: EB8A484DE63DD14D6E96A05BC0E759B3
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_iface.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: EB8A484DE63DD14D6E96A05BC0E759B3
+- generatedChecksum: D655FD00126753A8ACF7BA8961A0F83D
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/jwt
+  name: atca_jwt.c
+  physicalPath: library/cryptoauthlib/jwt
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: D655FD00126753A8ACF7BA8961A0F83D
+- generatedChecksum: F41DD68794903B094FB89C320406C227
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/jwt
+  name: atca_jwt.h
+  physicalPath: library/cryptoauthlib/jwt
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: F41DD68794903B094FB89C320406C227
+- generatedChecksum: C44F01BA65C6AC0A0BB2F1F257D2C405
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_status.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: C44F01BA65C6AC0A0BB2F1F257D2C405
+- generatedChecksum: 9F6C09BA42D5F83B35F111C330A9131D
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_utils_sizes.c
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 9F6C09BA42D5F83B35F111C330A9131D
+- generatedChecksum: 06124DB738A3AE73C8E53CA1A6907756
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_version.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 06124DB738A3AE73C8E53CA1A6907756
+- generatedChecksum: 39B479CDDBCD8CEB51C6FDAD2D5D6527
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert.h
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 39B479CDDBCD8CEB51C6FDAD2D5D6527
+- generatedChecksum: F71702CE59B594A4320A4A67E840B735
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_client.c
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: F71702CE59B594A4320A4A67E840B735
+- generatedChecksum: 481CEFA6107D950DA2593A78494043C4
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_client.h
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 481CEFA6107D950DA2593A78494043C4
+- generatedChecksum: FACF788182ED6872C37F54136C671611
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_date.c
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: FACF788182ED6872C37F54136C671611
+- generatedChecksum: 97BDFD21248DE60EA44A06564EB4A9E1
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_date.h
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 97BDFD21248DE60EA44A06564EB4A9E1
+- generatedChecksum: 23B3121CC0EACB48AE299C4EFC430AEB
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_def.c
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 23B3121CC0EACB48AE299C4EFC430AEB
+- generatedChecksum: 7E81275CEC5D18195AFAB0069751E90F
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_def.h
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 7E81275CEC5D18195AFAB0069751E90F
+- generatedChecksum: 6B6E34A7BD2ED737583C14A8C3C474DB
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_der.c
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 6B6E34A7BD2ED737583C14A8C3C474DB
+- generatedChecksum: 78E60FE1968E176C2FAAECFF28F15859
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_der.h
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 78E60FE1968E176C2FAAECFF28F15859
+- generatedChecksum: 1FD52A0985CB9AB9612CC71F43229BB3
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_host_hw.c
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 1FD52A0985CB9AB9612CC71F43229BB3
+- generatedChecksum: EEBBBFD34F708E36768B5D57BAF655E7
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_host_hw.h
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: EEBBBFD34F708E36768B5D57BAF655E7
+- generatedChecksum: 8F2BE817F0A3805F591C160C0AB2A8B1
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_host_sw.c
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 8F2BE817F0A3805F591C160C0AB2A8B1
+- generatedChecksum: 938C9787ED5322AEC1364D6F77BAE706
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_host_sw.h
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 938C9787ED5322AEC1364D6F77BAE706
+- generatedChecksum: C9282574F24F4342FFE533BB667D9103
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_pem.c
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: C9282574F24F4342FFE533BB667D9103
+- generatedChecksum: DD048659E440B34428ED209F89C42D9D
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/atcacert
+  name: atcacert_pem.h
+  physicalPath: library/cryptoauthlib/atcacert
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: DD048659E440B34428ED209F89C42D9D
 - generatedChecksum: DD1747C2B46BEF6DF38701233BE89BFC
   logicalPath: third_party/azure_rtos/netxduo/addons/azure_iot/azure-sdk-for-c/sdk/src/azure/core
   name: az_base64.c
@@ -194,14 +586,259 @@ files:
   physicalPath: third_party_adapter/azure_rtos/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: C66023B9737FDBF0C4D372CE569FF07D
+  userChecksum: 53EDD627D5EE7F708CE9639E3E28CBDE
 - generatedChecksum: 7F46F93CFAAD75CACB249017911CE218
   logicalPath: config/pic32mz_w1/third_party_adapter/azure_rtos/src
   name: azure_glue_private.c
   physicalPath: third_party_adapter/azure_rtos/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: D174B836FF2694752E3CBDD1B11E766F
+  userChecksum: B499B9261802F6E4C61DAD15967B5157
+- generatedChecksum: 146319085C483D4BB39B6804959EBD14
+  logicalPath: config/pic32mz_w1/bsp
+  name: bsp.c
+  physicalPath: bsp
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 146319085C483D4BB39B6804959EBD14
+- generatedChecksum: D81A0A83EE6097AEEF8B8A524B921BBE
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_aes.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: D81A0A83EE6097AEEF8B8A524B921BBE
+- generatedChecksum: 6C65A1A4857B51BBFD0B4C0D898D2C43
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_aes_gcm.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 6C65A1A4857B51BBFD0B4C0D898D2C43
+- generatedChecksum: EA3115EBE1DA89D1E95D834CAD16F601
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_aes_gcm.h
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: EA3115EBE1DA89D1E95D834CAD16F601
+- generatedChecksum: ACB17A8EC9DEA574B08091796F690A03
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_basic.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: ACB17A8EC9DEA574B08091796F690A03
+- generatedChecksum: 89AF7751A1190A3508FC8B0130D82824
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_basic.h
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 89AF7751A1190A3508FC8B0130D82824
+- generatedChecksum: A884DB08629E4695434C706C4230727C
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_checkmac.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: A884DB08629E4695434C706C4230727C
+- generatedChecksum: B9C2ACA1981DD40242F5DE61494A9DA6
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_command.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: B9C2ACA1981DD40242F5DE61494A9DA6
+- generatedChecksum: C647A6D4029CC332EDFF5BFFB89654A8
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_command.h
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: C647A6D4029CC332EDFF5BFFB89654A8
+- generatedChecksum: 25C166411F3C2085D29ED53892EBA699
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_counter.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 25C166411F3C2085D29ED53892EBA699
+- generatedChecksum: 2A92914CEB45FEF801A142E1E2CAA5BA
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_derivekey.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 2A92914CEB45FEF801A142E1E2CAA5BA
+- generatedChecksum: 037D62AB95DFF5D98575548E69E78319
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_ecdh.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 037D62AB95DFF5D98575548E69E78319
+- generatedChecksum: C1CF87E8CF2C13F5C34DBFBFAFFC7E5A
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_execution.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: C1CF87E8CF2C13F5C34DBFBFAFFC7E5A
+- generatedChecksum: 88650BB1C64DF85297146DB38F4A9A22
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_execution.h
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 88650BB1C64DF85297146DB38F4A9A22
+- generatedChecksum: 5B7A1501266F78F3C790B776043CDFB6
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_gendig.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 5B7A1501266F78F3C790B776043CDFB6
+- generatedChecksum: BDC2785995C64F2543135A7495438421
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_genkey.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: BDC2785995C64F2543135A7495438421
+- generatedChecksum: 92EBC019E752DDF677D6009355774130
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_helpers.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 92EBC019E752DDF677D6009355774130
+- generatedChecksum: 38EF4DCFFC7B15BD8C0764468CCF0F54
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_hmac.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 38EF4DCFFC7B15BD8C0764468CCF0F54
+- generatedChecksum: F9821758395246DCA4F13F68A19D8468
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_info.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: F9821758395246DCA4F13F68A19D8468
+- generatedChecksum: 13197C0C3C9664FD455F684139AA3DB9
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_kdf.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 13197C0C3C9664FD455F684139AA3DB9
+- generatedChecksum: F21072D5552F38182BF2CDACFA88D56C
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_lock.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: F21072D5552F38182BF2CDACFA88D56C
+- generatedChecksum: 75047A7395A29787E1F153BC53111732
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_mac.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 75047A7395A29787E1F153BC53111732
+- generatedChecksum: 0DCA9A9619EC283EDEA0004AC5D64D01
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_nonce.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 0DCA9A9619EC283EDEA0004AC5D64D01
+- generatedChecksum: 7E627DF11DB5E2702C9502031A70C2F5
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_privwrite.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 7E627DF11DB5E2702C9502031A70C2F5
+- generatedChecksum: E578C71AEB8AC9418FAFE9AF51E840E8
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_random.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: E578C71AEB8AC9418FAFE9AF51E840E8
+- generatedChecksum: 1445CF8CA07C367FE208AE129D571B17
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_read.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 1445CF8CA07C367FE208AE129D571B17
+- generatedChecksum: EE3AF8F403379659507CE05FDC2FBA88
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_secureboot.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: EE3AF8F403379659507CE05FDC2FBA88
+- generatedChecksum: 51138AB4EAFF12235CD3BAF8DF3C542C
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_selftest.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 51138AB4EAFF12235CD3BAF8DF3C542C
+- generatedChecksum: 1BDA7F4454FBEED306C258F612363366
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_sha.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 1BDA7F4454FBEED306C258F612363366
+- generatedChecksum: E1B8B8CB923D5C236D231EEAD89899B4
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_sign.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: E1B8B8CB923D5C236D231EEAD89899B4
+- generatedChecksum: B565C2FA644B9FB81FA673BD50D62D60
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_updateextra.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: B565C2FA644B9FB81FA673BD50D62D60
+- generatedChecksum: 5841CE8DED618FF5E886CC37F2DB47AF
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_verify.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 5841CE8DED618FF5E886CC37F2DB47AF
+- generatedChecksum: 0D9A2C359776F1C94B4C84E9418577AA
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/calib
+  name: calib_write.c
+  physicalPath: library/cryptoauthlib/calib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 0D9A2C359776F1C94B4C84E9418577AA
+- generatedChecksum: FE7621D4C509011330C1FE849EB44D84
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: cryptoauthlib.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: FE7621D4C509011330C1FE849EB44D84
+- generatedChecksum: 65F5B99DAB8ECAC3CB0624E73CA6E0A0
+  logicalPath: config/pic32mz_w1/system/fs/fat_fs/hardware_access
+  name: diskio.c
+  physicalPath: system/fs/fat_fs/hardware_access
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 65F5B99DAB8ECAC3CB0624E73CA6E0A0
 - generatedChecksum: 7E3142C72C357BC5EB12B612417783DC
   logicalPath: config/pic32mz_w1/driver/ba414e/src
   name: drv_ba414e.c
@@ -209,6 +846,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: AA5CAD814D34D2DD2AF2E256C75F1CC3
+- generatedChecksum: 257ACC61A57EA8DE78BA7E1F78DB85A3
+  logicalPath: config/pic32mz_w1/driver/memory
+  name: drv_memory.c
+  physicalPath: driver/memory/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 257ACC61A57EA8DE78BA7E1F78DB85A3
+- generatedChecksum: AD5CAAD66A56C9B5D17EB7E756C22D0C
+  logicalPath: config/pic32mz_w1/driver/memory
+  name: drv_memory_file_system.c
+  physicalPath: driver/memory/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: AD5CAAD66A56C9B5D17EB7E756C22D0C
 - generatedChecksum: C356E1DAD6180DE4075F1BD38B5D38DF
   logicalPath: config/pic32mz_w1/driver/wifi/pic32mzw1
   name: drv_pic32mzw1_crypto.c
@@ -216,6 +867,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: E9B174E9AD30BA4168F5E6C8B1C96F02
+- generatedChecksum: F87DDE7DDF931D561BE17418915F16CB
+  logicalPath: config/pic32mz_w1/driver/sst26
+  name: drv_sst26.c
+  physicalPath: driver/sst26/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: F87DDE7DDF931D561BE17418915F16CB
+- generatedChecksum: E8A25523C8CDDC97F3FD108E97BF4A9F
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src
+  name: drv_usbfs.c
+  physicalPath: driver/usb/usbfs/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: E8A25523C8CDDC97F3FD108E97BF4A9F
+- generatedChecksum: E65E55268349D2945F1AC4144D0327CC
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src
+  name: drv_usbfs_device.c
+  physicalPath: driver/usb/usbfs/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: E65E55268349D2945F1AC4144D0327CC
 - generatedChecksum: 6B9BEE27686FC36C62760DBAA363C695
   logicalPath: config/pic32mz_w1
   name: exceptions.c
@@ -230,6 +902,20 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: C73FC716A50DDB05718577E8BBE06959
+- generatedChecksum: B2ADAD943E1B2BEEFF974468E2509BD5
+  logicalPath: config/pic32mz_w1/system/fs/fat_fs/file_system
+  name: ff.c
+  physicalPath: system/fs/fat_fs/file_system
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: B2ADAD943E1B2BEEFF974468E2509BD5
+- generatedChecksum: 9E153A6D4F8E0EA1F6901BAED7DD80FD
+  logicalPath: config/pic32mz_w1/system/fs/fat_fs/file_system
+  name: ffunicode.c
+  physicalPath: system/fs/fat_fs/file_system
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 9E153A6D4F8E0EA1F6901BAED7DD80FD
 - generatedChecksum: 78F8E97DCF5C93B5826563EFA17595CB
   logicalPath: third_party/azure_rtos/filex/common/src
   name: fx_directory_attributes_read.c
@@ -1889,20 +2575,55 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: B4A0A8097EDA8332DFD577C748144180
-- generatedChecksum: 56E62CE95B1543CC254193BACD9A7117
+- generatedChecksum: B2E4EECC23A0B08DB18091355D20C5B1
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/hal
+  name: hal_freertos.c
+  physicalPath: library/cryptoauthlib/hal
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: B2E4EECC23A0B08DB18091355D20C5B1
+- generatedChecksum: F0F3ACCCC2C1C2FF47C3153B02D5A531
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/hal
+  name: hal_gpio_harmony.c
+  physicalPath: library/cryptoauthlib/hal
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: F0F3ACCCC2C1C2FF47C3153B02D5A531
+- generatedChecksum: 3459AC767423498DA8D92F144580EEC2
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/hal
+  name: hal_harmony_init.c
+  physicalPath: library/cryptoauthlib/hal
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 3459AC767423498DA8D92F144580EEC2
+- generatedChecksum: 2C73B489A476FDAEA18D51FD06F29943
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/hal
+  name: hal_i2c_harmony.c
+  physicalPath: library/cryptoauthlib/hal
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 2C73B489A476FDAEA18D51FD06F29943
+- generatedChecksum: 04C90D6C19C62922CD1201770E617AB4
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/hal
+  name: hal_pic32_delay.c
+  physicalPath: library/cryptoauthlib/hal
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 04C90D6C19C62922CD1201770E617AB4
+- generatedChecksum: D9B3F2176160ABF8EA0AD7564CF0B469
   logicalPath: config/pic32mz_w1
   name: initialization.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 35398381F4EDE0FC1D49B528C5208983
-- generatedChecksum: 5720DDB757425562406E4CE2BE49679D
+  userChecksum: 333CBADB16C16D97DDDD5208A475BD1A
+- generatedChecksum: 9BDE5CD46DCA12F0AA553070930C137E
   logicalPath: config/pic32mz_w1
   name: interrupts.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 84A9D28EB24B1ACF0E0C2B673BF60039
+  userChecksum: 9BDE5CD46DCA12F0AA553070930C137E
 - generatedChecksum: null
   logicalPath: ''
   name: main.c
@@ -2532,7 +3253,7 @@ files:
   physicalPath: third_party_adapter/azure_rtos/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 4C7F93C59E40E46D1D19F484D94BEFC4
+  userChecksum: 9F20348C309EE6E7800744F79B82A4DB
 - generatedChecksum: F51B835C84014BDD848A41AB01919742
   logicalPath: third_party/azure_rtos/netxduo/common/src
   name: nx_icmp_cleanup.c
@@ -3561,7 +4282,7 @@ files:
   physicalPath: ../../third_party/azure_rtos/netxduo/common/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 609DF87FEF148672F752BE5CEAE535CF
+  userChecksum: 76DD72FABCEC98A5597C4259BD170729
 - generatedChecksum: AC0383630E8E72277585081E4E557C0F
   logicalPath: third_party/azure_rtos/netxduo/common/src
   name: nx_packet_copy.c
@@ -7986,13 +8707,34 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 6B67FAAE5074F582318CD257A807BD3C
-- generatedChecksum: FD9CCED04912F9909A4206B832DC7F55
+- generatedChecksum: 65A7BD3CB0B8FE05768B2EC9A503C3AB
+  logicalPath: config/pic32mz_w1/peripheral/cache
+  name: plib_cache.c
+  physicalPath: peripheral/cache
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 65A7BD3CB0B8FE05768B2EC9A503C3AB
+- generatedChecksum: 4FD2B20C75E8ABCE5AFD77297FA520F4
+  logicalPath: config/pic32mz_w1/peripheral/cache
+  name: plib_cache_local.h
+  physicalPath: peripheral/cache
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 4FD2B20C75E8ABCE5AFD77297FA520F4
+- generatedChecksum: 0DA10C8889278A796D0EE4C6096B57C3
+  logicalPath: config/pic32mz_w1/peripheral/cache
+  name: plib_cache_pic32mz.S
+  physicalPath: peripheral/cache
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 0DA10C8889278A796D0EE4C6096B57C3
+- generatedChecksum: 61879B2F98E43C0A3A0CF9542A14B98A
   logicalPath: config/pic32mz_w1/peripheral/clk
   name: plib_clk.c
   physicalPath: peripheral/clk
   security: NON_SECURE
   type: SOURCE
-  userChecksum: FD9CCED04912F9909A4206B832DC7F55
+  userChecksum: 61879B2F98E43C0A3A0CF9542A14B98A
 - generatedChecksum: 2FEFEA0D4E94F5A5F3D76BAEC3D602E5
   logicalPath: config/pic32mz_w1/peripheral/coretimer
   name: plib_coretimer.c
@@ -8000,27 +8742,41 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 2FEFEA0D4E94F5A5F3D76BAEC3D602E5
-- generatedChecksum: E4FE9C01898E04ACB8E2D1766EBA14D3
+- generatedChecksum: DA193AE7991A7A5F80623FBFDB8CAEBF
   logicalPath: config/pic32mz_w1/peripheral/evic
   name: plib_evic.c
   physicalPath: peripheral/evic
   security: NON_SECURE
   type: SOURCE
-  userChecksum: E4FE9C01898E04ACB8E2D1766EBA14D3
-- generatedChecksum: 8BAADDEBEA7C93E5084122EC879F91BF
+  userChecksum: DA193AE7991A7A5F80623FBFDB8CAEBF
+- generatedChecksum: 35EB9BF46E325F20D984F039F98B01A0
   logicalPath: config/pic32mz_w1/peripheral/gpio
   name: plib_gpio.c
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 8BAADDEBEA7C93E5084122EC879F91BF
-- generatedChecksum: AE604F3000CBB648C9C8BB7EA99F10F2
+  userChecksum: 35EB9BF46E325F20D984F039F98B01A0
+- generatedChecksum: 9637646B5A6E9B40DB177E9B603B68DD
+  logicalPath: config/pic32mz_w1/peripheral/i2c/master
+  name: plib_i2c2_master.c
+  physicalPath: peripheral/i2c/master
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 9637646B5A6E9B40DB177E9B603B68DD
+- generatedChecksum: CA7F2C954C9E5F7F34F3A3E6EC1E3932
+  logicalPath: config/pic32mz_w1/peripheral/spi/spi_master
+  name: plib_spi1_master.c
+  physicalPath: peripheral/spi/spi_master
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: CA7F2C954C9E5F7F34F3A3E6EC1E3932
+- generatedChecksum: 6EC4BE010474DACE7E56288DB72D9BFA
   logicalPath: config/pic32mz_w1/peripheral/uart
   name: plib_uart1.c
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: SOURCE
-  userChecksum: AE604F3000CBB648C9C8BB7EA99F10F2
+  userChecksum: 6EC4BE010474DACE7E56288DB72D9BFA
 - generatedChecksum: 9D5504AEDAE0DCAD4CB3374F95415EE2
   logicalPath: config/pic32mz_w1/peripheral/uart
   name: plib_uart3.c
@@ -8035,6 +8791,41 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 290251D6FF0845DC4259E0EF74DCB657
+- generatedChecksum: 2678A6AC469B2CBC962FC647A763814C
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto/hashes
+  name: sha1_routines.c
+  physicalPath: library/cryptoauthlib/crypto/hashes
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 2678A6AC469B2CBC962FC647A763814C
+- generatedChecksum: 604A05C17479FC6839FB64A83B4F5C36
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto/hashes
+  name: sha1_routines.h
+  physicalPath: library/cryptoauthlib/crypto/hashes
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 604A05C17479FC6839FB64A83B4F5C36
+- generatedChecksum: 6384F6E961B5C4D394D3872576E223A4
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto/hashes
+  name: sha2_routines.c
+  physicalPath: library/cryptoauthlib/crypto/hashes
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 6384F6E961B5C4D394D3872576E223A4
+- generatedChecksum: 91BA4A3E87D24FD2FA0F40652F9C4C9A
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/crypto/hashes
+  name: sha2_routines.h
+  physicalPath: library/cryptoauthlib/crypto/hashes
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 91BA4A3E87D24FD2FA0F40652F9C4C9A
+- generatedChecksum: 47204A328D6218B0241B5993D3198668
+  logicalPath: config/pic32mz_w1/system/cache
+  name: sys_cache.c
+  physicalPath: system/cache
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 47204A328D6218B0241B5993D3198668
 - generatedChecksum: 844B5535563F8399C03E2105085D14EB
   logicalPath: config/pic32mz_w1/system/command
   name: sys_command.c
@@ -8091,6 +8882,27 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: B8C6C7356AC7841AECC7C779040F745C
+- generatedChecksum: 64197587C5A197FD05E94AB039A2DD66
+  logicalPath: config/pic32mz_w1/system/fs
+  name: sys_fs.c
+  physicalPath: system/fs/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 64197587C5A197FD05E94AB039A2DD66
+- generatedChecksum: 1F79CD9E378D98E657FCEB0552B2B659
+  logicalPath: config/pic32mz_w1/system/fs
+  name: sys_fs_fat_interface.c
+  physicalPath: system/fs/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 1F79CD9E378D98E657FCEB0552B2B659
+- generatedChecksum: 1115692CC0E3DF70C0007627FCAC6FFA
+  logicalPath: config/pic32mz_w1/system/fs
+  name: sys_fs_media_manager.c
+  physicalPath: system/fs/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 1115692CC0E3DF70C0007627FCAC6FFA
 - generatedChecksum: C95CE0ABB86E6B11CF77E8891D294510
   logicalPath: config/pic32mz_w1/system/int
   name: sys_int.c
@@ -8119,13 +8931,83 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: F849420C740D2B32346B4B4D9F46C136
-- generatedChecksum: 68D26FB118A385CDD529F9F217D1CF18
+- generatedChecksum: 8A9AAE83B389C3B66369055F2BE21D59
   logicalPath: config/pic32mz_w1
   name: tasks.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 5728EF1CA29EE4F8331D12F0FE738A04
+  userChecksum: F71E3D38BBDECA52240D53AF9FE9A8B1
+- generatedChecksum: 7018715B02E090D5ED53EAE0DF359928
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tflxtls_cert_def_4_device.c
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 7018715B02E090D5ED53EAE0DF359928
+- generatedChecksum: 3B25F0E7ED674893CAE3BC36F6A9393F
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tng_atca.c
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 3B25F0E7ED674893CAE3BC36F6A9393F
+- generatedChecksum: A9A0029AD183D159401EBE873C1B7322
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tng_atcacert_client.c
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: A9A0029AD183D159401EBE873C1B7322
+- generatedChecksum: 7BE05B38EAF515050600DE4AE2A26218
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tng_root_cert.c
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 7BE05B38EAF515050600DE4AE2A26218
+- generatedChecksum: C1F51C5724A0B99AEFD590E8B62591E4
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tnglora_cert_def_1_signer.c
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: C1F51C5724A0B99AEFD590E8B62591E4
+- generatedChecksum: AE373C91E4822A951FC12EBB1B7A5555
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tnglora_cert_def_2_device.c
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: AE373C91E4822A951FC12EBB1B7A5555
+- generatedChecksum: 0AAC497F37A7E5740F9914BFD00A41F1
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tnglora_cert_def_4_device.c
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 0AAC497F37A7E5740F9914BFD00A41F1
+- generatedChecksum: 7112258550C62156D642FAD1E525F11E
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tngtls_cert_def_1_signer.c
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 7112258550C62156D642FAD1E525F11E
+- generatedChecksum: DC156A8C75ACD2162F8995214775D08C
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tngtls_cert_def_2_device.c
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: DC156A8C75ACD2162F8995214775D08C
+- generatedChecksum: 63D0AA27B3E5123BD968C39FDF2F8E86
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tngtls_cert_def_3_device.c
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 63D0AA27B3E5123BD968C39FDF2F8E86
 - generatedChecksum: 91D688554B1E19C9B21B541D7AE1F750
   logicalPath: threadx/common/src
   name: tx_block_allocate.c
@@ -9484,13 +10366,34 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: C1DD82DC16DD85EC8C5FE819B1B47E9E
+- generatedChecksum: D2FFA7B8FF0AFC7B18DC164151CA1529
+  logicalPath: config/pic32mz_w1/usb/src
+  name: usb_device.c
+  physicalPath: usb/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: D2FFA7B8FF0AFC7B18DC164151CA1529
+- generatedChecksum: FE7E8C5CDB81A2D6995CFC39CA65BF68
+  logicalPath: config/pic32mz_w1
+  name: usb_device_init_data.c
+  physicalPath: ''
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: FE7E8C5CDB81A2D6995CFC39CA65BF68
+- generatedChecksum: 5B2E4F04BB9E3347BD0D10242479D4F0
+  logicalPath: config/pic32mz_w1/usb/src
+  name: usb_device_msd.c
+  physicalPath: usb/src
+  security: NON_SECURE
+  type: SOURCE
+  userChecksum: 5B2E4F04BB9E3347BD0D10242479D4F0
 - generatedChecksum: 5C58DCC19F4DC7CBA95E5A6017D2B542
   logicalPath: config/pic32mz_w1/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw.c
   physicalPath: driver/wifi/pic32mzw1
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 33AA891210A7D324CA182776993CB930
+  userChecksum: B9A4A4D09AB8FBC6F9299EDB3F8BC05F
 - generatedChecksum: 5C2A427D83E5CCA5D980D9FEC6D02E5D
   logicalPath: config/pic32mz_w1/driver/wifi/pic32mzw1
   name: wdrv_pic32mzw_assoc.c
@@ -9574,7 +10477,7 @@ files:
   physicalPath: stdio
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 71352EF41F6688AD8408E42970B50B66
+  userChecksum: 8F7BC4E806781EE7DC460CCC6AE3620F
 - generatedChecksum: 4D7B537E5004684A383F87B25BF9B89A
   logicalPath: third_party/azure_rtos/netxduo/addons/azure_iot/azure-sdk-for-c/sdk/inc/azure/core
   name: _az_cfg.h
@@ -9610,6 +10513,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: null
+- generatedChecksum: 917441C01A695A46816BD78582A6ACC4
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib
+  name: atca_config.h
+  physicalPath: library/cryptoauthlib
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 917441C01A695A46816BD78582A6ACC4
 - generatedChecksum: 58BD55A2095DBA9152B5E34C2F6B3E77
   logicalPath: third_party/azure_rtos/netxduo/addons/azure_iot/azure-sdk-for-c/sdk/inc/azure/core
   name: az_base64.h
@@ -9862,20 +10772,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: E884DC0803FD0CDE78CEB731C709D574
-- generatedChecksum: 17624EB64AC480D7E097A27060AC6344
+- generatedChecksum: C7CFEE43123FAC887759049BE29C6880
+  logicalPath: config/pic32mz_w1/bsp
+  name: bsp.h
+  physicalPath: bsp
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: C7CFEE43123FAC887759049BE29C6880
+- generatedChecksum: 026F584F88EEA8A338DBF36AB347D33E
   logicalPath: config/pic32mz_w1
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 86BD041CE6545301B2AE0824012F12B8
-- generatedChecksum: C266AA4E61C5E31C472A169681323655
+  userChecksum: 026F584F88EEA8A338DBF36AB347D33E
+- generatedChecksum: 19927CD7F4E4B96648BDF26B87F44C95
   logicalPath: config/pic32mz_w1
   name: definitions.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: C266AA4E61C5E31C472A169681323655
+  userChecksum: 19927CD7F4E4B96648BDF26B87F44C95
 - generatedChecksum: E189C26B2269F8DE46033CCD0621958D
   logicalPath: config/pic32mz_w1
   name: device.h
@@ -9883,6 +10800,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: E189C26B2269F8DE46033CCD0621958D
+- generatedChecksum: 1CA1C2C02834207DCB4B0E3C00338FCC
+  logicalPath: config/pic32mz_w1
+  name: device_cache.h
+  physicalPath: ''
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 1CA1C2C02834207DCB4B0E3C00338FCC
+- generatedChecksum: 630DFA1824A5279838B4330DA2FF3E5E
+  logicalPath: config/pic32mz_w1/system/fs/fat_fs/hardware_access
+  name: diskio.h
+  physicalPath: system/fs/fat_fs/hardware_access
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 630DFA1824A5279838B4330DA2FF3E5E
 - generatedChecksum: 1D2094DFA60F847FFD4E8153B6E78027
   logicalPath: config/pic32mz_w1/driver
   name: driver.h
@@ -9918,6 +10849,27 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 70F69BDC225E4D1A7B5135C6357C4897
+- generatedChecksum: EFD9CC847D820C0DCC84B3877B8FA415
+  logicalPath: config/pic32mz_w1/driver/memory
+  name: drv_memory.h
+  physicalPath: driver/memory
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: EFD9CC847D820C0DCC84B3877B8FA415
+- generatedChecksum: 8BF1EFFCD7DC02480C27F3DE35FB5009
+  logicalPath: config/pic32mz_w1/driver/memory
+  name: drv_memory_definitions.h
+  physicalPath: driver/memory
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 8BF1EFFCD7DC02480C27F3DE35FB5009
+- generatedChecksum: 2E25CEFA28CCA2CD66BA9DF6B4C66621
+  logicalPath: config/pic32mz_w1/driver/memory
+  name: drv_memory_local.h
+  physicalPath: driver/memory/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 2E25CEFA28CCA2CD66BA9DF6B4C66621
 - generatedChecksum: 2F179FF9CCD93B68A7C23A2768F96AD6
   logicalPath: config/pic32mz_w1/driver/wifi/pic32mzw1/include
   name: drv_pic32mzw1.h
@@ -9932,6 +10884,76 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: DDD131AAE2C978645E64A718960A8B77
+- generatedChecksum: 8EAE086FFBCC60C4343BAA26620B1204
+  logicalPath: config/pic32mz_w1/driver/sst26
+  name: drv_sst26.h
+  physicalPath: driver/sst26
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 8EAE086FFBCC60C4343BAA26620B1204
+- generatedChecksum: E33CB96258AD0A16961987965221090E
+  logicalPath: config/pic32mz_w1/driver/sst26
+  name: drv_sst26_definitions.h
+  physicalPath: driver/sst26
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E33CB96258AD0A16961987965221090E
+- generatedChecksum: 5B915DFB2B75B9A111AB0317C1CC159D
+  logicalPath: config/pic32mz_w1/driver/sst26
+  name: drv_sst26_local.h
+  physicalPath: driver/sst26/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 5B915DFB2B75B9A111AB0317C1CC159D
+- generatedChecksum: DF147276AE56CA76E3E9BEB8447620AB
+  logicalPath: config/pic32mz_w1/driver/usb
+  name: drv_usb.h
+  physicalPath: driver/usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: DF147276AE56CA76E3E9BEB8447620AB
+- generatedChecksum: A8072403A5346EF85CDFD4EF996C0826
+  logicalPath: config/pic32mz_w1/driver/usb
+  name: drv_usb_external_dependencies.h
+  physicalPath: driver/usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A8072403A5346EF85CDFD4EF996C0826
+- generatedChecksum: 8E09A88EA42C831AF5D8F17A1549E1D2
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs
+  name: drv_usbfs.h
+  physicalPath: driver/usb/usbfs
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 8E09A88EA42C831AF5D8F17A1549E1D2
+- generatedChecksum: BA88E5162CA794A6A62D146A58458A43
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src
+  name: drv_usbfs_local.h
+  physicalPath: driver/usb/usbfs/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: BA88E5162CA794A6A62D146A58458A43
+- generatedChecksum: AE86F1881720D058DAAAB3C5A196BC27
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src
+  name: drv_usbfs_variant_mapping.h
+  physicalPath: driver/usb/usbfs/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: AE86F1881720D058DAAAB3C5A196BC27
+- generatedChecksum: 2D3A9FC37968F5000CB45C6B4AD965D6
+  logicalPath: config/pic32mz_w1/system/fs/fat_fs/file_system
+  name: ff.h
+  physicalPath: system/fs/fat_fs/file_system
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 2D3A9FC37968F5000CB45C6B4AD965D6
+- generatedChecksum: D9A040CE610ED3F9283F4BA6A13DADF9
+  logicalPath: config/pic32mz_w1/system/fs/fat_fs/file_system
+  name: ffconf.h
+  physicalPath: system/fs/fat_fs/file_system
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D9A040CE610ED3F9283F4BA6A13DADF9
 - generatedChecksum: 883CF5C58E9B10627B48EE518D194501
   logicalPath: third_party/azure_rtos/filex/common/inc
   name: fx_api.h
@@ -10631,7 +11653,7 @@ files:
   physicalPath: third_party_adapter/azure_rtos
   security: NON_SECURE
   type: HEADER
-  userChecksum: 691A466EBDDE6985FDAB7BCCEA002826
+  userChecksum: 4F6342987AD7799C86DC9718DAB9DF38
 - generatedChecksum: 13F260C7480C045F48C3958359D35EB2
   logicalPath: third_party/azure_rtos/netxduo/common/inc
   name: nx_user_sample.h
@@ -10709,6 +11731,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2499D9CCE80F596240163A47B180F395
+- generatedChecksum: 37885E3505BF5B0FD6AFE768807361C1
+  logicalPath: config/pic32mz_w1/peripheral/cache
+  name: plib_cache.h
+  physicalPath: peripheral/cache
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 37885E3505BF5B0FD6AFE768807361C1
+- generatedChecksum: 3D2558D7758EF020BBF792820203C0A2
+  logicalPath: config/pic32mz_w1/peripheral/cache
+  name: plib_cache_pic32mz.h
+  physicalPath: peripheral/cache
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 3D2558D7758EF020BBF792820203C0A2
 - generatedChecksum: F4C7B8A950B1D12FF6EC959D0A996B5B
   logicalPath: config/pic32mz_w1/peripheral/clk
   name: plib_clk.h
@@ -10730,20 +11766,48 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 2B5072810107E051495C4B6379DEDA4E
-- generatedChecksum: D9B00CCF87095896FD2DE8B5A025A4CA
+- generatedChecksum: 85B48C0D48BEB67C2A23C72ED655D843
   logicalPath: config/pic32mz_w1/peripheral/gpio
   name: plib_gpio.h
   physicalPath: peripheral/gpio
   security: NON_SECURE
   type: HEADER
-  userChecksum: D9B00CCF87095896FD2DE8B5A025A4CA
-- generatedChecksum: 2B111FC8ADC9E50611E481BE82CD3982
+  userChecksum: 85B48C0D48BEB67C2A23C72ED655D843
+- generatedChecksum: 98DDD931F1A3452F1369FD2708D64EEA
+  logicalPath: config/pic32mz_w1/peripheral/i2c/master
+  name: plib_i2c2_master.h
+  physicalPath: peripheral/i2c/master
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 98DDD931F1A3452F1369FD2708D64EEA
+- generatedChecksum: B963C6FE44292A1C4A14C3BA5BE95AEE
+  logicalPath: config/pic32mz_w1/peripheral/i2c/master
+  name: plib_i2c_master_common.h
+  physicalPath: peripheral/i2c/master
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B963C6FE44292A1C4A14C3BA5BE95AEE
+- generatedChecksum: A9C21E81CB403E638EEB811A7780088B
+  logicalPath: config/pic32mz_w1/peripheral/spi/spi_master
+  name: plib_spi1_master.h
+  physicalPath: peripheral/spi/spi_master
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A9C21E81CB403E638EEB811A7780088B
+- generatedChecksum: CFA758C8B7258190473EF7C60C4BA4E9
+  logicalPath: config/pic32mz_w1/peripheral/spi/spi_master
+  name: plib_spi_master_common.h
+  physicalPath: peripheral/spi/spi_master
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: CFA758C8B7258190473EF7C60C4BA4E9
+- generatedChecksum: 3EAAE65089C3F691641586CF2CD60190
   logicalPath: config/pic32mz_w1/peripheral/uart
   name: plib_uart1.h
   physicalPath: peripheral/uart
   security: NON_SECURE
   type: HEADER
-  userChecksum: 2B111FC8ADC9E50611E481BE82CD3982
+  userChecksum: 3EAAE65089C3F691641586CF2CD60190
 - generatedChecksum: FDF23C4CD8EB7AFD2A25DB738B3A86B6
   logicalPath: config/pic32mz_w1/peripheral/uart
   name: plib_uart3.h
@@ -10758,13 +11822,41 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 67EEAF539A53B6B8FD7B600ACCB3F3CA
+- generatedChecksum: 9C90A94077F62F71141B144757F04E7E
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src
+  name: plib_usbfs.h
+  physicalPath: driver/usb/usbfs/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 9C90A94077F62F71141B144757F04E7E
+- generatedChecksum: 9B4B2B2E7722D50697564E6D6E4F9E04
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src
+  name: plib_usbfs_header.h
+  physicalPath: driver/usb/usbfs/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 9B4B2B2E7722D50697564E6D6E4F9E04
 - generatedChecksum: 58C57FA19323536A9471DD5064080DE6
   logicalPath: azure_rtos_demo/sample_azure_iot_embedded_sdk
   name: sample_config.h
   physicalPath: ../../azure_rtos_demo/sample_azure_iot_embedded_sdk
   security: NON_SECURE
   type: HEADER
-  userChecksum: 58C57FA19323536A9471DD5064080DE6
+  userChecksum: B9DB19545969FA98CD2E75F9D170382E
+- generatedChecksum: 9E71D345C6F5A276C502502C87316EA5
+  logicalPath: config/pic32mz_w1/usb
+  name: scsi.h
+  physicalPath: usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 9E71D345C6F5A276C502502C87316EA5
+- generatedChecksum: AFAAF7D896D57569CA4CF73BB3339481
+  logicalPath: config/pic32mz_w1/system/cache
+  name: sys_cache.h
+  physicalPath: system/cache
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: AFAAF7D896D57569CA4CF73BB3339481
 - generatedChecksum: 712D1407BC82CB6B3C4C44FED4F14D26
   logicalPath: config/pic32mz_w1/system/command
   name: sys_command.h
@@ -10786,6 +11878,41 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 6972608768DDBE6E37A2D81B83DF490B
+- generatedChecksum: 4A8DA7BC60B438CE161462CB299CCC9D
+  logicalPath: config/pic32mz_w1/system/fs
+  name: sys_fs.h
+  physicalPath: system/fs
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 4A8DA7BC60B438CE161462CB299CCC9D
+- generatedChecksum: 0D9FE9035E3AA8082C5657240106F2DC
+  logicalPath: config/pic32mz_w1/system/fs
+  name: sys_fs_fat_interface.h
+  physicalPath: system/fs
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 0D9FE9035E3AA8082C5657240106F2DC
+- generatedChecksum: 0D162D1868A187FDC092657020E668D8
+  logicalPath: config/pic32mz_w1/system/fs
+  name: sys_fs_local.h
+  physicalPath: system/fs/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 0D162D1868A187FDC092657020E668D8
+- generatedChecksum: D0DEC824B933722219A05F00A4CD5BB4
+  logicalPath: config/pic32mz_w1/system/fs
+  name: sys_fs_media_manager.h
+  physicalPath: system/fs
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D0DEC824B933722219A05F00A4CD5BB4
+- generatedChecksum: E50782BD59B15F2EAAF53AAD818793EE
+  logicalPath: config/pic32mz_w1/system/fs
+  name: sys_fs_media_manager_local.h
+  physicalPath: system/fs/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E50782BD59B15F2EAAF53AAD818793EE
 - generatedChecksum: 47330C2D8F204B2B69F8A86240A564B6
   logicalPath: config/pic32mz_w1/system/int
   name: sys_int.h
@@ -10800,6 +11927,20 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: FC7B55936A09E0CA1395AE4DFB1A188F
+- generatedChecksum: 5D12C990BEEF029AF81885587A366CA5
+  logicalPath: config/pic32mz_w1/system/ports
+  name: sys_ports.h
+  physicalPath: system/ports
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 5D12C990BEEF029AF81885587A366CA5
+- generatedChecksum: BC6E1661BF4CAC21B70F5F56A0D7BBDB
+  logicalPath: config/pic32mz_w1/system/ports
+  name: sys_ports_mapping.h
+  physicalPath: system/ports
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: BC6E1661BF4CAC21B70F5F56A0D7BBDB
 - generatedChecksum: 8E43BD17134E69982826F202D0AB42C5
   logicalPath: config/pic32mz_w1/system/reset
   name: sys_reset.h
@@ -10856,6 +11997,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: C46D4E1219266DE6FE3A1DE9BB5AE390
+- generatedChecksum: A1CB3454D5A9393479E09211BEEDDD49
+  logicalPath: config/pic32mz_w1/system
+  name: system_media.h
+  physicalPath: system
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A1CB3454D5A9393479E09211BEEDDD49
 - generatedChecksum: 1C75A8A6B60598A2FD0D533F57839B72
   logicalPath: config/pic32mz_w1/system
   name: system_module.h
@@ -10884,6 +12032,76 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 6A790F9F331FF58F80B14C201FBCCED9
+- generatedChecksum: 73C239EC3FD91415ECE351A061B96C15
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tflxtls_cert_def_4_device.h
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 73C239EC3FD91415ECE351A061B96C15
+- generatedChecksum: C6ED28594DBB017DE1BB694D53A4EF0F
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tng_atca.h
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: C6ED28594DBB017DE1BB694D53A4EF0F
+- generatedChecksum: 3513B497D5FD9AC89C29B79E87F6AC64
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tng_atcacert_client.h
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 3513B497D5FD9AC89C29B79E87F6AC64
+- generatedChecksum: 770683106FC07A57C2D1AE881BCD10BB
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tng_root_cert.h
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 770683106FC07A57C2D1AE881BCD10BB
+- generatedChecksum: F1DB7071A952A5682208B061982F4680
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tnglora_cert_def_1_signer.h
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: F1DB7071A952A5682208B061982F4680
+- generatedChecksum: 096575DA8225A5238AD064F18960430E
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tnglora_cert_def_2_device.h
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 096575DA8225A5238AD064F18960430E
+- generatedChecksum: CA9929DCB6D228B9DC6BB0754BF8DB72
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tnglora_cert_def_4_device.h
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: CA9929DCB6D228B9DC6BB0754BF8DB72
+- generatedChecksum: 57DEA0617C46C0C93563A809EAB4FAAB
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tngtls_cert_def_1_signer.h
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 57DEA0617C46C0C93563A809EAB4FAAB
+- generatedChecksum: E78F3F8D485A74DC602D3A5A30637C0F
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tngtls_cert_def_2_device.h
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E78F3F8D485A74DC602D3A5A30637C0F
+- generatedChecksum: B82914256F44A8612BFB1CDF0ED5EEB0
+  logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
+  name: tngtls_cert_def_3_device.h
+  physicalPath: library/cryptoauthlib/tng
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B82914256F44A8612BFB1CDF0ED5EEB0
 - generatedChecksum: CAC44960D20AEC03CF4B325A1CD2877C
   logicalPath: config/pic32mz_w1
   name: toolchain_specifics.h
@@ -10996,6 +12214,881 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: F41C06EEE503C605D285A81725DBE043
+- generatedChecksum: 7614490532C606BCAFEC5F729FDBEDAD
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ALL_Interrupt_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 7614490532C606BCAFEC5F729FDBEDAD
+- generatedChecksum: 745B8DF89B5477EADA7B0786F1491B4C
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ALL_Interrupt_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 745B8DF89B5477EADA7B0786F1491B4C
+- generatedChecksum: 86227AAF459AA8589F50247D54E63EA1
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ActivityPending_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 86227AAF459AA8589F50247D54E63EA1
+- generatedChecksum: E86B513BFC354B734122E715E9673569
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ActivityPending_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E86B513BFC354B734122E715E9673569
+- generatedChecksum: FCDC292B30CBCAE218A51F68C3ADD7B2
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_AutomaticSuspend_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: FCDC292B30CBCAE218A51F68C3ADD7B2
+- generatedChecksum: 4C2B2ED2E7617D6EFD806454B03D7BF8
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_AutomaticSuspend_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 4C2B2ED2E7617D6EFD806454B03D7BF8
+- generatedChecksum: 09A5E6FEB6CADD075F370EC5FF2733C8
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_BDTBaseAddress_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 09A5E6FEB6CADD075F370EC5FF2733C8
+- generatedChecksum: 6ECAB19200B7B025B56DFC85D15369F4
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_BDTBaseAddress_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6ECAB19200B7B025B56DFC85D15369F4
+- generatedChecksum: F11B46BCB5572997D5531BA60D331A21
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_BDTFunctions_PIC32.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: F11B46BCB5572997D5531BA60D331A21
+- generatedChecksum: 62A57CF6942AF8E8B60B3B8771C53306
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_BDTFunctions_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 62A57CF6942AF8E8B60B3B8771C53306
+- generatedChecksum: EFDB80DE1EC77D54E76D2F3291142209
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_BufferFreeze_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: EFDB80DE1EC77D54E76D2F3291142209
+- generatedChecksum: 44A4CF72E79B206503A570A7C6B15CAD
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_BufferFreeze_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 44A4CF72E79B206503A570A7C6B15CAD
+- generatedChecksum: 10843324F0C3C37B9419EAD8FFB4B75E
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_DeviceAddress_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 10843324F0C3C37B9419EAD8FFB4B75E
+- generatedChecksum: 54BFBC3F08C0D4752DF74799F4C9B449
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_DeviceAddress_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 54BFBC3F08C0D4752DF74799F4C9B449
+- generatedChecksum: 4D2630F1B71886CAF9503FE025AFF5EE
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EP0LowSpeedConnect_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 4D2630F1B71886CAF9503FE025AFF5EE
+- generatedChecksum: 19518D9996047F6F94CA2AA4902E9E7B
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EP0LowSpeedConnect_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 19518D9996047F6F94CA2AA4902E9E7B
+- generatedChecksum: E7025F9FBA2413ED2AD4522B66DEDA9C
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EP0NAKRetry_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E7025F9FBA2413ED2AD4522B66DEDA9C
+- generatedChecksum: BE22CA76DBE5C80AB3E7A7D9C2B3C0DC
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EP0NAKRetry_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: BE22CA76DBE5C80AB3E7A7D9C2B3C0DC
+- generatedChecksum: A172572AB4A8E1076DC9543FCCD4CB65
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EPnControlTransfer_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A172572AB4A8E1076DC9543FCCD4CB65
+- generatedChecksum: 74220D1C57F227F60349E1B08EE06A98
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EPnControlTransfer_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 74220D1C57F227F60349E1B08EE06A98
+- generatedChecksum: B2A9683B9EF845D691DBE7F61594836F
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EPnHandshake_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B2A9683B9EF845D691DBE7F61594836F
+- generatedChecksum: 7AA89118BF93853F1958AD8736D28B61
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EPnHandshake_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 7AA89118BF93853F1958AD8736D28B61
+- generatedChecksum: 350B868A638E3EC481AA29B73D81622F
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EPnRxEnableEnhanced_PIC32.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 350B868A638E3EC481AA29B73D81622F
+- generatedChecksum: B6C1F8C688E949B477CAE40A758D928C
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EPnRxEnableEnhanced_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B6C1F8C688E949B477CAE40A758D928C
+- generatedChecksum: 34F5E74F7D49EE64CD92F9BEE2B8F7C9
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EPnStall_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 34F5E74F7D49EE64CD92F9BEE2B8F7C9
+- generatedChecksum: 0D383886A9E3659029E372AA369E04F0
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EPnStall_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 0D383886A9E3659029E372AA369E04F0
+- generatedChecksum: A05787C93C388FF70D13BEDD156E9165
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EPnTxRx_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A05787C93C388FF70D13BEDD156E9165
+- generatedChecksum: F46E538F66BC67AB746DE5DC08335D18
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EPnTxRx_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: F46E538F66BC67AB746DE5DC08335D18
+- generatedChecksum: D91EF7D6D66318175EC902AC10B07541
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ERR_InterruptStatus_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D91EF7D6D66318175EC902AC10B07541
+- generatedChecksum: 13AFF95C87EB4F8C70972D2B27BD9315
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ERR_InterruptStatus_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 13AFF95C87EB4F8C70972D2B27BD9315
+- generatedChecksum: 3266F05DC49F47AD8983E08695D228EB
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ERR_Interrupt_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 3266F05DC49F47AD8983E08695D228EB
+- generatedChecksum: 29467AB44D0B20289667E5E8696C81B6
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ERR_Interrupt_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 29467AB44D0B20289667E5E8696C81B6
+- generatedChecksum: 6E6CFAA5FB99D2D377C7B7F194423195
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EyePattern_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6E6CFAA5FB99D2D377C7B7F194423195
+- generatedChecksum: BAEA73C8C521F1ACCE710D4512F3FAE6
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_EyePattern_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: BAEA73C8C521F1ACCE710D4512F3FAE6
+- generatedChecksum: 76B9CFCF5B06444BD689EAA1F22AD71D
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_FrameNumber_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 76B9CFCF5B06444BD689EAA1F22AD71D
+- generatedChecksum: 408CB74019E2380B2BCD429049F1B981
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_FrameNumber_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 408CB74019E2380B2BCD429049F1B981
+- generatedChecksum: 6EB33D0EB60209522E91C7B805AB25DC
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_GEN_InterruptStatus_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6EB33D0EB60209522E91C7B805AB25DC
+- generatedChecksum: 3360F2D7F303E408D8F581FC44A6DE3C
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_GEN_InterruptStatus_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 3360F2D7F303E408D8F581FC44A6DE3C
+- generatedChecksum: 980B20058F736B07F71A233527B55809
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_GEN_Interrupt_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 980B20058F736B07F71A233527B55809
+- generatedChecksum: 54F632B5226E20C4685BB6069D995765
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_GEN_Interrupt_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 54F632B5226E20C4685BB6069D995765
+- generatedChecksum: 048544CF9B6F68C7EBD7D78ECBFEDA59
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_HostBusyWithToken_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 048544CF9B6F68C7EBD7D78ECBFEDA59
+- generatedChecksum: B6C53AAB216360C9BBAE677366BC9890
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_HostBusyWithToken_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B6C53AAB216360C9BBAE677366BC9890
+- generatedChecksum: 65F3253730F0AA1AB36C4512A52794FB
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_HostGeneratesReset_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 65F3253730F0AA1AB36C4512A52794FB
+- generatedChecksum: 6623665EA8F1449332618060E20D196B
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_HostGeneratesReset_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6623665EA8F1449332618060E20D196B
+- generatedChecksum: B7CF190EB03BA59B93C489D8994926CC
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LastDirection_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: B7CF190EB03BA59B93C489D8994926CC
+- generatedChecksum: 625AB3F01773E229D8CCFEB1006C7CD2
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LastDirection_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 625AB3F01773E229D8CCFEB1006C7CD2
+- generatedChecksum: 60810E675DF84F16A02B0D0EAD6D7F63
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LastEndpoint_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 60810E675DF84F16A02B0D0EAD6D7F63
+- generatedChecksum: 82F028EFD6BEB1C80F9B9292831A65D9
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LastEndpoint_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 82F028EFD6BEB1C80F9B9292831A65D9
+- generatedChecksum: 9A2A474F2CFED908346E87E36C2D79F2
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LastPingPong_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 9A2A474F2CFED908346E87E36C2D79F2
+- generatedChecksum: 058EAAB655838DA5289D587DDAC32CAA
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LastPingPong_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 058EAAB655838DA5289D587DDAC32CAA
+- generatedChecksum: 33E50D04E85804ADE7171A8376C42424
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LastTransactionDetails_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 33E50D04E85804ADE7171A8376C42424
+- generatedChecksum: EB7BEA76434E3AC1308285FBAB01B13F
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LastTransactionDetails_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: EB7BEA76434E3AC1308285FBAB01B13F
+- generatedChecksum: 5F6530DD94D66305E91832C300436D8C
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LiveJState_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 5F6530DD94D66305E91832C300436D8C
+- generatedChecksum: 6B6273C05B158120AC6D38BAAF663D3B
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LiveJState_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6B6273C05B158120AC6D38BAAF663D3B
+- generatedChecksum: 30F8DF0AF32CB6257839B7AEB898A46F
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LiveSingleEndedZero_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 30F8DF0AF32CB6257839B7AEB898A46F
+- generatedChecksum: 134E5C20D6CA8AED76B4037DB9A09AB7
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_LiveSingleEndedZero_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 134E5C20D6CA8AED76B4037DB9A09AB7
+- generatedChecksum: 2422148BA969698923685283F46C92E9
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ModuleBusy_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 2422148BA969698923685283F46C92E9
+- generatedChecksum: 167442BF79AE0D75BFBED51A312C6EE1
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ModuleBusy_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 167442BF79AE0D75BFBED51A312C6EE1
+- generatedChecksum: E2E2A24D754C152E0273ACE870235103
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ModulePower_32Bit16Bit.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E2E2A24D754C152E0273ACE870235103
+- generatedChecksum: A53F5BE327C6E2F3D218EF3C9F5C6EEF
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ModulePower_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A53F5BE327C6E2F3D218EF3C9F5C6EEF
+- generatedChecksum: E2B3981232810DC07B12BB0F413B787B
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_NextTokenSpeed_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E2B3981232810DC07B12BB0F413B787B
+- generatedChecksum: 9513196BF2783545C5B62361D943437D
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_NextTokenSpeed_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 9513196BF2783545C5B62361D943437D
+- generatedChecksum: 38BE3303E98314C627DA67AC076C3F09
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_ASessionValid_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 38BE3303E98314C627DA67AC076C3F09
+- generatedChecksum: 5352DFCC35451F729FA0911037218B86
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_ASessionValid_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 5352DFCC35451F729FA0911037218B86
+- generatedChecksum: 36A534DD422BA20FA2AE8EFF18DA8039
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_BSessionEnd_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 36A534DD422BA20FA2AE8EFF18DA8039
+- generatedChecksum: FA19A265F10A2C91948E37C137599B24
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_BSessionEnd_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: FA19A265F10A2C91948E37C137599B24
+- generatedChecksum: 84C73320F432149F92318F74E8496122
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_IDPinState_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 84C73320F432149F92318F74E8496122
+- generatedChecksum: 7128C610EC9A82EBDCBCB3BFDC6FF31E
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_IDPinState_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 7128C610EC9A82EBDCBCB3BFDC6FF31E
+- generatedChecksum: D1A36D8ACF5801EACF74063F1F7C8724
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_InterruptStatus_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D1A36D8ACF5801EACF74063F1F7C8724
+- generatedChecksum: D551EA6473C70608F3B158FC41103424
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_InterruptStatus_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D551EA6473C70608F3B158FC41103424
+- generatedChecksum: 8106E66B318C78D4F5BCF81A7F9AB47A
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_Interrupt_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 8106E66B318C78D4F5BCF81A7F9AB47A
+- generatedChecksum: D54E0303FC83CE7061086D7D9C416DFB
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_Interrupt_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D54E0303FC83CE7061086D7D9C416DFB
+- generatedChecksum: 5CE79190E2C8E1130DBA5FA0B133C905
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_LineState_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 5CE79190E2C8E1130DBA5FA0B133C905
+- generatedChecksum: 39D144A10029BEF9EB84994C93C9F97C
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_LineState_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 39D144A10029BEF9EB84994C93C9F97C
+- generatedChecksum: 749259B13336B1A48E3A212CC8E76A10
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_PullUpPullDown_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 749259B13336B1A48E3A212CC8E76A10
+- generatedChecksum: 603005C43494A7B577DDFDC072F38934
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_PullUpPullDown_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 603005C43494A7B577DDFDC072F38934
+- generatedChecksum: F53CDCE8B12DC50609F738356C557D7C
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_SessionValid_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: F53CDCE8B12DC50609F738356C557D7C
+- generatedChecksum: 2E1C89EE866754BA6E3716C01F81840A
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_SessionValid_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 2E1C89EE866754BA6E3716C01F81840A
+- generatedChecksum: 169EF167B1CA3EE3432083DDB9A4DF68
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_VbusCharge_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 169EF167B1CA3EE3432083DDB9A4DF68
+- generatedChecksum: 83BE346B5A9706159421BA8A882BC654
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_VbusCharge_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 83BE346B5A9706159421BA8A882BC654
+- generatedChecksum: CCED5CAFC52EA7EBAB9C7EA633F94FBD
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_VbusDischarge_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: CCED5CAFC52EA7EBAB9C7EA633F94FBD
+- generatedChecksum: F18FCAF76F4FE96F560CAC9D61883E10
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_VbusDischarge_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: F18FCAF76F4FE96F560CAC9D61883E10
+- generatedChecksum: 256E24F8D6407783D550D7EE34DC5454
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_VbusPowerOnOff_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 256E24F8D6407783D550D7EE34DC5454
+- generatedChecksum: A5FDE90F969D0F5EC080DCA1336EC551
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OTG_VbusPowerOnOff_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: A5FDE90F969D0F5EC080DCA1336EC551
+- generatedChecksum: 09E1D9F5F5E052007AF0A26348B8F59A
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OnChipPullup_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 09E1D9F5F5E052007AF0A26348B8F59A
+- generatedChecksum: E9695732C30EACDBA9345D94C37D4417
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OnChipTransceiver_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E9695732C30EACDBA9345D94C37D4417
+- generatedChecksum: 4909CC4C2573CDE282AF965174A8C73F
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OpModeSelect_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 4909CC4C2573CDE282AF965174A8C73F
+- generatedChecksum: 08A0CD4EEF17F405055CD252FBCF396D
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_OpModeSelect_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 08A0CD4EEF17F405055CD252FBCF396D
+- generatedChecksum: D67E34356E44DDADFD0FEF511E82C4F6
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_PacketTransfer_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D67E34356E44DDADFD0FEF511E82C4F6
+- generatedChecksum: 96CF545A48CBE1FD23CC65374F22816B
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_PacketTransfer_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 96CF545A48CBE1FD23CC65374F22816B
+- generatedChecksum: 9414911A8C7113A0DE499DAC504F8EC8
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_PingPongMode_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 9414911A8C7113A0DE499DAC504F8EC8
+- generatedChecksum: 36A4207833DBBB09794F91FB4CE02DE0
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ResumeSignaling_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 36A4207833DBBB09794F91FB4CE02DE0
+- generatedChecksum: F1CE5B84B9774E099FC20869BD88D848
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_ResumeSignaling_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: F1CE5B84B9774E099FC20869BD88D848
+- generatedChecksum: 2EDA2AF4702BFC856F32A7C394F1CA3D
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_SOFThreshold_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 2EDA2AF4702BFC856F32A7C394F1CA3D
+- generatedChecksum: 173533D9D44F34EAC6A43805F513C5BB
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_SOFThreshold_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 173533D9D44F34EAC6A43805F513C5BB
+- generatedChecksum: D130FC249330270320088204690E6E69
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_SleepEntryGuard_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D130FC249330270320088204690E6E69
+- generatedChecksum: 22AF76F4008304D97083432006CE7B3C
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_SleepEntryGuard_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 22AF76F4008304D97083432006CE7B3C
+- generatedChecksum: 43AC410D2E57BEDBEDBA5CEB27E39C85
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_SpeedControl_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 43AC410D2E57BEDBEDBA5CEB27E39C85
+- generatedChecksum: D009D85E4B81A1B1C348D6B41AB33556
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_StartOfFrames_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D009D85E4B81A1B1C348D6B41AB33556
+- generatedChecksum: 80E4E33CD6C02C4AF9EC825D4628B8CE
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_StartOfFrames_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 80E4E33CD6C02C4AF9EC825D4628B8CE
+- generatedChecksum: BFB7D5B997ADAB1B881165EBCE26C408
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_StopInIdle_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: BFB7D5B997ADAB1B881165EBCE26C408
+- generatedChecksum: D8718B32B3BCE26F4B03AF46971ACF34
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_StopInIdle_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D8718B32B3BCE26F4B03AF46971ACF34
+- generatedChecksum: D88042DD257B1A0841E72FF9E8A53768
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_Suspend_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D88042DD257B1A0841E72FF9E8A53768
+- generatedChecksum: F450A2CB5B56FB19B09D89481F6B6D9C
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_Suspend_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: F450A2CB5B56FB19B09D89481F6B6D9C
+- generatedChecksum: 37B19C89A43207CF77661935E8D2188B
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_TokenEP_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 37B19C89A43207CF77661935E8D2188B
+- generatedChecksum: AAAF6430E674ED656EBD9939AF79EB82
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_TokenEP_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: AAAF6430E674ED656EBD9939AF79EB82
+- generatedChecksum: 6B9BA1140FB58631035F927EAF5E9AE5
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_TokenPID_Default.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6B9BA1140FB58631035F927EAF5E9AE5
+- generatedChecksum: 979F4D2846A355BE6DF6DD0D02D82AE0
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_TokenPID_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 979F4D2846A355BE6DF6DD0D02D82AE0
+- generatedChecksum: E67575175AA2DF30E077E4F10646158E
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usb_UOEMonitor_Unsupported.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E67575175AA2DF30E077E4F10646158E
+- generatedChecksum: 39659CDE2CC726544BD68544FB7EF4B2
+  logicalPath: config/pic32mz_w1/usb
+  name: usb_chapter_9.h
+  physicalPath: usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 39659CDE2CC726544BD68544FB7EF4B2
+- generatedChecksum: E7B6EAD8687A8EBC0355E0CE413B6A87
+  logicalPath: config/pic32mz_w1/usb
+  name: usb_common.h
+  physicalPath: usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: E7B6EAD8687A8EBC0355E0CE413B6A87
+- generatedChecksum: 68F7DBD311EDCAF1098CDF2FD15B8C73
+  logicalPath: config/pic32mz_w1/usb
+  name: usb_device.h
+  physicalPath: usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 68F7DBD311EDCAF1098CDF2FD15B8C73
+- generatedChecksum: 626BFDDD140B808E90C9DD2E4A27421E
+  logicalPath: config/pic32mz_w1/usb/src
+  name: usb_device_function_driver.h
+  physicalPath: usb/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 626BFDDD140B808E90C9DD2E4A27421E
+- generatedChecksum: CBCB7E174A244BB46572A1E51F76AE3D
+  logicalPath: config/pic32mz_w1/usb/src
+  name: usb_device_local.h
+  physicalPath: usb/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: CBCB7E174A244BB46572A1E51F76AE3D
+- generatedChecksum: C8D4A1D9092FD842506F565CE9B8C265
+  logicalPath: config/pic32mz_w1/usb/src
+  name: usb_device_mapping.h
+  physicalPath: usb/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: C8D4A1D9092FD842506F565CE9B8C265
+- generatedChecksum: FE6B03F3573AFF839373A99B2BF81731
+  logicalPath: config/pic32mz_w1/usb
+  name: usb_device_msd.h
+  physicalPath: usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: FE6B03F3573AFF839373A99B2BF81731
+- generatedChecksum: 78DD3C60D6E25569FE9F0143064D2E20
+  logicalPath: config/pic32mz_w1/usb/src
+  name: usb_device_msd_local.h
+  physicalPath: usb/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 78DD3C60D6E25569FE9F0143064D2E20
+- generatedChecksum: 6C4A6859DB16EA8C046F995C6B6C1C6F
+  logicalPath: config/pic32mz_w1/usb/src
+  name: usb_external_dependencies.h
+  physicalPath: usb/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6C4A6859DB16EA8C046F995C6B6C1C6F
+- generatedChecksum: F127C67A3E33E5788C0F057F648EE57C
+  logicalPath: config/pic32mz_w1/usb
+  name: usb_host.h
+  physicalPath: usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: F127C67A3E33E5788C0F057F648EE57C
+- generatedChecksum: 6EBC5E4D06FC96A02ADF3B7416957DD6
+  logicalPath: config/pic32mz_w1/usb
+  name: usb_host_client_driver.h
+  physicalPath: usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6EBC5E4D06FC96A02ADF3B7416957DD6
+- generatedChecksum: 757C8484C955543C893361992D11FD4C
+  logicalPath: config/pic32mz_w1/usb
+  name: usb_host_hub_interface.h
+  physicalPath: usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 757C8484C955543C893361992D11FD4C
+- generatedChecksum: 3E3CC6BC9128194CB4D19F29C57E312B
+  logicalPath: config/pic32mz_w1/usb
+  name: usb_hub.h
+  physicalPath: usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 3E3CC6BC9128194CB4D19F29C57E312B
+- generatedChecksum: 8AF03E090F2D85FDF03C40E013D06615
+  logicalPath: config/pic32mz_w1/usb
+  name: usb_msd.h
+  physicalPath: usb
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 8AF03E090F2D85FDF03C40E013D06615
+- generatedChecksum: 6C8C42002A3EF221532D06F809FDD69A
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src
+  name: usbfs_registers.h
+  physicalPath: driver/usb/usbfs/src
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: 6C8C42002A3EF221532D06F809FDD69A
+- generatedChecksum: D048A36DC93E66C9CA02E4D6CD9827B9
+  logicalPath: config/pic32mz_w1/driver/usb/usbfs/src/templates
+  name: usbfs_registers.h
+  physicalPath: driver/usb/usbfs/src/templates
+  security: NON_SECURE
+  type: HEADER
+  userChecksum: D048A36DC93E66C9CA02E4D6CD9827B9
 - generatedChecksum: null
   logicalPath: config/pic32mz_w1
   name: user.h
@@ -11139,6 +13232,18 @@ settings:
   delimiter: ;
   key: extra-include-directories
   security: NON_SECURE
+  value: ../src/config/pic32mz_w1/library/cryptoauthlib/tng
+- append: true
+  category: C32
+  delimiter: ;
+  key: extra-include-directories
+  security: NON_SECURE
+  value: ../src/config/pic32mz_w1/library/cryptoauthlib;../src/config/pic32mz_w1/library/cryptoauthlib/crypto;../src/config/pic32mz_w1/library/cryptoauthlib/pkcs11
+- append: true
+  category: C32
+  delimiter: ;
+  key: extra-include-directories
+  security: NON_SECURE
   value: ../src/config/pic32mz_w1/third_party_adapter/azure_rtos;../src/config/pic32mz_w1/third_party_adapter/azure_rtos/src;
     ../src/config/pic32mz_w1/third_party_adapter/azure_rtos/src/tcpip
 - append: true
@@ -11237,6 +13342,12 @@ settings:
   key: extra-include-directories
   security: NON_SECURE
   value: ../src;../src/config/pic32mz_w1;
+- append: true
+  category: C32
+  delimiter: ;
+  key: extra-include-directories
+  security: NON_SECURE
+  value: ;../src/config/pic32mz_w1/system/fs/fat_fs/file_system;../src/config/pic32mz_w1/system/fs/fat_fs/hardware_access
 - append: false
   category: C32
   delimiter: ''
@@ -11309,6 +13420,12 @@ settings:
   key: extra-include-directories
   security: NON_SECURE
   value: ../src;../src/config/pic32mz_w1;
+- append: true
+  category: C32CPP
+  delimiter: ;
+  key: extra-include-directories
+  security: NON_SECURE
+  value: ;../src/config/pic32mz_w1/system/fs/fat_fs/file_system;../src/config/pic32mz_w1/system/fs/fat_fs/hardware_access
 - append: false
   category: C32CPP
   delimiter: ''

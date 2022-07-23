@@ -10,6 +10,9 @@
 /**************************************************************************/
 
 #include "nx_azure_iot_ciphersuites.h"
+#ifdef ENABLE_ATECC608B
+extern NX_CRYPTO_METHOD crypto_method_ecdsa_pkcs11_atca;
+#endif
 
 #if (!NX_SECURE_TLS_TLS_1_2_ENABLED)
 #error "TLS 1.2 must be enabled."
@@ -45,7 +48,7 @@ const NX_CRYPTO_METHOD *_nx_azure_iot_tls_supported_crypto[] =
 #ifdef NX_SECURE_ENABLE_ECC_CIPHERSUITE
     &crypto_method_ecdhe,
     &crypto_method_ecdsa,
-    &crypto_method_ec_secp384,
+    &crypto_method_ec_secp384,    
 #endif /* NX_SECURE_ENABLE_ECC_CIPHERSUITE */
 };
 

@@ -148,7 +148,7 @@ NX_IPV4_HEADER *fragment_header_ptr;
     {
         /* Allocate a packet from the default packet pool.  */
         status =  _nx_packet_allocate(ip_ptr -> nx_ip_default_packet_pool, &fragment_packet,
-                                      NX_IPv4_PACKET, TX_NO_WAIT, __func__);
+                                      NX_IPv4_PACKET, TX_NO_WAIT);
 
         /* Determine if there is a packet available.  */
         if (status)
