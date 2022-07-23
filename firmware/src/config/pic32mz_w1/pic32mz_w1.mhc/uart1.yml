@@ -18,13 +18,6 @@ children:
       children:
       - type: Dynamic
         attributes: {id: uart1, value: '0'}
-  - type: Integer
-    attributes: {id: UART_CLOCK_FREQ}
-    children:
-    - type: Values
-      children:
-      - type: Dynamic
-        attributes: {id: uart1, value: '100000000'}
   - type: File
     attributes: {id: UART_HEADER}
     children:
@@ -120,4 +113,4 @@ children:
         children:
         - {type: Value, value: sys_console_UART_dependency}
 - type: ElementPosition
-  attributes: {x: '59', y: '329', id: uart1}
+  attributes: {x: '27', y: '333', id: uart1}

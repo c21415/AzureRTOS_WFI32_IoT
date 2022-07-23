@@ -43,23 +43,22 @@ THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 
 #include "definitions.h"
 
-#include "osal/osal.h"
 #include "azure_glue.h"
 #include "azure_glue_private.h"
 
 #include "tcpip/tcpip_mac.h"
 #include "tcpip/tcpip_mac_object.h"
 
-#include "system/console/sys_console.h"
 #include "system/debug/sys_debug.h"
 #include "system/int/sys_int.h"
-
+#include "osal/osal.h"
 
 #include "tx_api.h"
 #include "nx_api.h"
 
 // definitions
 //
+
 #define AZURE_GLUE_HDR_MESSAGE "Azure IoT Glue: "
 #define AZURE_MAC_INIT_DATA_SIZE    60  // storing the MAC initialization data
 
@@ -610,7 +609,7 @@ size_t write(int fd, const void *buffer, size_t length)
 {
     if(fd == STDOUT_FILENO || fd == STDERR_FILENO)
     {
-        return SYS_CONSOLE_Write(0, buffer, length);
+        return UART3_Write((uint8_t *)buffer, length);
     }
     return -1;
 }

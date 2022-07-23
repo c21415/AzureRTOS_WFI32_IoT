@@ -30,12 +30,12 @@
 #endif
 
 /* Include necessary system files.  */
+#include    <stdio.h>
+#include    <string.h>
 
 #include    "nx_api.h"
 #include    "nx_ip.h"
 #include    "nxd_dns.h"
-#include    "stdio.h"
-#include    "string.h"
 #include    "nx_system.h"
 
 /* Define the resource record section.  */

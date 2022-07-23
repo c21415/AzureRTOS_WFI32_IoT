@@ -420,8 +420,7 @@ void APP_PIC32MZ_W1_Tasks ( void )
             else
             {
                 SYS_FS_DriveLabelSet(APP_MOUNT_NAME, "WFI32-IoT");
-                SYS_FS_CurrentDriveSet(APP_MOUNT_NAME);
-                SYS_CONSOLE_MESSAGE("Mounting the MSD drive!\r\n");                
+                SYS_FS_CurrentDriveSet(APP_MOUNT_NAME);                
                 /* Format succeeded. Open a file. */
                 app_pic32mz_w1Data.appPic32mzW1State = APP_PIC32MZ_W1_STATE_MSD_CONNECT;                              
             
@@ -447,7 +446,7 @@ void APP_PIC32MZ_W1_Tasks ( void )
                 memset(app_pic32mz_w1Data.ecc608SerialNum, 0, sizeof(app_pic32mz_w1Data.ecc608SerialNum));
                 atcab_bin2hex_(sernum, ATCA_SERIAL_NUM_SIZE, (char *)tempAsciiBuf, &displen, false, false, true);
                 sprintf(app_pic32mz_w1Data.ecc608SerialNum, AZURE_DEVICE_CRT_FILE_NAME_FMT, tempAsciiBuf);                
-                SYS_CONSOLE_PRINT("Serial Number of the Device: %s\r\n\n", app_pic32mz_w1Data.ecc608SerialNum);
+                SYS_CONSOLE_PRINT("Serial Number of the Device: %s\r\n", tempAsciiBuf);
 
                 if(SYS_FS_FileStat(app_pic32mz_w1Data.ecc608SerialNum, &app_pic32mz_w1Data.fileStatus) != SYS_FS_RES_SUCCESS)            
                 {                               
@@ -464,12 +463,10 @@ void APP_PIC32MZ_W1_Tasks ( void )
                         SYS_CONSOLE_PRINT("tng_atcacert_read_device_cert Failed (%x) \r\n", status);                        
                     }
                     else
-                    {                              
-                        SYS_CONSOLE_PRINT("Creating the certificate!\n");
+                    {                                                      
                         app_pic32mz_w1Data.fileHandle = SYS_FS_FileOpen(app_pic32mz_w1Data.ecc608SerialNum, SYS_FS_FILE_OPEN_WRITE);              
                         if(app_pic32mz_w1Data.fileHandle != SYS_FS_HANDLE_INVALID)
-                        {
-                            SYS_CONSOLE_PRINT("File open for writing!\n");
+                        {                            
                             memset(fileBuffer, 0, sizeof(fileBuffer));
                             sprintf(fileBuffer, APP_USB_MSD_WIFI_CONFIG_DATA_TEMPLATE, APP_STA_DEFAULT_SSID, APP_STA_DEFAULT_PASSPHRASE, APP_STA_DEFAULT_AUTH);
                             if(SYS_FS_FileWrite(app_pic32mz_w1Data.fileHandle, deviceCert, deviceCertSize) == deviceCertSize)                              
@@ -504,12 +501,10 @@ void APP_PIC32MZ_W1_Tasks ( void )
         {       
             app_pic32mz_w1Data.appPic32mzW1State = APP_PIC32MZ_W1_STATE_CHECK_WIFI_CFG_FILE;
             if(SYS_FS_FileStat(AZURE_CLOUD_CFG_FILE_NAME, &app_pic32mz_w1Data.fileStatus) != SYS_FS_RES_SUCCESS)            
-            {
-                SYS_CONSOLE_PRINT("Writing default cloud config file!");
+            {                
                 app_pic32mz_w1Data.fileHandle = SYS_FS_FileOpen(AZURE_CLOUD_CFG_FILE, SYS_FS_FILE_OPEN_WRITE);              
                 if(app_pic32mz_w1Data.fileHandle != SYS_FS_HANDLE_INVALID)
                 {                    
-                    SYS_CONSOLE_PRINT("File open for writing!\n");                    
                     cJSON *jsonObj = cJSON_CreateObject();
                     cJSON_AddItemToObject(jsonObj, AZURE_CLOUD_IDSCOPE_JSON_TAG, cJSON_CreateString((const char *)default_id_scope));
                     cJSON_AddItemToObject(jsonObj, AZURE_CLOUD_DEVICEID_JSON_TAG, cJSON_CreateString((const char *)default_registration_id));  
@@ -518,8 +513,7 @@ void APP_PIC32MZ_W1_Tasks ( void )
                                             
                     if(printBuffer && (SYS_FS_FileWrite(app_pic32mz_w1Data.fileHandle, printBuffer, strlen(printBuffer)) == strlen(printBuffer)))                                                  
                     { 
-                        SYS_FS_FileSync(app_pic32mz_w1Data.fileHandle);
-                        SYS_CONSOLE_PRINT("Default cloud configuration saved!\n");
+                        SYS_FS_FileSync(app_pic32mz_w1Data.fileHandle);                        
                     }
                     else
                     {
@@ -542,18 +536,15 @@ void APP_PIC32MZ_W1_Tasks ( void )
         {                                 
             app_pic32mz_w1Data.appPic32mzW1State = APP_PIC32MZ_W1_STATE_READ_CERT_WIFI_CLOUD_CFG_FILE;
             if(SYS_FS_FileStat(AZURE_WIFI_CFG_FILE_NAME, &app_pic32mz_w1Data.fileStatus) != SYS_FS_RES_SUCCESS)            
-            {
-                SYS_CONSOLE_PRINT("Writing default cloud config file!");
+            {                
                 app_pic32mz_w1Data.fileHandle = SYS_FS_FileOpen(AZURE_WIFI_CFG_FILE, SYS_FS_FILE_OPEN_WRITE);              
                 if(app_pic32mz_w1Data.fileHandle != SYS_FS_HANDLE_INVALID)
-                {
-                    SYS_CONSOLE_PRINT("File open for writing!\n");
+                {                    
                     memset(fileBuffer, 0, sizeof(fileBuffer));
                     sprintf(fileBuffer, APP_USB_MSD_WIFI_CONFIG_DATA_TEMPLATE, APP_STA_DEFAULT_SSID, APP_STA_DEFAULT_PASSPHRASE, APP_STA_DEFAULT_AUTH);
                     if(SYS_FS_FileWrite(app_pic32mz_w1Data.fileHandle, fileBuffer, strlen(fileBuffer)) == strlen(fileBuffer))                              
                     { 
-                        SYS_FS_FileSync(app_pic32mz_w1Data.fileHandle);
-                        SYS_CONSOLE_PRINT("Default wifi configuration saved!\n");                         
+                        SYS_FS_FileSync(app_pic32mz_w1Data.fileHandle);                                                 
                     }
                     else
                     {                                                
@@ -578,14 +569,11 @@ void APP_PIC32MZ_W1_Tasks ( void )
             {
                 app_pic32mz_w1Data.fileHandle = SYS_FS_FileOpen(AZURE_WIFI_CFG_FILE, SYS_FS_FILE_OPEN_READ);              
                 if(app_pic32mz_w1Data.fileHandle != SYS_FS_HANDLE_INVALID)
-                {
-                    SYS_CONSOLE_PRINT("File open for reading!\n");
+                {                    
                     memset(fileBuffer, 0, sizeof(fileBuffer));                
                     if(SYS_FS_FileRead(app_pic32mz_w1Data.fileHandle, fileBuffer, app_pic32mz_w1Data.fileStatus.fsize) == app_pic32mz_w1Data.fileStatus.fsize)                              
-                    { 
-                        SYS_CONSOLE_PRINT("Successfully read the wifi config!\n%s\n", fileBuffer);    
-                        parseWifiConfig(fileBuffer);
-                        //sscanf(fileBuffer, APP_USB_MSD_WIFI_CONFIG_DATA_TEMPLATE, wifi.ssid, wifi.key, wifi.auth);                    
+                    {                            
+                        parseWifiConfig(fileBuffer);                      
                     }
                     else
                     {                                                
@@ -600,12 +588,10 @@ void APP_PIC32MZ_W1_Tasks ( void )
             {
                 app_pic32mz_w1Data.fileHandle = SYS_FS_FileOpen(AZURE_CLOUD_CFG_FILE, SYS_FS_FILE_OPEN_READ);              
                 if(app_pic32mz_w1Data.fileHandle != SYS_FS_HANDLE_INVALID)
-                {
-                    SYS_CONSOLE_PRINT("File open for reading!\n");
+                {                    
                     memset(fileBuffer, 0, sizeof(fileBuffer));                
                     if(SYS_FS_FileRead(app_pic32mz_w1Data.fileHandle, fileBuffer, app_pic32mz_w1Data.fileStatus.fsize) == app_pic32mz_w1Data.fileStatus.fsize)                              
                     { 
-                        SYS_CONSOLE_PRINT("Successfully read the Cloud config!\n%s\n", fileBuffer); 
                         parseCloudConfig(fileBuffer);                       
                     }
                     else
@@ -686,16 +672,14 @@ void APP_PIC32MZ_W1_Tasks ( void )
 
         /* Check on Wi-Fi from USB MSD */
         case APP_PIC32MZ_W1_STATE_CHECK_CREDENTIALS:
-        {
-            SYS_CONSOLE_MESSAGE("Go to normal mode\r\n");            
+        {                       
             app_pic32mz_w1Data.appPic32mzW1State = APP_PIC32MZ_W1_STATE_CONFIG;              
             break; 
         }
         
         /* Configure and connect */
         case APP_PIC32MZ_W1_STATE_CONFIG:
-        {
-            SYS_CONSOLE_PRINT("pic32mzwTaskStack = %X\n", _WDRV_PIC32MZW_Task_Stk_Ptr);
+        {         
             SYS_CONSOLE_PRINT("Connecting to Wi-Fi (%s)\r\n",wifi.ssid);            
             if (APP_WifiConfig((char*)wifi.ssid, 
                                 (char*)wifi.key, 

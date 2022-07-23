@@ -586,14 +586,14 @@ files:
   physicalPath: third_party_adapter/azure_rtos/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 53EDD627D5EE7F708CE9639E3E28CBDE
+  userChecksum: 36237A717C15D33A07AA6C8A55904756
 - generatedChecksum: 7F46F93CFAAD75CACB249017911CE218
   logicalPath: config/pic32mz_w1/third_party_adapter/azure_rtos/src
   name: azure_glue_private.c
   physicalPath: third_party_adapter/azure_rtos/src
   security: NON_SECURE
   type: SOURCE
-  userChecksum: B499B9261802F6E4C61DAD15967B5157
+  userChecksum: 411074325216B1A13571EF4F58CC5D21
 - generatedChecksum: 146319085C483D4BB39B6804959EBD14
   logicalPath: config/pic32mz_w1/bsp
   name: bsp.c
@@ -2616,7 +2616,7 @@ files:
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 333CBADB16C16D97DDDD5208A475BD1A
+  userChecksum: A0A832CABB62781692A06097E7274E1B
 - generatedChecksum: 9BDE5CD46DCA12F0AA553070930C137E
   logicalPath: config/pic32mz_w1
   name: interrupts.c
@@ -2805,7 +2805,7 @@ files:
   physicalPath: ../../third_party/azure_rtos/netxduo/addons/azure_iot
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 7B15068ACAF13B28DBBA769734D4DF96
+  userChecksum: D2F91AB6630EBF8BF1C86933DFB79D60
 - generatedChecksum: AD290D769D08FEECEE83152B3E8054AA
   logicalPath: third_party/azure_rtos/netxduo/addons/azure_iot
   name: nx_azure_iot_hub_client.c
@@ -6718,7 +6718,7 @@ files:
   physicalPath: ../../third_party/azure_rtos/netxduo/addons/dns
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 2D8B2034745E72A66C903041E9DA1AFF
+  userChecksum: 6AD9C1D241EAAD61752A22D6693F231E
 - generatedChecksum: C4CD0D26B51B37AA7E6C8ECBFDECAE82
   logicalPath: third_party/azure_rtos/netxduo/common/src
   name: nxd_icmp_enable.c
@@ -11653,7 +11653,7 @@ files:
   physicalPath: third_party_adapter/azure_rtos
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4F6342987AD7799C86DC9718DAB9DF38
+  userChecksum: 283A37A9730FDDC7D27B6C9F08C9F82D
 - generatedChecksum: 13F260C7480C045F48C3958359D35EB2
   logicalPath: third_party/azure_rtos/netxduo/common/inc
   name: nx_user_sample.h
@@ -11842,7 +11842,7 @@ files:
   physicalPath: ../../azure_rtos_demo/sample_azure_iot_embedded_sdk
   security: NON_SECURE
   type: HEADER
-  userChecksum: B9DB19545969FA98CD2E75F9D170382E
+  userChecksum: 94F5EF5A9813F89EA9D01C2585E7FCB1
 - generatedChecksum: 9E71D345C6F5A276C502502C87316EA5
   logicalPath: config/pic32mz_w1/usb
   name: scsi.h
