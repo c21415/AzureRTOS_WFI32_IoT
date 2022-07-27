@@ -115,24 +115,6 @@
 #define ntohs(val)  NX_CHANGE_USHORT_ENDIAN(val)
 #endif /*htons */
 
-#if 0
-#ifndef letoh64
-#define letoh64
-#endif
-
-#ifndef htole64
-#define htole64
-#endif
-
-#ifndef betoh64 
-#define betoh64 
-#endif
-
-#ifndef htobe64
-#define htobe64
-#endif
-#endif
-
 #else
 
 #define NX_CHANGE_ULONG_ENDIAN(a)
